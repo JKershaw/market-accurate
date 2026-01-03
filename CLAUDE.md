@@ -104,6 +104,25 @@ Commit messages:
 
 Never amend commits containing predictions after push.
 
+## For AI Agents: What To Do
+
+When starting a session, check in this order:
+
+1. **`gh issue list`** — prioritized work items
+2. **@predictions/tracker.md** — any predictions due for resolution?
+3. **Analysis data freshness** — metrics older than 1 quarter need refresh
+4. **@CONTRIBUTING.md** — expansion roadmap for new analyses
+
+### Priority Actions
+
+| Priority | Action | Frequency |
+|----------|--------|-----------|
+| High | Resolve predictions when verification date arrives | As due |
+| High | Create issues for upcoming prediction resolutions | Monthly |
+| Medium | Refresh stale data in analyses | Quarterly |
+| Medium | Add new analysis per roadmap | When capacity |
+| Low | Methodology improvements | Ongoing |
+
 ## Current Focus
 
 AI Valuation Analysis (January 2026):
@@ -111,5 +130,16 @@ AI Valuation Analysis (January 2026):
 - Key metrics: NVIDIA datacenter revenue, hyperscaler capex, open-source benchmarks
 - 7 active predictions, resolution dates through 2027
 
+### Upcoming Prediction Dates
+
+| ID | Prediction | Verification Date |
+|----|-----------|-------------------|
+| AV-001 | NVIDIA DC revenue growth <50% | Feb 2026 |
+| AV-002 | Hyperscaler capex language moderation | May 2026 |
+| AV-003 | Open source GPT-4 parity on consumer GPU | Jun 30, 2026 |
+| AV-004 | Enterprise AI spend growth <25% | Oct 2026 |
+| AV-005 | NVIDIA+AMD+Arm market cap lower | Dec 31, 2026 |
+
 See @analysis/ai-valuation-2026-01.md for current analysis.
-See @predictions/tracker.md for track record.
+See @predictions/tracker.md for full track record.
+See @CONTRIBUTING.md for expansion roadmap and templates.
