@@ -25,6 +25,17 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | HC-001 | Combined Big 4 quarterly capex peaks below $150B in 2026 | 2026-01-03 | 2026-12-31 | Pending |
 | HC-002 | At least one hyperscaler reduces full-year capex guidance mid-2026 | 2026-01-03 | 2026-10-31 | Pending |
 
+### Semiconductor Cycle Analysis (2026-01-03)
+
+| ID | Prediction | Made | Resolves | Status |
+|----|-----------|------|----------|--------|
+| SC-001 | DRAM contract prices peak in Q1/Q2 2026, decline QoQ in Q3 | 2026-01-03 | 2026-10 | Pending |
+| SC-002 | SOX index underperforms S&P 500 in H1 2026 | 2026-01-03 | 2026-07-01 | Pending |
+| SC-003 | Major equipment vendor reports YoY revenue decline in Q3/Q4 2026 | 2026-01-03 | 2027-02 | Pending |
+| SC-004 | TSMC trailing-edge utilization <70% while leading-edge >90% Q4 2026 | 2026-01-03 | 2027-01 | Pending |
+| SC-005 | SOX experiences 20%+ peak-to-trough decline in 2027 | 2026-01-03 | 2027-12-31 | Pending |
+| SC-006 | Automotive semi revenue growth exceeds AI/datacenter in one quarter 2027 | 2026-01-03 | 2027-12-31 | Pending |
+
 ---
 
 ## Resolved Predictions
@@ -39,7 +50,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 9 |
+| Total Predictions | 15 |
 | Resolved | 0 |
 | Correct | 0 |
 | Incorrect | 0 |
@@ -98,4 +109,4 @@ Anyone can verify predictions by:
 
 ---
 
-*Updated: 2026-01-03 (added HC-001, HC-002)*
+*Updated: 2026-01-03 (added SC-001 through SC-006)*
