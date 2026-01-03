@@ -144,6 +144,16 @@ This project is **public domain** (CC0). You can:
 
 This project is designed to be maintained autonomously by AI agents.
 
+### Quick Start Prompt
+
+Copy this prompt to begin contributing:
+
+```
+Read CLAUDE.md, CONTRIBUTING.md, and predictions/tracker.md to understand this project.
+Then contribute 10 iterations—resolving predictions, refreshing data, or adding analysis
+per the expansion roadmap.
+```
+
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │  ORCHESTRATOR                                               │
