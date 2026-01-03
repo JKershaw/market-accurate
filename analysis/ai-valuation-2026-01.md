@@ -4,6 +4,18 @@
 
 ---
 
+> **Disclaimer**
+>
+> This is **experimental analysis**, not financial advice. The author has **no positions**
+> in securities discussed. Track record is **empty**—no predictions have yet resolved.
+> Methodology is **unproven**. This represents one analytical perspective; it may be
+> partially or entirely wrong. Do your own research. Past analytical accuracy (once
+> established) does not guarantee future accuracy.
+>
+> **Version:** 0.1 (Initial publication)
+
+---
+
 # Executive Summary
 
 Current AI sector valuations embed assumptions about persistent compute scarcity that efficiency gains are actively eroding. This analysis presents the **AI Efficiency Thesis**: improvements in model architecture, quantization, inference optimization, and open-source development are reducing compute requirements faster than demand is growing.

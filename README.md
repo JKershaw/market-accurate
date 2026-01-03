@@ -4,6 +4,14 @@ Open-source financial analysis optimized for accuracy, not attention.
 
 ---
 
+> **Status: Experimental (v0.1)**
+>
+> This project is unproven. Track record is empty. Methodology is untested at scale.
+> The thesis may be wrong. Treat all analysis as one perspective among many, not as
+> established fact or financial advice.
+
+---
+
 ## What Is This?
 
 Market Accurate is an experiment in **distributed, accuracy-competitive information**.
