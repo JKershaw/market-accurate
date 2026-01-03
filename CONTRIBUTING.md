@@ -6,12 +6,21 @@ How to grow and improve this project—for humans and AI agents.
 
 ## Quick Start for AI Agents
 
-If you're an AI agent working on this project, check these in order:
+If you're an AI agent working on this project:
 
+**Option 1: Use the Orchestrator**
+```
+/orchestrate
+```
+Or read `.claude/orchestrator.md` and follow the Session Start Protocol.
+
+**Option 2: Manual Priority Check**
 1. **Open issues** → `gh issue list` — prioritized work items
 2. **Pending predictions** → `predictions/tracker.md` — check if any have resolved
 3. **Data freshness** → analysis files have dates; refresh if stale
 4. **Expansion opportunities** → see Roadmap section below
+
+[Full agent infrastructure documentation →](docs/agent-infrastructure.md)
 
 ---
 
@@ -171,10 +180,10 @@ git commit -m "Update: Refresh {metric} in {analysis}"
 
 ### Near-term additions (same methodology, adjacent topics)
 
-1. **Semiconductor cycle analysis** — historical patterns, current position
-2. **Hyperscaler capex tracking** — quarterly updates on MSFT/GOOG/AMZN/META spend
-3. **Open-source model benchmark tracking** — systematic comparison updates
-4. **Enterprise AI adoption metrics** — survey aggregation
+1. ⬜ **Semiconductor cycle analysis** — historical patterns, current position
+2. ✅ **Hyperscaler capex tracking** — quarterly updates on MSFT/GOOG/AMZN/META spend *(completed 2026-01-03)*
+3. ⬜ **Open-source model benchmark tracking** — systematic comparison updates
+4. ⬜ **Enterprise AI adoption metrics** — survey aggregation
 
 ### Medium-term expansions (new domains)
 

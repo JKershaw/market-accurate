@@ -44,13 +44,25 @@ Market Accurate is an experiment in **distributed, accuracy-competitive informat
 
 [Read full analysis →](analysis/ai-valuation-2026-01.md)
 
+### [Hyperscaler Capex Tracker (January 2026)](analysis/hyperscaler-capex-2026-01.md)
+
+**Focus:** Quarterly tracking of AI infrastructure spending by Microsoft, Google, Amazon, and Meta.
+
+**Key metrics:**
+- Combined 2025 capex: **$380-400B** (up ~60% YoY)
+- 2026 projected: **~$600B** (up ~36% YoY)
+- Q3 2025 record: **$106-113B** single quarter
+- Capex intensity: **23.3%** of revenue (vs 13.9% historical median)
+
+[Read full tracker →](analysis/hyperscaler-capex-2026-01.md)
+
 ---
 
 ## Track Record
 
 | Predictions Made | Resolved | Correct | Accuracy |
 |-----------------|----------|---------|----------|
-| 7 | 0 | - | - |
+| 9 | 0 | - | - |
 
 [View detailed tracker →](predictions/tracker.md)
 
@@ -128,17 +140,59 @@ This project is **public domain** (CC0). You can:
 
 ---
 
+## Agent Infrastructure
+
+This project is designed to be maintained autonomously by AI agents.
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  ORCHESTRATOR                                               │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐        │
+│  │ ORIENT  │→ │ ASSESS  │→ │ DECIDE  │→ │ EXECUTE │        │
+│  └─────────┘  └─────────┘  └─────────┘  └─────────┘        │
+│       │                                       │             │
+│       ▼                                       ▼             │
+│  ┌─────────────────┐              ┌─────────────────────┐  │
+│  │ Load state:     │              │ Sub-agents:         │  │
+│  │ • tracker.md    │              │ • prediction-resolver│ │
+│  │ • CLAUDE.md     │              │ • data-refresher    │  │
+│  │ • analyses      │              │ • analyst           │  │
+│  └─────────────────┘              │ • researcher        │  │
+│                                   └─────────────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Capabilities:**
+- Resolve predictions when verification dates arrive
+- Refresh stale data automatically
+- Create new analyses per expansion roadmap
+- Maintain quality standards
+
+[Full agent documentation →](docs/agent-infrastructure.md)
+
+---
+
 ## Structure
 
 ```
 market-accurate/
 ├── README.md                 # This file
-├── LICENSE                   # CC0 Public Domain
+├── CLAUDE.md                 # Project memory for AI agents
+├── CONTRIBUTING.md           # How to contribute
 ├── methodology.md            # How we produce analysis
 ├── analysis/
-│   └── ai-valuation-2026-01.md   # Current analysis
-└── predictions/
-    └── tracker.md            # Prediction outcomes
+│   ├── ai-valuation-2026-01.md       # AI efficiency thesis
+│   └── hyperscaler-capex-2026-01.md  # Capex tracking
+├── predictions/
+│   └── tracker.md            # Prediction outcomes
+├── docs/
+│   └── agent-infrastructure.md  # Agent system documentation
+└── .claude/
+    ├── orchestrator.md       # Full orchestration protocol
+    ├── bootstrap.md          # Session initialization
+    ├── settings.json         # Configuration
+    └── commands/
+        └── orchestrate.md    # Slash command
 ```
 
 ---
