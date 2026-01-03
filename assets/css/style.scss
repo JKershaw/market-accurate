@@ -1,0 +1,182 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Market Accurate - Custom Styles
+   Clean, data-focused, no sensationalism */
+
+:root {
+  --text-primary: #1a1a1a;
+  --text-secondary: #555;
+  --bg-primary: #fff;
+  --bg-secondary: #f8f9fa;
+  --border-color: #e1e4e8;
+  --accent: #0366d6;
+  --success: #28a745;
+  --warning: #ffc107;
+  --pending: #6c757d;
+}
+
+/* Base Typography */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: var(--text-primary);
+}
+
+/* Tables - The core data display */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 1.5rem;
+  font-size: 0.95rem;
+}
+
+th {
+  background: var(--bg-secondary);
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+}
+
+td {
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background: var(--bg-secondary);
+}
+
+/* Make key metrics stand out */
+td strong, th strong {
+  color: var(--text-primary);
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Horizontal rules */
+hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2rem 0;
+}
+
+/* Blockquotes for disclaimers */
+blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+blockquote strong {
+  color: var(--text-primary);
+}
+
+/* Code for technical terms */
+code {
+  background: var(--bg-secondary);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Status indicators */
+.status-pending {
+  color: var(--pending);
+}
+
+.status-correct {
+  color: var(--success);
+}
+
+.status-incorrect {
+  color: #dc3545;
+}
+
+/* Track record summary box */
+.track-record {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 0.5rem;
+  }
+
+  body {
+    padding: 1rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: var(--text-secondary);
+  }
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}

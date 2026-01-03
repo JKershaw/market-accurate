@@ -1,3 +1,9 @@
+---
+layout: default
+title: Semiconductor Cycle Analysis
+permalink: /analysis/semiconductor-cycle-2026-01/
+---
+
 # MARKET ACCURATE
 ## Semiconductor Cycle Analysis
 ### January 3, 2026

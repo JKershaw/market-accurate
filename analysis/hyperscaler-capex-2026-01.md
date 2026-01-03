@@ -1,3 +1,9 @@
+---
+layout: default
+title: Hyperscaler Capex Tracker
+permalink: /analysis/hyperscaler-capex-2026-01/
+---
+
 # MARKET ACCURATE
 ## Hyperscaler AI Capital Expenditure Tracker
 ### January 3, 2026

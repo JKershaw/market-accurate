@@ -1,3 +1,9 @@
+---
+layout: default
+title: Methodology
+permalink: /methodology/
+---
+
 # Methodology
 
 How Market Accurate produces analysis and why it works.
