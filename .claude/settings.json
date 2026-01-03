@@ -1,0 +1,50 @@
+{
+  "hooks": {
+    "session_start": {
+      "prompt": "Read .claude/orchestrator.md and execute the Session Start Protocol. Report current state and recommended priority action."
+    }
+  },
+  "permissions": {
+    "allow_web_search": true,
+    "allow_web_fetch": true,
+    "auto_commit": false,
+    "require_review_before_push": true
+  },
+  "project": {
+    "name": "Market Accurate",
+    "type": "financial-analysis",
+    "update_frequency": "daily",
+    "primary_focus": [
+      "prediction_resolution",
+      "data_freshness",
+      "analysis_expansion"
+    ]
+  },
+  "sub_agents": {
+    "prediction-resolver": {
+      "description": "Resolves predictions when verification dates arrive",
+      "triggers": ["prediction_due"],
+      "required_tools": ["WebSearch", "WebFetch", "Read", "Edit"]
+    },
+    "data-refresher": {
+      "description": "Updates stale metrics in analysis documents",
+      "triggers": ["data_stale"],
+      "required_tools": ["WebSearch", "WebFetch", "Read", "Edit"]
+    },
+    "analyst": {
+      "description": "Creates new analysis documents per roadmap",
+      "triggers": ["capacity_available"],
+      "required_tools": ["WebSearch", "WebFetch", "Read", "Write", "Edit"]
+    },
+    "researcher": {
+      "description": "Gathers data for any task requiring external information",
+      "triggers": ["data_needed"],
+      "required_tools": ["WebSearch", "WebFetch"]
+    },
+    "quality-reviewer": {
+      "description": "Ensures content meets project standards",
+      "triggers": ["content_created", "idle"],
+      "required_tools": ["Read", "Grep", "Glob"]
+    }
+  }
+}

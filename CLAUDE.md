@@ -128,7 +128,13 @@ When starting a session, check in this order:
 AI Valuation Analysis (January 2026):
 - Efficiency thesis: compute requirements falling faster than demand growing
 - Key metrics: NVIDIA datacenter revenue, hyperscaler capex, open-source benchmarks
-- 7 active predictions, resolution dates through 2027
+
+Hyperscaler Capex Tracker (January 2026):
+- Tracks MSFT, GOOG, AMZN, META infrastructure spending quarterly
+- Combined 2025 capex: $380-400B; 2026 projected: ~$600B
+- Supports predictions AV-002, AV-007
+
+**Active predictions:** 9 total, resolution dates through 2027
 
 ### Upcoming Prediction Dates
 
@@ -138,8 +144,11 @@ AI Valuation Analysis (January 2026):
 | AV-002 | Hyperscaler capex language moderation | May 2026 |
 | AV-003 | Open source GPT-4 parity on consumer GPU | Jun 30, 2026 |
 | AV-004 | Enterprise AI spend growth <25% | Oct 2026 |
+| HC-002 | Hyperscaler reduces capex guidance | Oct 31, 2026 |
 | AV-005 | NVIDIA+AMD+Arm market cap lower | Dec 31, 2026 |
+| HC-001 | Combined quarterly capex peaks <$150B | Dec 31, 2026 |
 
-See @analysis/ai-valuation-2026-01.md for current analysis.
+See @analysis/ai-valuation-2026-01.md for AI valuation thesis.
+See @analysis/hyperscaler-capex-2026-01.md for capex tracking.
 See @predictions/tracker.md for full track record.
 See @CONTRIBUTING.md for expansion roadmap and templates.

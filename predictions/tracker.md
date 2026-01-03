@@ -18,6 +18,13 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | AV-006 | Efficiency narrative in 5+ mainstream financial articles | 2026-01-03 | 2027-06-30 | Pending |
 | AV-007 | At least one hyperscaler reduces absolute AI capex YoY | 2026-01-03 | 2027-12-31 | Pending |
 
+### Hyperscaler Capex Tracker (2026-01-03)
+
+| ID | Prediction | Made | Resolves | Status |
+|----|-----------|------|----------|--------|
+| HC-001 | Combined Big 4 quarterly capex peaks below $150B in 2026 | 2026-01-03 | 2026-12-31 | Pending |
+| HC-002 | At least one hyperscaler reduces full-year capex guidance mid-2026 | 2026-01-03 | 2026-10-31 | Pending |
+
 ---
 
 ## Resolved Predictions
@@ -32,7 +39,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 7 |
+| Total Predictions | 9 |
 | Resolved | 0 |
 | Correct | 0 |
 | Incorrect | 0 |
@@ -91,4 +98,4 @@ Anyone can verify predictions by:
 
 ---
 
-*Updated: 2026-01-03*
+*Updated: 2026-01-03 (added HC-001, HC-002)*
