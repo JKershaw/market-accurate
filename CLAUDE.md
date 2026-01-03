@@ -140,7 +140,19 @@ Semiconductor Cycle Analysis (January 2026):
 - Key metrics: SOX valuations, memory prices, foundry utilization
 - Supports predictions on cycle correction timing (2027)
 
-**Active predictions:** 15 total, resolution dates through 2027
+Open-Source Benchmark Tracking (January 2026):
+- Tracks performance gap between proprietary and open-weights models
+- Current gap: -2.1 MMLU points (open-source leads after DeepSeek-R1)
+- Key metrics: MMLU/HumanEval/GSM8K scores, training costs, consumer GPU viability
+- Supports prediction AV-003
+
+Enterprise AI Adoption Metrics (January 2026):
+- Aggregates enterprise AI adoption surveys from BCG, Gartner, McKinsey, etc.
+- Key finding: 88% adoption but only 6% measurable EBIT impact
+- Key metrics: Adoption rates, ROI realization, project failure rates
+- Supports prediction AV-004
+
+**Active predictions:** 21 total, resolution dates through 2027
 
 ### Upcoming Prediction Dates
 
@@ -149,19 +161,28 @@ Semiconductor Cycle Analysis (January 2026):
 | AV-001 | NVIDIA DC revenue growth <50% | Feb 2026 |
 | AV-002 | Hyperscaler capex language moderation | May 2026 |
 | AV-003 | Open source GPT-4 parity on consumer GPU | Jun 30, 2026 |
+| EA-001 | Enterprise AI spending forecast <25% for 2027 | Jun 30, 2026 |
 | SC-002 | SOX underperforms S&P 500 in H1 2026 | Jul 1, 2026 |
 | SC-001 | DRAM prices peak Q1/Q2, decline in Q3 | Oct 2026 |
 | AV-004 | Enterprise AI spend growth <25% | Oct 2026 |
 | HC-002 | Hyperscaler reduces capex guidance | Oct 31, 2026 |
 | AV-005 | NVIDIA+AMD+Arm market cap lower | Dec 31, 2026 |
 | HC-001 | Combined quarterly capex peaks <$150B | Dec 31, 2026 |
+| OB-001 | Open-weights maintains frontier parity | Dec 31, 2026 |
+| OB-002 | 4B parameter model matches Llama 2 70B | Dec 31, 2026 |
+| OB-003 | Frontier training for under $1M | Dec 31, 2026 |
+| EA-002 | Consulting firm publishes >80% AI failure rate | Dec 31, 2026 |
 | SC-004 | Foundry utilization divergence | Jan 2027 |
 | SC-003 | Equipment vendor revenue decline | Feb 2027 |
+| EA-003 | 3+ Fortune 500 disclose quantified AI ROI | Feb 2027 |
 | SC-005 | SOX 20%+ correction in 2027 | Dec 31, 2027 |
 | SC-006 | Auto semi growth exceeds AI growth | Dec 31, 2027 |
 
 See @analysis/ai-valuation-2026-01.md for AI valuation thesis.
 See @analysis/hyperscaler-capex-2026-01.md for capex tracking.
 See @analysis/semiconductor-cycle-2026-01.md for cycle analysis.
+See @analysis/open-source-benchmarks-2026-01.md for open-source tracking.
+See @analysis/enterprise-ai-adoption-2026-01.md for enterprise adoption metrics.
 See @predictions/tracker.md for full track record.
+See @docs/prediction-calendar.md for resolution calendar.
 See @CONTRIBUTING.md for expansion roadmap and templates.

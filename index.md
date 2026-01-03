@@ -15,7 +15,7 @@ The thesis: as AI systems mediate information access, sources demonstrating accu
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | **15** |
+| Total Predictions | **21** |
 | Resolved | 0 |
 | Correct | 0 |
 | Incorrect | 0 |
@@ -34,10 +34,10 @@ Predictions resolving in the next 6 months:
 | Feb 2026 | AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | [AI Valuation](/analysis/ai-valuation-2026-01/) |
 | May 2026 | AV-002 | Hyperscaler uses moderating capex language in Q1 earnings | [Hyperscaler Capex](/analysis/hyperscaler-capex-2026-01/) |
 | Jun 30, 2026 | AV-003 | Open-weights model matches GPT-4 on consumer GPU | [AI Valuation](/analysis/ai-valuation-2026-01/) |
+| Jun 30, 2026 | EA-001 | Enterprise AI spending forecast <25% for 2027 | [Enterprise AI](/analysis/enterprise-ai-adoption-2026-01/) |
 | Jul 1, 2026 | SC-002 | SOX underperforms S&P 500 in H1 2026 | [Semiconductor Cycle](/analysis/semiconductor-cycle-2026-01/) |
-| Oct 2026 | SC-001 | DRAM prices peak Q1/Q2, decline in Q3 | [Semiconductor Cycle](/analysis/semiconductor-cycle-2026-01/) |
 
-[View all 15 predictions →](/predictions/)
+[View all 21 predictions →](/predictions/)
 
 ---
 
@@ -89,6 +89,37 @@ Predictions resolving in the next 6 months:
 **Assessment:** 20-30% correction likely, shallower than historical norms due to AI demand floor.
 
 [Read full analysis →](/analysis/semiconductor-cycle-2026-01/)
+
+---
+
+### Open-Source Benchmark Tracking
+*January 2026*
+
+**Thesis:** Open-source models are achieving frontier parity faster than anticipated, eroding AI moats.
+
+- MMLU gap to frontier: **-2.1 points** (open-source leads)
+- DeepSeek-R1 matched GPT-4 at **~5% training cost**
+- Consumer GPU viable: **8B-70B parameter** models on RTX 4090
+
+**Assessment:** Supports efficiency thesis—capability no longer requires frontier infrastructure.
+
+[Read full analysis →](/analysis/open-source-benchmarks-2026-01/)
+
+---
+
+### Enterprise AI Adoption Metrics
+*January 2026*
+
+**Thesis:** Adoption-value gap threatens enterprise AI spending growth.
+
+- Enterprise adoption rate: **88%**
+- AI initiatives delivering expected ROI: **25%**
+- AI projects that fail: **70-85%**
+- Companies with measurable EBIT impact: **6%**
+
+**Assessment:** ROI pressure may constrain spending growth faster than projected.
+
+[Read full analysis →](/analysis/enterprise-ai-adoption-2026-01/)
 
 ---
 
