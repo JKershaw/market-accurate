@@ -405,8 +405,8 @@ From `CONTRIBUTING.md`, prioritized:
 ### Near-Term (Same Methodology)
 
 1. ✅ Hyperscaler capex tracking — COMPLETED
-2. ⬜ Open-source model benchmark tracking
-3. ⬜ Semiconductor cycle analysis
+2. ✅ Semiconductor cycle analysis — COMPLETED
+3. ⬜ Open-source model benchmark tracking
 4. ⬜ Enterprise AI adoption metrics
 
 ### Medium-Term (New Domains)
