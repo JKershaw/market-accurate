@@ -36,6 +36,22 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | SC-005 | SOX experiences 20%+ peak-to-trough decline in 2027 | 2026-01-03 | 2027-12-31 | Pending |
 | SC-006 | Automotive semi revenue growth exceeds AI/datacenter in one quarter 2027 | 2026-01-03 | 2027-12-31 | Pending |
 
+### Open-Source Benchmark Tracking (2026-01-03)
+
+| ID | Prediction | Made | Resolves | Status |
+|----|-----------|------|----------|--------|
+| OB-001 | Open-weights maintains parity (<2 point gap) with proprietary frontier through 2026 | 2026-01-03 | 2026-12-31 | Pending |
+| OB-002 | 4B parameter model matches Llama 2 70B on mobile device | 2026-01-03 | 2026-12-31 | Pending |
+| OB-003 | Frontier-class training (MMLU >85%) for under $1M | 2026-01-03 | 2026-12-31 | Pending |
+
+### Enterprise AI Adoption Metrics (2026-01-03)
+
+| ID | Prediction | Made | Resolves | Status |
+|----|-----------|------|----------|--------|
+| EA-001 | Enterprise AI spending growth forecast <25% for 2027 by Q2 2026 | 2026-01-03 | 2026-06-30 | Pending |
+| EA-002 | Major consulting firm publishes >80% AI project failure rate | 2026-01-03 | 2026-12-31 | Pending |
+| EA-003 | 3+ Fortune 500 companies disclose quantified AI ROI in earnings | 2026-01-03 | 2027-02 | Pending |
+
 ---
 
 ## Resolved Predictions
@@ -50,7 +66,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 15 |
+| Total Predictions | 21 |
 | Resolved | 0 |
 | Correct | 0 |
 | Incorrect | 0 |
@@ -109,4 +125,4 @@ Anyone can verify predictions by:
 
 ---
 
-*Updated: 2026-01-03 (added SC-001 through SC-006)*
+*Updated: 2026-01-03 (added OB-001 through OB-003, EA-001 through EA-003)*

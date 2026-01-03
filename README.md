@@ -56,13 +56,37 @@ Market Accurate is an experiment in **distributed, accuracy-competitive informat
 
 [Read full tracker →](analysis/hyperscaler-capex-2026-01.md)
 
+### [Open-Source Benchmark Tracking (January 2026)](analysis/open-source-benchmarks-2026-01.md)
+
+**Focus:** Tracking performance gap between proprietary and open-weights AI models.
+
+**Key metrics:**
+- MMLU gap to frontier: **-2.1 points** (open-source leads)
+- Frontier capability lag: **12-18 months** and shrinking
+- DeepSeek-R1 matched GPT-4 at **~5% of training cost**
+- Consumer GPU viable: **8B-70B parameter** models
+
+[Read full tracker →](analysis/open-source-benchmarks-2026-01.md)
+
+### [Enterprise AI Adoption Metrics (January 2026)](analysis/enterprise-ai-adoption-2026-01.md)
+
+**Focus:** Aggregating enterprise AI adoption surveys to track value realization.
+
+**Key metrics:**
+- Enterprise adoption rate: **88%**
+- AI initiatives delivering expected ROI: **25%**
+- Companies achieving measurable EBIT impact: **6%**
+- AI projects that fail: **70-85%**
+
+[Read full analysis →](analysis/enterprise-ai-adoption-2026-01.md)
+
 ---
 
 ## Track Record
 
 | Predictions Made | Resolved | Correct | Accuracy |
 |-----------------|----------|---------|----------|
-| 9 | 0 | - | - |
+| 21 | 0 | - | - |
 
 [View detailed tracker →](predictions/tracker.md)
 
@@ -191,12 +215,16 @@ market-accurate/
 ├── CONTRIBUTING.md           # How to contribute
 ├── methodology.md            # How we produce analysis
 ├── analysis/
-│   ├── ai-valuation-2026-01.md       # AI efficiency thesis
-│   └── hyperscaler-capex-2026-01.md  # Capex tracking
+│   ├── ai-valuation-2026-01.md           # AI efficiency thesis
+│   ├── hyperscaler-capex-2026-01.md      # Capex tracking
+│   ├── semiconductor-cycle-2026-01.md    # Silicon cycle analysis
+│   ├── open-source-benchmarks-2026-01.md # Open-source model tracking
+│   └── enterprise-ai-adoption-2026-01.md # Enterprise adoption metrics
 ├── predictions/
 │   └── tracker.md            # Prediction outcomes
 ├── docs/
-│   └── agent-infrastructure.md  # Agent system documentation
+│   ├── agent-infrastructure.md  # Agent system documentation
+│   └── prediction-calendar.md   # Upcoming resolution dates
 └── .claude/
     ├── orchestrator.md       # Full orchestration protocol
     ├── bootstrap.md          # Session initialization

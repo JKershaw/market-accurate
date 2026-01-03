@@ -182,8 +182,8 @@ git commit -m "Update: Refresh {metric} in {analysis}"
 
 1. ✅ **Semiconductor cycle analysis** — historical patterns, current position *(completed 2026-01-03)*
 2. ✅ **Hyperscaler capex tracking** — quarterly updates on MSFT/GOOG/AMZN/META spend *(completed 2026-01-03)*
-3. ⬜ **Open-source model benchmark tracking** — systematic comparison updates
-4. ⬜ **Enterprise AI adoption metrics** — survey aggregation
+3. ✅ **Open-source model benchmark tracking** — systematic comparison updates *(completed 2026-01-03)*
+4. ✅ **Enterprise AI adoption metrics** — survey aggregation *(completed 2026-01-03)*
 
 ### Medium-term expansions (new domains)
 
