@@ -152,7 +152,25 @@ Enterprise AI Adoption Metrics (January 2026):
 - Key metrics: Adoption rates, ROI realization, project failure rates
 - Supports prediction AV-004
 
-**Active predictions:** 21 total, resolution dates through 2027
+Energy & Climate Efficiency Analysis (January 2026):
+- Compares efficiency thesis to clean energy sector
+- Finding: Clean energy priced rationally (14.4x P/E) vs AI (30-40x)
+- Key metrics: Solar LCOE, battery costs, IRA policy risks
+- Supports predictions EC-001 through EC-004
+
+Biotech Development Cost Analysis (January 2026):
+- Examines if AI can reverse Eroom's Law (rising drug development costs)
+- Key finding: AI Phase I success 80-90% vs 40-65% traditional, but no FDA approvals yet
+- Key metrics: Phase success rates, AI drug pipeline, M&A activity
+- Supports predictions BT-001 through BT-004
+
+Commercial Real Estate Analysis (January 2026):
+- Analyzes remote work impact on office valuations
+- Key finding: Vacancy peaked (~19.6%), bifurcation between Class A and lower-tier
+- Key metrics: Office vacancy, REIT performance, hybrid work adoption
+- Supports predictions CRE-001 through CRE-004
+
+**Active predictions:** 33 total, resolution dates through 2027
 
 ### Upcoming Prediction Dates
 
@@ -177,12 +195,22 @@ Enterprise AI Adoption Metrics (January 2026):
 | EA-003 | 3+ Fortune 500 disclose quantified AI ROI | Feb 2027 |
 | SC-005 | SOX 20%+ correction in 2027 | Dec 31, 2027 |
 | SC-006 | Auto semi growth exceeds AI growth | Dec 31, 2027 |
+| EC-001 | Solar remains cheapest electricity | Dec 31, 2026 |
+| EC-002 | Battery prices <$100/kWh | Dec 31, 2026 |
+| BT-001 | First AI-discovered FDA approval | Dec 31, 2027 |
+| BT-003 | Biopharma M&A >$100B | Feb 2027 |
+| CRE-001 | Office vacancy <18% | Feb 2027 |
+| CRE-004 | SF vacancy >25% through 2026 | Feb 2027 |
 
 See @analysis/ai-valuation-2026-01.md for AI valuation thesis.
 See @analysis/hyperscaler-capex-2026-01.md for capex tracking.
 See @analysis/semiconductor-cycle-2026-01.md for cycle analysis.
 See @analysis/open-source-benchmarks-2026-01.md for open-source tracking.
 See @analysis/enterprise-ai-adoption-2026-01.md for enterprise adoption metrics.
+See @analysis/energy-climate-2026-01.md for clean energy comparison.
+See @analysis/biotech-development-2026-01.md for drug development analysis.
+See @analysis/commercial-real-estate-2026-01.md for office market analysis.
 See @predictions/tracker.md for full track record.
 See @docs/prediction-calendar.md for resolution calendar.
+See @docs/analyst-comparison.md for Wall Street consensus comparison.
 See @CONTRIBUTING.md for expansion roadmap and templates.
