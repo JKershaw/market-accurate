@@ -1,3 +1,9 @@
+---
+layout: default
+title: AI Valuation Analysis
+permalink: /analysis/ai-valuation-2026-01/
+---
+
 # MARKET ACCURATE
 ## AI Valuation Analysis
 ### January 3, 2026
