@@ -140,21 +140,31 @@ Semiconductor Cycle Analysis (January 2026):
 - Key metrics: SOX valuations, memory prices, foundry utilization
 - Supports predictions on cycle correction timing (2027)
 
-**Active predictions:** 15 total, resolution dates through 2027
+Open-Source Benchmark Tracker (January 2026):
+- Tracks performance gap between open-source and proprietary LLMs
+- Gap has inverted: open-source now exceeds GPT-4 (Mar 2023) on standard benchmarks
+- Key metrics: MMLU, HumanEval, GSM8K scores; consumer GPU viability
+- Supports prediction AV-003 and adds OSB-001 through OSB-004
+
+**Active predictions:** 19 total, resolution dates through 2027
 
 ### Upcoming Prediction Dates
 
 | ID | Prediction | Verification Date |
 |----|-----------|-------------------|
 | AV-001 | NVIDIA DC revenue growth <50% | Feb 2026 |
+| OSB-001 | Open-weights <40B matches GPT-4, runs on RTX 4090 | Mar 31, 2026 |
 | AV-002 | Hyperscaler capex language moderation | May 2026 |
 | AV-003 | Open source GPT-4 parity on consumer GPU | Jun 30, 2026 |
+| OSB-002 | 5+ model families at ≥90% MMLU | Jun 30, 2026 |
 | SC-002 | SOX underperforms S&P 500 in H1 2026 | Jul 1, 2026 |
 | SC-001 | DRAM prices peak Q1/Q2, decline in Q3 | Oct 2026 |
 | AV-004 | Enterprise AI spend growth <25% | Oct 2026 |
 | HC-002 | Hyperscaler reduces capex guidance | Oct 31, 2026 |
 | AV-005 | NVIDIA+AMD+Arm market cap lower | Dec 31, 2026 |
 | HC-001 | Combined quarterly capex peaks <$150B | Dec 31, 2026 |
+| OSB-003 | GPT-4-equivalent inference <$0.10/M tokens | Dec 31, 2026 |
+| OSB-004 | Open-weights 90% of GPT-5 on RTX 5090 | Dec 31, 2026 |
 | SC-004 | Foundry utilization divergence | Jan 2027 |
 | SC-003 | Equipment vendor revenue decline | Feb 2027 |
 | SC-005 | SOX 20%+ correction in 2027 | Dec 31, 2027 |
@@ -163,5 +173,6 @@ Semiconductor Cycle Analysis (January 2026):
 See @analysis/ai-valuation-2026-01.md for AI valuation thesis.
 See @analysis/hyperscaler-capex-2026-01.md for capex tracking.
 See @analysis/semiconductor-cycle-2026-01.md for cycle analysis.
+See @analysis/open-source-benchmarks-2026-01.md for open-source benchmark tracking.
 See @predictions/tracker.md for full track record.
 See @CONTRIBUTING.md for expansion roadmap and templates.
