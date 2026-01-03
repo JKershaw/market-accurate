@@ -36,6 +36,15 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | SC-005 | SOX experiences 20%+ peak-to-trough decline in 2027 | 2026-01-03 | 2027-12-31 | Pending |
 | SC-006 | Automotive semi revenue growth exceeds AI/datacenter in one quarter 2027 | 2026-01-03 | 2027-12-31 | Pending |
 
+### Open-Source Benchmark Tracker (2026-01-03)
+
+| ID | Prediction | Made | Resolves | Status |
+|----|-----------|------|----------|--------|
+| OSB-001 | Open-weights <40B model matches GPT-4 on all benchmarks, runs on RTX 4090 | 2026-01-03 | 2026-03-31 | Pending |
+| OSB-002 | 5+ distinct open-weights model families score ≥90% MMLU | 2026-01-03 | 2026-06-30 | Pending |
+| OSB-003 | GPT-4-equivalent inference available at <$0.10/M input tokens | 2026-01-03 | 2026-12-31 | Pending |
+| OSB-004 | Open-weights model achieves 90% of GPT-5 performance on RTX 5090 | 2026-01-03 | 2026-12-31 | Pending |
+
 ---
 
 ## Resolved Predictions
@@ -50,7 +59,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 15 |
+| Total Predictions | 19 |
 | Resolved | 0 |
 | Correct | 0 |
 | Incorrect | 0 |
@@ -109,4 +118,4 @@ Anyone can verify predictions by:
 
 ---
 
-*Updated: 2026-01-03 (added SC-001 through SC-006)*
+*Updated: 2026-01-03 (added OSB-001 through OSB-004)*
