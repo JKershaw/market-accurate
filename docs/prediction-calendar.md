@@ -39,6 +39,12 @@ Upcoming prediction verification dates and resolution requirements.
 | ID | Prediction | Verification Source | Action |
 |----|-----------|-------------------|--------|
 | AV-003 | Open-weights model matches GPT-4 on consumer GPU | Benchmark leaderboards | Compare MMLU, HumanEval, GSM8K scores |
+| EA-001 | Enterprise AI spending forecast <25% for 2027 | Analyst reports | Check IDC/Gartner/Forrester forecasts |
+
+**EA-001 Resolution Details:**
+- **Claim:** Enterprise AI spending growth forecast falls below 25% for 2027
+- **Sources to check:** IDC, Gartner, Forrester spending forecasts
+- **Threshold:** Published forecast showing <25% YoY growth for 2027
 
 **AV-003 Resolution Details:**
 - **Claim:** Open-weights model matches/exceeds GPT-4 (March 2023) on MMLU, HumanEval, GSM8K while running on RTX 4090
@@ -95,6 +101,16 @@ Upcoming prediction verification dates and resolution requirements.
 |----|-----------|-------------------|--------|
 | AV-005 | NVIDIA+AMD+Arm market cap lower than Jan 3, 2026 | Financial data | Compare market caps |
 | HC-001 | Combined Big 4 quarterly capex peaks <$150B | Quarterly filings | Sum quarterly capex reports |
+| OB-001 | Open-weights maintains <2pt gap with frontier | Benchmark leaderboards | Compare MMLU scores |
+| OB-002 | 4B model matches Llama 2 70B on mobile | Mobile AI benchmarks | Test on mobile device |
+| OB-003 | Frontier training for under $1M | Published training costs | Verify cost reports |
+| EA-002 | Consulting firm publishes >80% AI failure rate | Consulting reports | Monitor BCG/McKinsey/Deloitte |
+| EC-001 | Solar remains cheapest new electricity | LCOE reports | Check Lazard/BNEF data |
+| EC-002 | Battery pack prices <$100/kWh for EVs | BloombergNEF | Check annual battery survey |
+| EC-003 | $50B+ clean energy projects cancelled | Project announcements | Track cancellation news |
+| EC-004 | 3+ utilities cite AI data center demand | Earnings transcripts | Search utility earnings |
+| BT-004 | XBI 20% drawdown if no AI FDA approval | Market data | Check XBI performance |
+| CRE-003 | 50M+ sq ft office conversion announced | Real estate news | Track conversion announcements |
 
 **AV-005 Resolution Details:**
 - **Claim:** Combined market cap of NVIDIA + AMD + Arm lower on Dec 31, 2026 than Jan 3, 2026
@@ -116,12 +132,17 @@ Upcoming prediction verification dates and resolution requirements.
 | ID | Prediction | Verification Source | Action |
 |----|-----------|-------------------|--------|
 | SC-004 | Foundry utilization divergence | TSMC reports/analyst data | Compare trailing vs leading edge |
+| CRE-002 | Class A office REITs outperform B/C by 15%+ | REIT performance data | Compare sector returns |
 
 ### February 2027
 
 | ID | Prediction | Verification Source | Action |
 |----|-----------|-------------------|--------|
 | SC-003 | Equipment vendor revenue decline | Quarterly earnings | Check ASML/AMAT/LRCX/KLAC |
+| EA-003 | 3+ Fortune 500 disclose quantified AI ROI | Earnings transcripts | Search Q4 2026 transcripts |
+| BT-003 | Biopharma M&A exceeds $100B in 2026 | M&A databases | Sum 2026 deal values |
+| CRE-001 | National office vacancy <18% by Q4 2026 | Yardi Matrix/CBRE | Check Q4 2026 vacancy data |
+| CRE-004 | San Francisco vacancy >25% through 2026 | CoStar/CBRE | Check SF Q4 2026 vacancy |
 
 ### June 30, 2027
 
@@ -136,6 +157,8 @@ Upcoming prediction verification dates and resolution requirements.
 | AV-007 | Hyperscaler absolute capex reduction YoY | Annual filings | Compare 2027 vs 2026 capex |
 | SC-005 | SOX 20%+ peak-to-trough decline in 2027 | Index data | Track peak and trough prices |
 | SC-006 | Auto semi growth > AI growth in one quarter | Industry reports | Compare segment growth rates |
+| BT-001 | First AI-discovered FDA approval | FDA database | Check approvals with AI discovery claim |
+| BT-002 | 3+ AI drugs Phase III with >55% success | Clinical trial databases | Track AI drug outcomes |
 
 ---
 
@@ -153,4 +176,4 @@ When a prediction's verification date arrives:
 
 ---
 
-*Updated: 2026-01-03*
+*Updated: 2026-01-03 (added EC, BT, CRE predictions)*

@@ -406,20 +406,20 @@ From `CONTRIBUTING.md`, prioritized:
 
 1. ✅ Hyperscaler capex tracking — COMPLETED
 2. ✅ Semiconductor cycle analysis — COMPLETED
-3. ⬜ Open-source model benchmark tracking
-4. ⬜ Enterprise AI adoption metrics
+3. ✅ Open-source model benchmark tracking — COMPLETED
+4. ✅ Enterprise AI adoption metrics — COMPLETED
 
 ### Medium-Term (New Domains)
 
-5. ⬜ Energy/climate efficiency thesis
-6. ⬜ Biotech development costs
-7. ⬜ Commercial real estate vs. remote work
+5. ✅ Energy/climate efficiency thesis — COMPLETED
+6. ✅ Biotech development costs — COMPLETED
+7. ✅ Commercial real estate vs. remote work — COMPLETED
 
 ### Methodology Improvements
 
 - ⬜ Automated data pipelines
-- ⬜ Brier score tracking
-- ⬜ Comparison benchmarks vs. analyst consensus
+- ✅ Brier score tracking — COMPLETED
+- ✅ Comparison benchmarks vs. analyst consensus — COMPLETED
 
 ---
 

@@ -187,15 +187,15 @@ git commit -m "Update: Refresh {metric} in {analysis}"
 
 ### Medium-term expansions (new domains)
 
-1. **Energy/climate** — similar efficiency thesis may apply to renewables
-2. **Biotech** — drug development cost curves, approval rates
-3. **Real estate** — commercial real estate valuation vs. remote work trends
+1. ✅ **Energy/climate** — efficiency thesis comparison to renewables *(completed 2026-01-03)*
+2. ✅ **Biotech** — drug development cost curves, AI impact *(completed 2026-01-03)*
+3. ✅ **Real estate** — commercial real estate vs. remote work *(completed 2026-01-03)*
 
 ### Methodology improvements
 
-1. **Automated data pipelines** — scripts to fetch and update key metrics
-2. **Prediction scoring refinements** — Brier scores, calibration tracking
-3. **Comparison benchmarks** — track accuracy vs. analyst consensus
+1. ⬜ **Automated data pipelines** — scripts to fetch and update key metrics
+2. ✅ **Prediction scoring refinements** — Brier scores, calibration tracking *(completed 2026-01-03)*
+3. ✅ **Comparison benchmarks** — track accuracy vs. analyst consensus *(completed 2026-01-03)*
 
 ---
 
