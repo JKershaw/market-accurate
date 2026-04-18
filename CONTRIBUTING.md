@@ -190,12 +190,17 @@ git commit -m "Update: Refresh {metric} in {analysis}"
 1. ✅ **Energy/climate** — efficiency thesis comparison to renewables *(completed 2026-01-03)*
 2. ✅ **Biotech** — drug development cost curves, AI impact *(completed 2026-01-03)*
 3. ✅ **Real estate** — commercial real estate vs. remote work *(completed 2026-01-03)*
+4. ✅ **Labor market & AI impact** — aggregate vs. concentrated disruption *(completed 2026-04-18)*
+5. ✅ **Digital assets cycle** — post-ETF institutionalization thesis *(completed 2026-04-18)*
+6. ⬜ Consumer spending / retail cycle
+7. ⬜ Private credit / BDC sector
 
 ### Methodology improvements
 
-1. ⬜ **Automated data pipelines** — scripts to fetch and update key metrics
+1. 🟡 **Automated data pipelines** — scaffolding + 3 fetchers in `scripts/` *(started 2026-04-18; see `scripts/README.md`)*
 2. ✅ **Prediction scoring refinements** — Brier scores, calibration tracking *(completed 2026-01-03)*
 3. ✅ **Comparison benchmarks** — track accuracy vs. analyst consensus *(completed 2026-01-03)*
+4. ✅ **Pre-registration framework** — immutability, prep docs, resolution protocol *(completed 2026-04-18; see `docs/pre-registration.md`)*
 
 ---
 

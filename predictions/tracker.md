@@ -79,6 +79,25 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | CRE-003 | 50M+ sq ft office announced for conversion/demolition | 2026-01-03 | 2026-12-31 | Pending | 50% |
 | CRE-004 | San Francisco office vacancy remains >25% through 2026 | 2026-01-03 | 2027-02 | Pending | 75% |
 
+### Labor Market & AI Impact (2026-04-18)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| LM-001 | US unemployment stays 3.8–4.5% through 2026, no AI attribution in official reports | 2026-04-18 | 2027-02 | Pending | 65% |
+| LM-002 | New-grad tech hiring ≥15% down YoY (2026 vs 2024) | 2026-04-18 | 2027-06-30 | Pending | 60% |
+| LM-003 | BLS Customer Service Rep (43-4051) headcount ≥5% decline 2024→2026 | 2026-04-18 | 2027-05 | Pending | 55% |
+| LM-004 | No Tier-1 consulting firm declares aggregate AI-unemployment wave through 2026 | 2026-04-18 | 2026-12-31 | Pending | 75% |
+
+### Digital Assets Cycle (2026-04-18)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| DA-001 | BTC ≥40% peak-to-trough drawdown between Apr 2026 and Dec 2027 | 2026-04-18 | 2027-12-31 | Pending | 65% |
+| DA-002 | Spot BTC ETF flow / price correlation stays >0.5 through 2026 | 2026-04-18 | 2027-01-31 | Pending | 60% |
+| DA-003 | Combined USDT+USDC supply exceeds $300B at some point in 2026 | 2026-04-18 | 2026-12-31 | Pending | 60% |
+| DA-004 | No US-regulated stablecoin >2% peg break for >24 hours in 2026 | 2026-04-18 | 2026-12-31 | Pending | 80% |
+| DA-005 | 2026 BTC drawdown (if any) smaller than 77% (2022 analogue) | 2026-04-18 | 2026-12-31 | Pending | 60% |
+
 ---
 
 ## Resolved Predictions
@@ -93,7 +112,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 33 |
+| Total Predictions | 42 |
 | Resolved | 0 |
 | Correct | 0 |
 | Incorrect | 0 |
@@ -113,6 +132,8 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | Energy & Climate | 4 | 0 | 0 | N/A |
 | Biotech Development | 4 | 0 | 0 | N/A |
 | Commercial Real Estate | 4 | 0 | 0 | N/A |
+| Labor Market & AI | 4 | 0 | 0 | N/A |
+| Digital Assets Cycle | 5 | 0 | 0 | N/A |
 
 ---
 
@@ -203,4 +224,4 @@ Under-confidence = accuracy higher than stated confidence.
 
 ---
 
-*Updated: 2026-01-03 (added EC-001 through EC-004, BT-001 through BT-004, CRE-001 through CRE-004, Brier score methodology)*
+*Updated: 2026-04-18 (added LM-001 through LM-004, DA-001 through DA-005; see [docs/pre-registration.md](/docs/pre-registration.md) for resolution protocol)*
