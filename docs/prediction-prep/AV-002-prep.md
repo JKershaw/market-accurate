@@ -139,4 +139,53 @@ When all Q1 2026 earnings released (~May 7, 2026):
 
 ---
 
+## Addendum (April 19, 2026): Pre-Q1-earnings signals
+
+Before the Q1 2026 earnings window closes (late April – early May), non-transcript evidence has already appeared that should be weighed at resolution time. This addendum clarifies how to handle it without changing the threshold.
+
+### New signals (Jan–Apr 2026)
+
+| Company | Signal | Source | Classification |
+|---------|--------|--------|----------------|
+| Microsoft | Froze 1.5GW of near-term self-build DC projects | TD Cowen / SemiAnalysis | Infrastructure pullback |
+| Microsoft | Cancelled ~2GW of lease commitments (cumulative since Feb 2025) | TD Cowen | Infrastructure pullback |
+| Amazon | Paused data-center lease talks in overseas markets | Wells Fargo reporting (April 2026) | "Routine capacity management" per AWS VP |
+| Alphabet | 2026 capex guidance raised to $175–185B (from ~$91–93B) | Q4 2025 earnings call Feb 4, 2026 | Aggressive expansion |
+| Meta | 2026 capex guidance $115–135B (from ~$72B) | Q4 2025 earnings | Aggressive expansion |
+
+### How to score these at resolution
+
+The AV-002 threshold requires **language from Q1 2026 calendar-quarter earnings calls**. Infrastructure actions (Microsoft freeze, AWS lease pause) are **not** language on a call; they are corporate actions leaked or reported. They matter for thesis context but do not automatically resolve the prediction.
+
+**Strict scoring rule (keep):**
+- Only language explicitly delivered by CEO/CFO/cloud-head in a Q1 2026 earnings call counts toward resolution.
+- Analyst reports describing corporate actions do not count.
+- Pre-existing ("slower pace" from Hood in 2025) does not count.
+
+**Specific items to look for in Q1 2026 calls:**
+
+1. **Microsoft Q3 FY26 call (late April 2026):**
+   - Does Amy Hood or Satya Nadella reference the lease cancellations / self-build freeze in explicit capex terms?
+   - Does Microsoft quantify FY27 capex trajectory?
+   - Any recurrence of "slower pace"?
+
+2. **Alphabet Q1 2026 call (late April 2026):**
+   - Despite raised guidance, any language like "optimizing," "disciplined," "returns-focused"?
+   - Commentary on data center delivery constraints?
+
+3. **Amazon Q1 2026 call (early May 2026):**
+   - Does Kevin Miller's "routine capacity management" framing appear in prepared remarks from CFO/CEO?
+   - Any capex guidance revision from the $200B figure?
+
+### Probability update
+
+Original estimate (Jan 2026): moderate. Given the real pullback actions already taken by Microsoft and AWS in Q1 2026, the probability that *at least one* of MSFT/GOOG/AMZN executives references these actions with moderation-consistent language is now **materially higher**.
+
+Updated subjective probability of CORRECT: **~75%** (up from ~55% at January prep).
+
+The *failure mode* of this prediction would be Microsoft and AWS both addressing the pullbacks purely as "customer mix shift" or "capacity optimization" without any rate-of-growth moderation language, while Google continues its explicit acceleration narrative.
+
+---
+
 *Prepared: 2026-04-18*
+*Addendum: 2026-04-19*

@@ -506,12 +506,68 @@ The goal is accurate information, not credit. Better analysis should win.
 
 ---
 
+# April 2026 Interim Update: Thesis Nuance
+
+This section is added April 19, 2026. The January thesis is preserved above unchanged. What follows is an honest read on what has and has not happened since publication.
+
+## What the thesis got right so far
+
+- **Inference costs:** Continued to fall. No reversal of the 280x decline.
+- **Open-source parity:** Held. DeepSeek-R1-Distill-32B already clears the AV-003 threshold on a single RTX 4090.
+- **ROI gap:** Enterprise AI project failure rates persist. No dominant ROI success narrative has emerged in Q1 2026 earnings.
+- **DeepSeek precedent:** Reinforced, not undermined. Multiple sub-$10M frontier-grade training runs reported in 2025.
+
+## What the thesis got wrong so far
+
+- **NVIDIA deceleration:** AV-001 resolved INCORRECT. Q4 FY26 Data Center revenue +75% YoY vs predicted <50%. Blackwell ramp more than offset any per-capability compute reduction.
+- **Hyperscaler capex moderation:** Going in the wrong direction at the guidance level. Q4 2025 earnings (reported Feb 2026) produced 2026 capex guidance of ~$650B combined Big 4 — roughly 40–50% above the $380–400B the January analysis treated as the baseline and ~$200–250B above a naïve "moderation" path.
+
+## The supply-constraint wrinkle
+
+A new mechanism has emerged that the January analysis did not anticipate: **physical infrastructure is starting to constrain buildout independent of demand or efficiency**.
+
+| Signal | Source |
+|--------|--------|
+| 30–50% of US AI data centers planned for 2026 delayed/cancelled | Sightline Climate |
+| New data center deals fell >40% Q3→Q4 2025 | Industry reporting |
+| Microsoft froze 1.5GW of self-build + cancelled 2GW of leases | TD Cowen, SemiAnalysis |
+| Amazon paused overseas lease talks (April 2026) | Wells Fargo reporting |
+| Bottleneck: power, transformers, switchgear — not chips | Multiple |
+
+This matters because the supply-constraint story produces **similar near-term capex outcomes** (lower deployed capacity than guidance implies) but has **opposite valuation implications**:
+
+| Mechanism | Demand-side (efficiency thesis, January view) | Supply-side (April observation) |
+|-----------|----------------------------------------------|--------------------------------|
+| What slows buildout | Demand destruction | Physical constraints |
+| Durability | Structural, cumulative | Solvable by time + capex |
+| GPU makers | Bearish — less compute needed | Bullish — existing capacity more valuable |
+| Utilities / grid | Neutral | Very bullish |
+| Hyperscaler margins | Compressed via ROI failure | Boosted via scarcity pricing |
+| Existing-capacity owners | Exposed | Advantaged |
+
+## What this means for the longer-dated predictions
+
+The distinction changes how we should read each prediction's possible mechanism:
+
+- **AV-005 (NVIDIA+AMD+Arm market cap lower Dec 31, 2026):** In a supply-constrained world, these three are *more* valuable, not less. This prediction is now materially more likely INCORRECT.
+- **AV-007 (hyperscaler absolute capex reduction by end 2027):** Microsoft's 1.5GW freeze is the closest leading indicator, but it was offset by Stargate/Oracle rather than reflecting total demand decline. Prediction is still live but the mechanism is different from the January case.
+- **AV-006 (efficiency narrative in mainstream financial press by mid-2027):** Likely still CORRECT — coverage of efficiency is growing. The narrative is appearing even as the numbers contradict it.
+
+## Honest read
+
+The January 2026 analysis was **directionally right about efficiency dynamics being real** and **directionally wrong about the timeline over which they would translate to capex moderation**. A $650B 2026 guidance number is not a thesis that "efficiency gains are eroding demand." The efficiency story is real but slower than anticipated; the supply story is the binding constraint in 2026.
+
+Updating this in the document rather than in a new file so the record remains auditable: the January document asserted things that are being contradicted, and the April update says so.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
 | 2026-04-19 | Resolved AV-001 as INCORRECT: NVIDIA Q4 FY26 DC revenue +75% YoY vs predicted <50% |
+| 2026-04-19 | Added April 2026 Interim Update: supply-constraint vs demand-destruction distinction; honest read on what the thesis got right/wrong |
 
 ---
 
