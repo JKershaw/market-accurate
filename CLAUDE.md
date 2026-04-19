@@ -170,7 +170,19 @@ Commercial Real Estate Analysis (January 2026):
 - Key metrics: Office vacancy, REIT performance, hybrid work adoption
 - Supports predictions CRE-001 through CRE-004
 
-**Active predictions:** 33 total, resolution dates through 2027
+Labor Market & AI Impact Analysis (April 2026):
+- Asks whether AI is producing the predicted broad labor disruption
+- Key finding: Disruption is concentrated (support, entry-level SWE, translation, legal drafting), not aggregate
+- Key metrics: BLS unemployment, OES occupation headcount, new-grad hiring
+- Supports predictions LM-001 through LM-004
+
+Digital Assets Cycle Analysis (April 2026):
+- Tracks crypto cycle in post-spot-ETF era
+- Key finding: Four-year cycle intact in phase, dampened in amplitude
+- Key metrics: ETF flows, realized cap, MVRV, stablecoin supply
+- Supports predictions DA-001 through DA-005
+
+**Active predictions:** 42 total, resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
 
 ### Upcoming Prediction Dates
 

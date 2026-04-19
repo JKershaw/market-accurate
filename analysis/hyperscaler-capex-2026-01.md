@@ -332,11 +332,80 @@ Data compiled from:
 
 ---
 
+# April 2026 Interim Update
+
+Data as of April 18, 2026. Original January analysis numbers preserved above; this section adds the story that emerged during Q1 2026.
+
+## 2026 guidance: up sharply, not moderating
+
+Q4 2025 earnings (reported January–February 2026) produced official 2026 full-year capex guidance that materially exceeded both the January 2026 projection in this document (~$600B) and most sell-side consensus.
+
+| Company | 2025 Capex | 2026 Guidance | YoY Change | Source |
+|---------|-----------|--------------|-----------|--------|
+| Amazon | ~$125B | ~$200B | +60% | Q4 2025 earnings |
+| Alphabet | ~$91–93B | $175–185B | ~+100% | Q4 2025 call (Feb 4, 2026) |
+| Meta | ~$72B | $115–135B | +60–88% | Q4 2025 call |
+| Microsoft | ~$89B (FY25) | FY26 still ~$94B, language "slower pace" | modest | Jan 2026 earnings |
+| **Combined Big 4 (midpoint)** | **~$380B** | **~$625B** | **+64%** | — |
+
+Bloomberg, Reuters, and Futurum independently landed on a combined **$650–690B** total for the broader hyperscaler set including Oracle. This is **40–50% above the $380–400B combined figure** cited in the January 2026 baseline.
+
+**Interpretation:** Aggregate capex is accelerating, not decelerating. The deceleration thesis in the January AI Valuation Analysis is being contradicted at the guidance level.
+
+## But: supply-constraint cracks are visible
+
+While guidance rose, the *physical build-out* is running into constraints:
+
+| Indicator | Value | Source |
+|-----------|-------|--------|
+| US AI data centers planned for 2026 delayed/cancelled | 30–50% | Sightline Climate |
+| New DC deals Q3→Q4 2025 change | down >40% | Industry reporting |
+| Planned 240GW construction actually being built | ~1/3 | Industry reporting |
+| Primary bottleneck | Power, transformers, switchgear | Multiple |
+
+### Company-specific pullbacks
+
+| Company | Action | Scale | Timing |
+|---------|--------|-------|--------|
+| Microsoft | Cancelled leases | 200MW → 2GW | Feb–Mar 2025 |
+| Microsoft | Froze self-build projects | 1.5GW | 2025→2026 projects |
+| Amazon (AWS) | Paused lease talks (overseas) | Not quantified | April 2026 |
+| Alphabet | None material | — | — |
+| Meta | None material | — | — |
+| Oracle | Accelerating (Stargate) | Taking Microsoft's OpenAI workload | 2025–2026 |
+
+**AWS statement:** VP Kevin Miller described the pause as "routine capacity management," not a demand signal. Microsoft's pullback has been attributed by analysts (TD Cowen, SemiAnalysis, UBS) to overcommitment during the 2024–2025 OpenAI-driven rush — the capacity was redirected to Oracle/Stargate rather than disappearing.
+
+## The two-narrative problem
+
+Two stories are running simultaneously and they have opposite valuation implications:
+
+| Story | Mechanism | Implication |
+|-------|-----------|-------------|
+| **Guidance-up** | Hyperscalers raising FY26 capex 40–100% | Bullish for NVDA, equipment makers |
+| **Build-down** | Half of planned DCs delayed by supply chain | Bearish for execution; bullish for utilities, grid equipment, existing-capacity holders |
+
+These are reconcilable: hyperscalers can guide capex higher *and* underdeliver because the constraint is physical (transformers, power interconnects) rather than willingness to spend. Guidance captures intent; delivery captures feasibility.
+
+**Key distinction from the original Market Accurate thesis:** The January AI Valuation Analysis argued *efficiency gains would erode demand*. What is actually slowing buildout is *supply*, not demand. These produce similar near-term capex outcomes but have opposite longer-term implications for GPU and datacenter valuations.
+
+## Updated read on supported predictions
+
+| Prediction | Jan 2026 Read | Apr 2026 Read |
+|-----------|--------------|---------------|
+| **AV-002** (≥1 of MSFT/GOOG/AMZN moderating Q1 2026) | Watch Microsoft "slower pace" | **More likely CORRECT**: MSFT freeze, AWS lease pause both dated in Q1 2026 window |
+| **AV-007** (hyperscaler absolute capex reduction by end-2027) | Speculative | Still speculative; Microsoft 2GW freeze is closest precedent |
+| **HC-001** (combined quarterly capex <$150B in 2026) | Plausible if deceleration | **More likely INCORRECT**: $625B annual run-rate implies quarterly average $155B; Q4 2026 likely well above $150B |
+| **HC-002** (hyperscaler lowers FY guidance mid-2026) | Plausible | **Unclear**: guidance could also be *raised* mid-year if power constraints don't bind quickly; or lowered if delivery falls short |
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-04-19 | Added April 2026 Interim Update: MSFT/AWS pullbacks, supply-constraint story, updated 2026 guidance ($650–690B combined), read on AV-002/007 and HC-001/002 |
 
 ---
 

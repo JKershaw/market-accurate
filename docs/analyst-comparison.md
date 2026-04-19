@@ -51,7 +51,7 @@ Comparing predictions to analyst consensus serves two goals:
 - Sell-side estimates: $55-58B datacenter revenue
 - Implied datacenter growth: 55-65% YoY
 
-**Outcome:** Pending (February 2026)
+**Outcome:** Resolved 2026-04-19. Actual: $62.3B DC revenue, +75% YoY. **Both Market Accurate and consensus were wrong**, but consensus was directionally correct (predicted ~65% vs <50%) while we predicted <50% and missed by more. Scorecard: Market Accurate INCORRECT, Wall Street consensus technically INCORRECT (65% < 75%) but directionally closer. Lesson: contrarian calls need base-rate discipline; NVIDIA's growth had not shown deceleration in any of the four prior quarters, making <50% a high bar.
 
 ---
 
@@ -114,11 +114,11 @@ When adding new comparisons:
 |--------|-------|
 | Total Comparisons | 3 |
 | Contrarian Predictions | 3 |
-| Resolved | 0 |
+| Resolved | 1 |
 | Our Correct, Consensus Wrong | 0 |
 | Consensus Correct, We Wrong | 0 |
 | Both Correct | 0 |
-| Both Wrong | 0 |
+| Both Wrong | 1 (AV-001: actual 75% > both our <50% and consensus ~65%) |
 
 ---
 

@@ -111,6 +111,10 @@ Upcoming prediction verification dates and resolution requirements.
 | EC-004 | 3+ utilities cite AI data center demand | Earnings transcripts | Search utility earnings |
 | BT-004 | XBI 20% drawdown if no AI FDA approval | Market data | Check XBI performance |
 | CRE-003 | 50M+ sq ft office conversion announced | Real estate news | Track conversion announcements |
+| LM-004 | No Tier-1 consulting firm AI-unemployment wave | Consulting publications | Search McKinsey/BCG/Bain/Deloitte |
+| DA-003 | USDT+USDC combined supply >$300B in 2026 | DeFiLlama | Track daily supply |
+| DA-004 | No US stablecoin >2% peg break >24h | Price feeds | Monitor USDC/PYUSD/etc. |
+| DA-005 | 2026 BTC drawdown smaller than 77% | Price data | Compute peak-to-trough |
 
 **AV-005 Resolution Details:**
 - **Claim:** Combined market cap of NVIDIA + AMD + Arm lower on Dec 31, 2026 than Jan 3, 2026
@@ -143,12 +147,21 @@ Upcoming prediction verification dates and resolution requirements.
 | BT-003 | Biopharma M&A exceeds $100B in 2026 | M&A databases | Sum 2026 deal values |
 | CRE-001 | National office vacancy <18% by Q4 2026 | Yardi Matrix/CBRE | Check Q4 2026 vacancy data |
 | CRE-004 | San Francisco vacancy >25% through 2026 | CoStar/CBRE | Check SF Q4 2026 vacancy |
+| LM-001 | US unemployment 3.8–4.5%, no AI attribution | BLS, Fed, CBO | Verify unemployment band + source scan |
+| DA-002 | BTC ETF flow/price correlation >0.5 | ETF data + price | Compute rolling correlation |
+
+### May 2027
+
+| ID | Prediction | Verification Source | Action |
+|----|-----------|-------------------|--------|
+| LM-003 | CSR (BLS 43-4051) ≥5% decline 2024→2026 | BLS OES | Check 2026 OES release |
 
 ### June 30, 2027
 
 | ID | Prediction | Verification Source | Action |
 |----|-----------|-------------------|--------|
 | AV-006 | Efficiency narrative in 5+ mainstream articles | News archives | Search WSJ/FT/Bloomberg |
+| LM-002 | New-grad tech hiring ≥15% down YoY (2026 vs 2024) | LinkedIn Workforce Insights / BLS | Compare hiring flows |
 
 ### December 31, 2027
 
@@ -159,6 +172,7 @@ Upcoming prediction verification dates and resolution requirements.
 | SC-006 | Auto semi growth > AI growth in one quarter | Industry reports | Compare segment growth rates |
 | BT-001 | First AI-discovered FDA approval | FDA database | Check approvals with AI discovery claim |
 | BT-002 | 3+ AI drugs Phase III with >55% success | Clinical trial databases | Track AI drug outcomes |
+| DA-001 | BTC ≥40% peak-to-trough drawdown (Apr 2026 – Dec 2027) | Price data | Compute max drawdown |
 
 ---
 
@@ -176,4 +190,4 @@ When a prediction's verification date arrives:
 
 ---
 
-*Updated: 2026-01-03 (added EC, BT, CRE predictions)*
+*Updated: 2026-04-18 (added LM, DA predictions; resolution prep docs now in `docs/prediction-prep/`)*

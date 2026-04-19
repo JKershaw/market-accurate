@@ -10,7 +10,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | ID | Prediction | Made | Resolves | Status |
 |----|-----------|------|----------|--------|
-| AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02 | Pending |
+| AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02 | **Resolved: INCORRECT** |
 | AV-002 | Hyperscaler capex language moderation in Q1 2026 | 2026-01-03 | 2026-05 | Pending |
 | AV-003 | Open-weights model matches GPT-4 on consumer GPU | 2026-01-03 | 2026-06-30 | Pending |
 | AV-004 | Enterprise AI spend growth intentions <25% YoY | 2026-01-03 | 2026-10 | Pending |
@@ -79,13 +79,32 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | CRE-003 | 50M+ sq ft office announced for conversion/demolition | 2026-01-03 | 2026-12-31 | Pending | 50% |
 | CRE-004 | San Francisco office vacancy remains >25% through 2026 | 2026-01-03 | 2027-02 | Pending | 75% |
 
+### Labor Market & AI Impact (2026-04-18)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| LM-001 | US unemployment stays 3.8–4.5% through 2026, no AI attribution in official reports | 2026-04-18 | 2027-02 | Pending | 65% |
+| LM-002 | New-grad tech hiring ≥15% down YoY (2026 vs 2024) | 2026-04-18 | 2027-06-30 | Pending | 60% |
+| LM-003 | BLS Customer Service Rep (43-4051) headcount ≥5% decline 2024→2026 | 2026-04-18 | 2027-05 | Pending | 55% |
+| LM-004 | No Tier-1 consulting firm declares aggregate AI-unemployment wave through 2026 | 2026-04-18 | 2026-12-31 | Pending | 75% |
+
+### Digital Assets Cycle (2026-04-18)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| DA-001 | BTC ≥40% peak-to-trough drawdown between Apr 2026 and Dec 2027 | 2026-04-18 | 2027-12-31 | Pending | 65% |
+| DA-002 | Spot BTC ETF flow / price correlation stays >0.5 through 2026 | 2026-04-18 | 2027-01-31 | Pending | 60% |
+| DA-003 | Combined USDT+USDC supply exceeds $300B at some point in 2026 | 2026-04-18 | 2026-12-31 | Pending | 60% |
+| DA-004 | No US-regulated stablecoin >2% peg break for >24 hours in 2026 | 2026-04-18 | 2026-12-31 | Pending | 80% |
+| DA-005 | 2026 BTC drawdown (if any) smaller than 77% (2022 analogue) | 2026-04-18 | 2026-12-31 | Pending | 60% |
+
 ---
 
 ## Resolved Predictions
 
 | ID | Prediction | Made | Resolved | Outcome | Correct? |
 |----|-----------|------|----------|---------|----------|
-| *None yet* | | | | | |
+| AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02-25 | Data Center $62.3B (+75% YoY vs $35.6B prior year) | **No** |
 
 ---
 
@@ -93,19 +112,21 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 33 |
-| Resolved | 0 |
+| Total Predictions | 42 |
+| Resolved | 1 |
 | Correct | 0 |
-| Incorrect | 0 |
-| Accuracy | N/A |
-| Brier Score | N/A |
-| Calibration | N/A |
+| Incorrect | 1 |
+| Accuracy | 0% (n=1) |
+| Brier Score | 0.25 (n=1; see note) |
+| Calibration | Insufficient data (need n≥30) |
+
+**Brier score note:** AV-001 did not state an explicit ex-ante probability (the AI Valuation Analysis predates the pre-registration framework's probability-disclosure requirement). Per the framework, predictions without stated probability are scored at 0.50 — yielding (0.50 − 0)² = 0.25. Future predictions must carry explicit probabilities to enable proper Brier calculation.
 
 ### By Analysis
 
 | Analysis | Predictions | Resolved | Correct | Accuracy |
 |----------|-------------|----------|---------|----------|
-| AI Valuation | 7 | 0 | 0 | N/A |
+| AI Valuation | 7 | 1 | 0 | 0% |
 | Hyperscaler Capex | 2 | 0 | 0 | N/A |
 | Semiconductor Cycle | 6 | 0 | 0 | N/A |
 | Open-Source Benchmarks | 3 | 0 | 0 | N/A |
@@ -113,6 +134,8 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | Energy & Climate | 4 | 0 | 0 | N/A |
 | Biotech Development | 4 | 0 | 0 | N/A |
 | Commercial Real Estate | 4 | 0 | 0 | N/A |
+| Labor Market & AI | 4 | 0 | 0 | N/A |
+| Digital Assets Cycle | 5 | 0 | 0 | N/A |
 
 ---
 
@@ -185,7 +208,7 @@ Under-confidence = accuracy higher than stated confidence.
 
 | Date | ID | Action | Evidence |
 |------|----|--------|----------|
-| *None yet* | | | |
+| 2026-04-19 | AV-001 | Resolved INCORRECT | NVIDIA Q4 FY26 Data Center revenue $62.3B (+75% YoY) reported Feb 25, 2026 — well above the <50% threshold. Sources: [CNBC](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html), [ServeTheHome](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/), [NVIDIA FY25 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025) for the $35.6B Q4 FY25 baseline. |
 
 ---
 
@@ -203,4 +226,4 @@ Under-confidence = accuracy higher than stated confidence.
 
 ---
 
-*Updated: 2026-01-03 (added EC-001 through EC-004, BT-001 through BT-004, CRE-001 through CRE-004, Brier score methodology)*
+*Updated: 2026-04-19 (resolved AV-001 as INCORRECT; added LM-001 through LM-004, DA-001 through DA-005; see [docs/pre-registration.md](/docs/pre-registration.md) for resolution protocol)*
