@@ -372,7 +372,7 @@ This section will be updated as predictions resolve.
 
 | Date Made | Prediction | Outcome Date | Result | Correct? |
 |-----------|-----------|--------------|--------|----------|
-| 2026-01-03 | NVIDIA DC revenue growth <50% Q4 FY26 | 2026-02-XX | Pending | - |
+| 2026-01-03 | NVIDIA DC revenue growth <50% Q4 FY26 | 2026-02-25 | DC revenue $62.3B (+75% YoY vs $35.6B) | **No** |
 | 2026-01-03 | Hyperscaler capex language moderation Q1 | 2026-05-XX | Pending | - |
 | 2026-01-03 | Open source GPT-4 parity on consumer GPU | 2026-06-30 | Pending | - |
 | 2026-01-03 | Enterprise AI spend growth <25% by Q3 | 2026-10-XX | Pending | - |
@@ -383,10 +383,14 @@ This section will be updated as predictions resolve.
 **Accuracy Statistics:**
 
 - Total predictions: 7
-- Resolved: 0
+- Resolved: 1
 - Correct: 0
-- Incorrect: 0
-- Accuracy: N/A (no resolved predictions yet)
+- Incorrect: 1
+- Accuracy: 0% (n=1)
+
+**AV-001 resolution note (2026-04-19):** Prediction was wrong. NVIDIA reported Q4 FY26 Data Center revenue of $62.3B vs $35.6B prior-year, a 75% YoY increase — well above the 50% threshold. The efficiency thesis has **not** yet shown up in NVIDIA's reported growth; Blackwell/Rubin ramp offset whatever per-capability compute reduction was occurring. A single miss does not invalidate the broader thesis, but it is a concrete point against near-term deceleration. Longer-dated predictions (AV-005 Dec 2026, AV-007 end-2027) are still live and will test whether the efficiency dynamics eventually bind.
+
+The prep doc's prior-year baseline of $39.2B was wrong; the correct figure from NVIDIA's FY25 release is $35.6B. Outcome unaffected (75% >> 50%), but flagged as a data-discipline lesson for future prep docs.
 
 ---
 
@@ -507,6 +511,7 @@ The goal is accurate information, not credit. Better analysis should win.
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-04-19 | Resolved AV-001 as INCORRECT: NVIDIA Q4 FY26 DC revenue +75% YoY vs predicted <50% |
 
 ---
 

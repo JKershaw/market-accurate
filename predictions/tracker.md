@@ -10,7 +10,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | ID | Prediction | Made | Resolves | Status |
 |----|-----------|------|----------|--------|
-| AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02 | Pending |
+| AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02 | **Resolved: INCORRECT** |
 | AV-002 | Hyperscaler capex language moderation in Q1 2026 | 2026-01-03 | 2026-05 | Pending |
 | AV-003 | Open-weights model matches GPT-4 on consumer GPU | 2026-01-03 | 2026-06-30 | Pending |
 | AV-004 | Enterprise AI spend growth intentions <25% YoY | 2026-01-03 | 2026-10 | Pending |
@@ -104,7 +104,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | ID | Prediction | Made | Resolved | Outcome | Correct? |
 |----|-----------|------|----------|---------|----------|
-| *None yet* | | | | | |
+| AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02-25 | Data Center $62.3B (+75% YoY vs $35.6B prior year) | **No** |
 
 ---
 
@@ -113,18 +113,20 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | Metric | Value |
 |--------|-------|
 | Total Predictions | 42 |
-| Resolved | 0 |
+| Resolved | 1 |
 | Correct | 0 |
-| Incorrect | 0 |
-| Accuracy | N/A |
-| Brier Score | N/A |
-| Calibration | N/A |
+| Incorrect | 1 |
+| Accuracy | 0% (n=1) |
+| Brier Score | 0.25 (n=1; see note) |
+| Calibration | Insufficient data (need n≥30) |
+
+**Brier score note:** AV-001 did not state an explicit ex-ante probability (the AI Valuation Analysis predates the pre-registration framework's probability-disclosure requirement). Per the framework, predictions without stated probability are scored at 0.50 — yielding (0.50 − 0)² = 0.25. Future predictions must carry explicit probabilities to enable proper Brier calculation.
 
 ### By Analysis
 
 | Analysis | Predictions | Resolved | Correct | Accuracy |
 |----------|-------------|----------|---------|----------|
-| AI Valuation | 7 | 0 | 0 | N/A |
+| AI Valuation | 7 | 1 | 0 | 0% |
 | Hyperscaler Capex | 2 | 0 | 0 | N/A |
 | Semiconductor Cycle | 6 | 0 | 0 | N/A |
 | Open-Source Benchmarks | 3 | 0 | 0 | N/A |
@@ -206,7 +208,7 @@ Under-confidence = accuracy higher than stated confidence.
 
 | Date | ID | Action | Evidence |
 |------|----|--------|----------|
-| *None yet* | | | |
+| 2026-04-19 | AV-001 | Resolved INCORRECT | NVIDIA Q4 FY26 Data Center revenue $62.3B (+75% YoY) reported Feb 25, 2026 — well above the <50% threshold. Sources: [CNBC](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html), [ServeTheHome](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/), [NVIDIA FY25 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025) for the $35.6B Q4 FY25 baseline. |
 
 ---
 
@@ -224,4 +226,4 @@ Under-confidence = accuracy higher than stated confidence.
 
 ---
 
-*Updated: 2026-04-18 (added LM-001 through LM-004, DA-001 through DA-005; see [docs/pre-registration.md](/docs/pre-registration.md) for resolution protocol)*
+*Updated: 2026-04-19 (resolved AV-001 as INCORRECT; added LM-001 through LM-004, DA-001 through DA-005; see [docs/pre-registration.md](/docs/pre-registration.md) for resolution protocol)*

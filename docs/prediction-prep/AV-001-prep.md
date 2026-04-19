@@ -8,7 +8,30 @@
 | Claim | NVIDIA Q4 FY2026 datacenter revenue YoY growth will be below 50% |
 | Made | 2026-01-03 |
 | Resolves | February 2026 |
-| Status | Pending - Resolution Prep |
+| Status | **Resolved 2026-04-19: INCORRECT** |
+
+---
+
+## Resolution (2026-04-19)
+
+**Outcome: INCORRECT** — the prediction failed by a large margin.
+
+| Metric | Value | Source |
+|--------|-------|--------|
+| Q4 FY2026 Data Center revenue | $62.3B | NVIDIA Q4 FY26 earnings (Feb 25, 2026) |
+| Q4 FY2025 Data Center revenue (baseline) | $35.6B | NVIDIA Q4 FY25 press release |
+| YoY growth | +75.0% | Arithmetic and stated |
+| Threshold | <50% | Prediction claim |
+| Result | **+75% > 50% → INCORRECT** | |
+
+**Baseline correction:** The "Current Data" section below shows $39.2B as the Q4 FY25 baseline. That was wrong; the correct figure is $35.6B per NVIDIA's Q4 FY25 release. The prediction outcome is unaffected (75% is far above 50% regardless of baseline), but this is a data-discipline lesson: prep docs should cite primary sources for baselines, not carry forward analyst estimates.
+
+**Thesis implication:** The 2026-01-03 analysis argued the efficiency thesis would show up as NVIDIA datacenter deceleration through Q4 FY26. The opposite happened: growth re-accelerated from 66% (Q3 FY26) to 75% (Q4 FY26), driven by Blackwell ramp. The efficiency dynamics (inference costs, open-source closing gap) are real but did not translate to demand deceleration on this timeline. Longer-dated AV predictions remain live.
+
+Sources:
+- [CNBC Q4 FY26 earnings report](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html)
+- [ServeTheHome Q4 FY26 breakdown](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/)
+- [NVIDIA Q4 FY25 press release (baseline)](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025)
 
 ---
 
