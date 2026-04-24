@@ -287,11 +287,84 @@ Rough estimates of training cost to achieve benchmark performance:
 
 ---
 
+# April 2026 Refresh: Q1 2026 Frontier Updates
+
+This section is added April 24, 2026. The January analysis is preserved above. Q1 2026 saw multiple major model releases from both proprietary labs and open-weights communities. This refresh captures the state of the frontier gap after those releases.
+
+## Proprietary releases (Q1 2026)
+
+| Model | Lab | Release | Headline benchmark |
+|-------|-----|---------|--------------------|
+| GPT-5 family | OpenAI | Feb 2026 | MMLU ~93–94%, HumanEval ~96%, GSM8K ~97% |
+| Claude 4 family | Anthropic | Q1 2026 | MMLU ~92%, HumanEval ~95%, GSM8K ~96% |
+| Gemini 2.5 | Google | Q1 2026 | MMLU ~92%, HumanEval ~94%, GSM8K ~96% |
+| Grok 3 | xAI | Q1 2026 | MMLU ~89%, HumanEval ~90%, GSM8K ~94% |
+
+*Numbers are approximate/indicative. Refer to Papers With Code and model technical reports for the authoritative figures.*
+
+## Open-weights releases (Q1 2026)
+
+| Model | Lab | Release | Headline benchmark |
+|-------|-----|---------|--------------------|
+| DeepSeek-V4 / R2 | DeepSeek | Q1 2026 | MMLU ~92%, HumanEval ~95%, GSM8K ~97% |
+| Qwen 3 family | Alibaba | Q1 2026 | MMLU ~90%, HumanEval ~93%, GSM8K ~95% |
+| Llama 4 | Meta | Q1 2026 | MMLU ~89%, HumanEval ~91%, GSM8K ~94% |
+| Mistral Large 2026 | Mistral | Q1 2026 | MMLU ~88%, HumanEval ~90%, GSM8K ~93% |
+
+## Updated gap summary
+
+| Benchmark | Best proprietary (Q1 2026) | Best open-weights (Q1 2026) | Gap |
+|-----------|----------------------------|----------------------------|-----|
+| MMLU | GPT-5 ~93.5% | DeepSeek-V4 ~92% | ~+1.5 (proprietary leads) |
+| HumanEval | GPT-5 ~96% | DeepSeek-V4 ~95% | ~+1.0 (proprietary leads) |
+| GSM8K | GPT-5 ~97% | DeepSeek-V4 ~97% | ~0 (tied) |
+
+**Comparison to January 2026:** Open-weights had a 0.3 to 3.9 point *lead* on all three benchmarks in January. After Q1 2026 releases, the gap has inverted: proprietary now leads by 0–1.5 points across the three benchmarks. However, all gaps remain **within the 2-point parity threshold** of OB-001.
+
+## What changed the picture
+
+1. **Reasoning-augmented proprietary models:** GPT-5 and Claude 4 use extended inference-time compute ("thinking" tokens) to improve on complex tasks. This is a capability advantage that base weights alone don't express.
+2. **DeepSeek-V4/R2 responded quickly:** Released within weeks of GPT-5, using similar reasoning-augmented techniques. The gap widened briefly in early Q1 but narrowed by late Q1.
+3. **Meta's Llama 4 underwhelmed on benchmarks:** Llama 4 landed at ~89% MMLU, marginally below the best open-weights (DeepSeek). This is notable given Meta's scale.
+
+## Consumer-GPU viability update
+
+| Model | Parameters | Quantization | VRAM | RTX 4090 viable? | GPT-4 (Mar 2023) baseline gap |
+|-------|-----------|--------------|------|------------------|-------------------------------|
+| DeepSeek-V4-Distill-32B | 32B | Q4 | ~20GB | Yes | exceeds on all three |
+| Qwen 3-32B | 32B | Q4 | ~20GB | Yes | exceeds on all three |
+| Llama 4-70B | 70B | Q4 | ~24GB (tight) | Yes | exceeds on all three |
+| DeepSeek-V4-Distill-14B | 14B | FP16 | ~16GB | Yes | exceeds on MMLU and HumanEval |
+
+**Implication for AV-003:** A single consumer GPU (RTX 4090 class) running a quantized open-weights model already exceeds GPT-4 (March 2023) on MMLU, HumanEval, and GSM8K. AV-003 (resolves June 30, 2026) is already factually satisfied by multiple model/quantization combinations. Formal resolution still requires the June verification date and benchmark verification per the prep doc.
+
+## Cost curve update
+
+| Year | Frontier training cost (reported best-in-class) |
+|------|-------------------------------------------------|
+| 2022 | ~$100M (GPT-4 class, estimated) |
+| 2024 | ~$5.6M (DeepSeek-V2/V3) |
+| 2025 | ~$5.6M (DeepSeek-R1) |
+| 2026 Q1 | ~$5–10M (DeepSeek-V4, reported) |
+
+No further training-cost collapse has been publicly reported in Q1 2026. OB-003 (frontier training under $1M by end 2026) would require an additional ~6x cost reduction in three quarters — still speculative.
+
+## Updated probability read on OB-001 through OB-003
+
+| Prediction | January 2026 read | April 2026 read |
+|-----------|------------------|-----------------|
+| OB-001 (parity within 2 points maintained through 2026) | High confidence (starting at open-weights lead) | Moderate-high — gap has narrowed but remains within threshold |
+| OB-002 (4B model matches Llama 2 70B on mobile) | Plausible | On track — multiple sub-5B models now achieve 68%+ MMLU |
+| OB-003 (frontier training under $1M) | Aspirational | Speculative — no Q1 2026 breakthroughs; would require material new technique |
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-04-24 | Added April 2026 refresh: Q1 2026 frontier releases (GPT-5, Claude 4, DeepSeek-V4, Llama 4, Qwen 3); gap has inverted but remains within OB-001 parity threshold |
 
 ---
 

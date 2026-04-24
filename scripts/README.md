@@ -16,6 +16,7 @@ scripts/
   fetch_nvidia_earnings.py   # NVIDIA datacenter revenue (supports AV-001)
   fetch_hyperscaler_capex.py # MSFT/GOOG/AMZN/META capex (supports HC-001, AV-002, AV-007)
   fetch_index_returns.py     # SOX vs SPX total returns (supports SC-002, AV-005)
+  fetch_stablecoin_supply.py # USDT/USDC/PYUSD supply + peg check (supports DA-003, DA-004)
   snapshot/                  # append-only JSON snapshots, gitignored by default
 ```
 
@@ -60,6 +61,7 @@ Each script prints a short summary and writes a JSON snapshot to `scripts/snapsh
 | `fetch_nvidia_earnings.py` | Datacenter revenue, YoY growth | AV-001 |
 | `fetch_hyperscaler_capex.py` | Quarterly capex per company | HC-001, HC-002, AV-002, AV-007 |
 | `fetch_index_returns.py` | SOX, S&P 500 TR, combined market cap | SC-002, SC-005, AV-005 |
+| `fetch_stablecoin_supply.py` | USDT/USDC/PYUSD circulating, peg check | DA-003, DA-004 |
 
 ---
 
@@ -68,3 +70,5 @@ Each script prints a short summary and writes a JSON snapshot to `scripts/snapsh
 - `fetch_benchmark_leaderboard.py` — Open LLM leaderboard scrape for AV-003, OB-001
 - `fetch_bnef_battery_prices.py` — Annual battery pack prices for EC-002
 - `fetch_office_vacancy.py` — Yardi/CBRE office vacancy for CRE-001, CRE-004
+- `fetch_ny_fed_household_debt.py` — CC delinquency data for CR-002
+- `fetch_bdc_filings.py` — BDC non-accrual and PIK disclosure for PC-001

@@ -182,7 +182,19 @@ Digital Assets Cycle Analysis (April 2026):
 - Key metrics: ETF flows, realized cap, MVRV, stablecoin supply
 - Supports predictions DA-001 through DA-005
 
-**Active predictions:** 42 total, resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
+Consumer Spending & Retail Cycle Analysis (April 2026):
+- Asks whether discretionary retail softness is a mid-cycle pause or downturn start
+- Key finding: Bifurcation widening; top quintile holding, bottom two quintiles credit-funded and contracting
+- Key metrics: Savings rate, CC delinquencies, discretionary retail comps, restaurant traffic
+- Supports predictions CR-001 through CR-005
+
+Private Credit & BDC Sector Analysis (April 2026):
+- Examines whether rapid private-credit AUM growth has loosened underwriting enough to bind in a cycle turn
+- Key finding: Not yet in distress; PIK rising, non-accruals elevating, spread compression
+- Key metrics: BDC non-accrual rate, PIK income share, direct-lending spreads
+- Supports predictions PC-001 through PC-005
+
+**Active predictions:** 52 total, resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
 
 ### Upcoming Prediction Dates
 
@@ -213,6 +225,11 @@ Digital Assets Cycle Analysis (April 2026):
 | BT-003 | Biopharma M&A >$100B | Feb 2027 |
 | CRE-001 | Office vacancy <18% | Feb 2027 |
 | CRE-004 | SF vacancy >25% through 2026 | Feb 2027 |
+| CR-002 | CC 90+ day delinquency ≥3.5% | Feb 2027 |
+| CR-003 | XLY underperforms S&P by 500bps+ | Jan 2027 |
+| CR-005 | No technical recession in 2026 | Feb 2027 |
+| PC-001 | BDC non-accrual rate >3.0% | Mar 2027 |
+| PC-004 | BDC sector positive 2026 total return | Jan 2027 |
 
 See @analysis/ai-valuation-2026-01.md for AI valuation thesis.
 See @analysis/hyperscaler-capex-2026-01.md for capex tracking.
@@ -222,6 +239,8 @@ See @analysis/enterprise-ai-adoption-2026-01.md for enterprise adoption metrics.
 See @analysis/energy-climate-2026-01.md for clean energy comparison.
 See @analysis/biotech-development-2026-01.md for drug development analysis.
 See @analysis/commercial-real-estate-2026-01.md for office market analysis.
+See @analysis/consumer-retail-2026-04.md for consumer spending & retail cycle analysis.
+See @analysis/private-credit-2026-04.md for private credit / BDC analysis.
 See @predictions/tracker.md for full track record.
 See @docs/prediction-calendar.md for resolution calendar.
 See @docs/analyst-comparison.md for Wall Street consensus comparison.

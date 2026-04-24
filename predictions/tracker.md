@@ -98,6 +98,26 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | DA-004 | No US-regulated stablecoin >2% peg break for >24 hours in 2026 | 2026-04-18 | 2026-12-31 | Pending | 80% |
 | DA-005 | 2026 BTC drawdown (if any) smaller than 77% (2022 analogue) | 2026-04-18 | 2026-12-31 | Pending | 60% |
 
+### Consumer Spending & Retail Cycle (2026-04-24)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| CR-001 | ≥5 of top 20 US discretionary retailers report negative FY26 comps | 2026-04-24 | 2027-04 | Pending | 65% |
+| CR-002 | US CC 90+ day delinquency rate reaches ≥3.5% in any 2026 quarter | 2026-04-24 | 2027-02 | Pending | 60% |
+| CR-003 | XLY underperforms S&P 500 by ≥500bps in 2026 total return | 2026-04-24 | 2027-01 | Pending | 55% |
+| CR-004 | US restaurant traffic declines YoY in ≥3 of 4 quarters 2026 | 2026-04-24 | 2027-02 | Pending | 70% |
+| CR-005 | US does NOT enter technical recession (2 negative real-GDP quarters) in 2026 | 2026-04-24 | 2027-02 | Pending | 60% |
+
+### Private Credit & BDC Sector (2026-04-24)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| PC-001 | Top-10 BDC weighted-avg non-accrual rate >3.0% in any 2026 quarter | 2026-04-24 | 2027-03 | Pending | 60% |
+| PC-002 | ≥3 publicly traded BDCs (top 30) cut base dividend ≥10% in 2026 | 2026-04-24 | 2027-01 | Pending | 55% |
+| PC-003 | New-deal direct-lending first-lien spread ≥500bps in Q4 2026 | 2026-04-24 | 2027-03 | Pending | 55% |
+| PC-004 | BDC sector (BDCS / BIZD) total return positive in 2026 | 2026-04-24 | 2027-01 | Pending | 55% |
+| PC-005 | ≥1 non-traded BDC (AUM >$10B) reduces/suspends tender capacity in 2026 | 2026-04-24 | 2027-01 | Pending | 40% |
+
 ---
 
 ## Resolved Predictions
@@ -112,7 +132,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 42 |
+| Total Predictions | 52 |
 | Resolved | 1 |
 | Correct | 0 |
 | Incorrect | 1 |
@@ -136,6 +156,8 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | Commercial Real Estate | 4 | 0 | 0 | N/A |
 | Labor Market & AI | 4 | 0 | 0 | N/A |
 | Digital Assets Cycle | 5 | 0 | 0 | N/A |
+| Consumer & Retail | 5 | 0 | 0 | N/A |
+| Private Credit & BDC | 5 | 0 | 0 | N/A |
 
 ---
 
@@ -226,4 +248,4 @@ Under-confidence = accuracy higher than stated confidence.
 
 ---
 
-*Updated: 2026-04-19 (resolved AV-001 as INCORRECT; added LM-001 through LM-004, DA-001 through DA-005; see [docs/pre-registration.md](/docs/pre-registration.md) for resolution protocol)*
+*Updated: 2026-04-24 (added CR-001 through CR-005 Consumer & Retail and PC-001 through PC-005 Private Credit & BDC; 52 total predictions)*

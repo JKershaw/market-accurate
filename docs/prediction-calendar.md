@@ -137,6 +137,10 @@ Upcoming prediction verification dates and resolution requirements.
 |----|-----------|-------------------|--------|
 | SC-004 | Foundry utilization divergence | TSMC reports/analyst data | Compare trailing vs leading edge |
 | CRE-002 | Class A office REITs outperform B/C by 15%+ | REIT performance data | Compare sector returns |
+| CR-003 | XLY underperforms S&P 500 by 500bps+ | S&P Dow Jones / ETF data | Compute total-return differential |
+| PC-002 | ≥3 BDC dividend cuts | Company 8-K filings | Count base-dividend cuts |
+| PC-004 | BDC sector positive 2026 total return | MVIS / BIZD index | Check 2026 total return |
+| PC-005 | ≥1 non-traded BDC reduces/suspends tender | Press releases / filings | Monitor non-traded BDC capacity |
 
 ### February 2027
 
@@ -149,6 +153,22 @@ Upcoming prediction verification dates and resolution requirements.
 | CRE-004 | San Francisco vacancy >25% through 2026 | CoStar/CBRE | Check SF Q4 2026 vacancy |
 | LM-001 | US unemployment 3.8–4.5%, no AI attribution | BLS, Fed, CBO | Verify unemployment band + source scan |
 | DA-002 | BTC ETF flow/price correlation >0.5 | ETF data + price | Compute rolling correlation |
+| CR-002 | CC 90+ day delinquency reaches ≥3.5% | NY Fed Household Debt Report | Check Q4 2026 release |
+| CR-004 | Restaurant traffic declines YoY 3+ quarters | Black Box Intelligence | Aggregate 2026 quarters |
+| CR-005 | No technical recession in 2026 | BEA GDP releases | Verify no 2-quarter neg real GDP |
+
+### March 2027
+
+| ID | Prediction | Verification Source | Action |
+|----|-----------|-------------------|--------|
+| PC-001 | BDC non-accrual rate >3.0% in any 2026 quarter | BDC 10-Q / Wells Fargo Monitor | Check weighted-avg for top 10 |
+| PC-003 | Direct-lending first-lien spread ≥500bps Q4 2026 | Refinitiv LPC / S&P LCD | Check Q4 2026 new-deal spreads |
+
+### April 2027
+
+| ID | Prediction | Verification Source | Action |
+|----|-----------|-------------------|--------|
+| CR-001 | ≥5 of top 20 discretionary retailers neg FY26 comps | Company 10-Ks | Aggregate fiscal-2026 comps |
 
 ### May 2027
 
@@ -190,4 +210,4 @@ When a prediction's verification date arrives:
 
 ---
 
-*Updated: 2026-04-18 (added LM, DA predictions; resolution prep docs now in `docs/prediction-prep/`)*
+*Updated: 2026-04-24 (added CR, PC predictions for Consumer & Retail and Private Credit analyses)*
