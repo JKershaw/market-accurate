@@ -187,5 +187,46 @@ The *failure mode* of this prediction would be Microsoft and AWS both addressing
 
 ---
 
+## Addendum (May 1, 2026): Q1 2026 earnings cycle status — interim
+
+The Q1 2026 calendar-quarter earnings window is closing. Microsoft and Alphabet have reported (late April); Meta and Amazon report in the first week of May. This addendum freezes what we know now and what is still required for resolution. It is **not** the resolution itself — that requires the full set of transcripts, which is gated on Amazon's Q1 call.
+
+### Status at May 1, 2026
+
+| Company | Reported | Source available | Provisional language read |
+|---------|----------|-----------------|---------------------------|
+| Microsoft (Q3 FY26) | Yes (late April) | Prepared remarks + Q&A | **Pending transcript pull** — initial coverage suggests continued "disciplined" framing alongside reaffirmed FY26 capex; FY27 commentary is the key tell |
+| Alphabet (Q1 2026) | Yes (late April) | Prepared remarks + Q&A | **Pending transcript pull** — initial coverage suggests guidance reaffirmation; "returns-focused" boilerplate present but unclear if it crosses the threshold |
+| Amazon (Q1 2026) | Not yet (early May) | Awaiting | **Pending** — Kevin Miller's "routine capacity management" framing is the key item to look for in CEO/CFO prepared remarks |
+| Meta (Q1 2026) | Around the time of this update | Awaiting | Informational only (excluded from AV-002 universe) |
+
+### Required to resolve
+
+Per the strict scoring rule (April 19 addendum), only language from the Q1 2026 calls themselves qualifies. The resolution checklist requires:
+
+- [ ] Microsoft Q3 FY26 transcript: keyword scan + capex change analysis
+- [ ] Alphabet Q1 2026 transcript: keyword scan + capex change analysis
+- [ ] Amazon Q1 2026 transcript (early May): keyword scan + capex change analysis
+- [ ] Tabulate guidance change vs. Q4 2025 baseline for each
+- [ ] Apply context-weighting filter (must be CEO/CFO/cloud-head, must specifically reference AI infrastructure)
+- [ ] Determine: CORRECT or INCORRECT
+
+### Resolution timing
+
+The earliest defensible resolution date is **May 8, 2026** (after Amazon's Q1 call). A draft resolution before that would be premature and risks Type-I error (resolving on incomplete evidence). Earlier coverage of Microsoft/Alphabet could move the prediction to "very likely CORRECT," but the strict rule requires the full transcript set.
+
+### Provisional read (subject to formal resolution)
+
+Without prejudging, the weight of pre-call signals (Microsoft 1.5GW freeze; 2GW cumulative lease cancellations; AWS overseas-lease pause) makes the operational picture clearly one of moderation at the *delivery* layer for at least Microsoft and Amazon. The remaining question is whether *language* in the calls reflects this or paints over it as "capacity optimization."
+
+Subjective probability of CORRECT: still ~75% (unchanged from April 19 estimate). No new information has materially changed this since the prep was last updated; we are simply now closer to the resolvable evidence.
+
+### Action item for next session
+
+When the Amazon Q1 2026 transcript becomes available (~May 2–3), pull all four transcripts, run the keyword scan, and resolve the prediction with the standard checklist above. Update tracker.md, hyperscaler-capex-2026-01.md, ai-valuation-2026-01.md Track Record, and analyst-comparison.md.
+
+---
+
 *Prepared: 2026-04-18*
 *Addendum: 2026-04-19*
+*Addendum: 2026-05-01 (Q1 earnings cycle status — interim, awaiting Amazon)*

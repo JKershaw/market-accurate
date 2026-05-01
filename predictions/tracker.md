@@ -98,6 +98,26 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | DA-004 | No US-regulated stablecoin >2% peg break for >24 hours in 2026 | 2026-04-18 | 2026-12-31 | Pending | 80% |
 | DA-005 | 2026 BTC drawdown (if any) smaller than 77% (2022 analogue) | 2026-04-18 | 2026-12-31 | Pending | 60% |
 
+### Consumer Spending & Retail Cycle (2026-05-01)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| CS-001 | Real PCE growth full-year 2026 between 1.5% and 2.5% | 2026-05-01 | 2027-02 | Pending | 60% |
+| CS-002 | Top-10% accounts for ≥45% of 2026 real PCE growth | 2026-05-01 | 2027-06-30 | Pending | 60% |
+| CS-003 | Walmart FY26 US comp SSS exceeds Dollar General by ≥4pp | 2026-05-01 | 2027-03 | Pending | 65% |
+| CS-004 | Credit-card 30+ day delinquency stays in [3.0%, 4.5%] all of 2026 | 2026-05-01 | 2027-02 | Pending | 55% |
+| CS-005 | Conditional: if S&P drops ≥15% in 2026, Hermès or RH posts negative US comp within 2Q | 2026-05-01 | 2026-12-31 | Pending | 60% (conditional) |
+
+### Private Credit & BDC Sector (2026-05-01)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| PC-001 | Top-10 traded BDC asset-weighted non-accrual >4.0% in any 2026 quarter | 2026-05-01 | 2027-02 | Pending | 55% |
+| PC-002 | No major non-traded BDC ($10B+ AUM) imposes above-cap gate in 2026 | 2026-05-01 | 2026-12-31 | Pending | 70% |
+| PC-003 | New-issue direct-lending unitranche spreads compress ≥50 bps in 2026 | 2026-05-01 | 2027-02 | Pending | 55% |
+| PC-004 | Median traded-BDC P/NAV <0.90x for ≥20 consecutive trading days in 2026 | 2026-05-01 | 2026-12-31 | Pending | 50% |
+| PC-005 | At least one disclosed private-credit non-accrual on AI-infrastructure loan in 2026 | 2026-05-01 | 2026-12-31 | Pending | 60% |
+
 ---
 
 ## Resolved Predictions
@@ -112,7 +132,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 42 |
+| Total Predictions | 52 |
 | Resolved | 1 |
 | Correct | 0 |
 | Incorrect | 1 |
@@ -136,6 +156,8 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | Commercial Real Estate | 4 | 0 | 0 | N/A |
 | Labor Market & AI | 4 | 0 | 0 | N/A |
 | Digital Assets Cycle | 5 | 0 | 0 | N/A |
+| Consumer Spending & Retail | 5 | 0 | 0 | N/A |
+| Private Credit & BDC | 5 | 0 | 0 | N/A |
 
 ---
 
@@ -226,4 +248,4 @@ Under-confidence = accuracy higher than stated confidence.
 
 ---
 
-*Updated: 2026-04-19 (resolved AV-001 as INCORRECT; added LM-001 through LM-004, DA-001 through DA-005; see [docs/pre-registration.md](/docs/pre-registration.md) for resolution protocol)*
+*Updated: 2026-05-01 (added CS-001 through CS-005, PC-001 through PC-005 from new Consumer Spending and Private Credit/BDC analyses; total predictions now 52)*

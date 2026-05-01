@@ -182,7 +182,19 @@ Digital Assets Cycle Analysis (April 2026):
 - Key metrics: ETF flows, realized cap, MVRV, stablecoin supply
 - Supports predictions DA-001 through DA-005
 
-**Active predictions:** 42 total, resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
+Consumer Spending & Retail Cycle Analysis (May 2026):
+- Examines K-shaped consumption: top-decile dominance of growth
+- Key finding: Aggregate spending stable but distribution worsening; bottom-quintile in late-cycle stress
+- Key metrics: Real PCE, savings rate, credit-card delinquency, retail comp SSS
+- Supports predictions CS-001 through CS-005
+
+Private Credit & BDC Sector Analysis (May 2026):
+- Tracks private-credit AUM, BDC valuations, AI-credit linkages
+- Key finding: $1.7T AUM untested by a real default cycle; non-traded BDC marks may lag
+- Key metrics: P/NAV, non-accrual %, direct-lending spreads
+- Supports predictions PC-001 through PC-005
+
+**Active predictions:** 52 total, resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
 
 ### Upcoming Prediction Dates
 
@@ -222,6 +234,10 @@ See @analysis/enterprise-ai-adoption-2026-01.md for enterprise adoption metrics.
 See @analysis/energy-climate-2026-01.md for clean energy comparison.
 See @analysis/biotech-development-2026-01.md for drug development analysis.
 See @analysis/commercial-real-estate-2026-01.md for office market analysis.
+See @analysis/labor-market-ai-2026-04.md for labor market & AI impact.
+See @analysis/digital-assets-2026-04.md for crypto cycle analysis.
+See @analysis/consumer-spending-2026-05.md for consumer spending & retail.
+See @analysis/private-credit-bdc-2026-05.md for private credit & BDC sector.
 See @predictions/tracker.md for full track record.
 See @docs/prediction-calendar.md for resolution calendar.
 See @docs/analyst-comparison.md for Wall Street consensus comparison.
