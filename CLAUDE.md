@@ -182,14 +182,26 @@ Digital Assets Cycle Analysis (April 2026):
 - Key metrics: ETF flows, realized cap, MVRV, stablecoin supply
 - Supports predictions DA-001 through DA-005
 
-**Active predictions:** 42 total, resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
+Consumer Spending & Retail Cycle Analysis (May 2026):
+- Examines whether the K-shaped consumer pattern is structural rather than cyclical
+- Key finding: Subprime auto 60+ DPD at 32-year record while top-quintile spending continues to expand
+- Key metrics: NY Fed delinquency series, NRF retail forecast, retail discount intensity
+- Supports predictions CS-001 through CS-005
+
+Private Credit & BDC Sector Analysis (May 2026):
+- Tests mark-to-model resilience as the asset class faces its first real cyclical default migration
+- Key finding: BCRED record redemptions ($3.8B / 7.9% AUM); FS KKR at 0.51x P/NAV; sponsor equities -41% to -66% from Sep 2025 highs
+- Key metrics: KBRA BDC non-accruals, BIZD vs HYG, BDC dividends, sponsor strategic actions
+- Supports predictions PC-001 through PC-005
+
+**Active predictions:** 52 total (50 pending, 2 resolved INCORRECT), resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
 
 ### Upcoming Prediction Dates
 
 | ID | Prediction | Verification Date |
 |----|-----------|-------------------|
-| AV-001 | NVIDIA DC revenue growth <50% | Feb 2026 |
-| AV-002 | Hyperscaler capex language moderation | May 2026 |
+| AV-001 | NVIDIA DC revenue growth <50% | Feb 2026 — **Resolved INCORRECT** |
+| AV-002 | Hyperscaler capex language moderation | May 2026 — **Resolved INCORRECT** |
 | AV-003 | Open source GPT-4 parity on consumer GPU | Jun 30, 2026 |
 | EA-001 | Enterprise AI spending forecast <25% for 2027 | Jun 30, 2026 |
 | SC-002 | SOX underperforms S&P 500 in H1 2026 | Jul 1, 2026 |
@@ -222,6 +234,8 @@ See @analysis/enterprise-ai-adoption-2026-01.md for enterprise adoption metrics.
 See @analysis/energy-climate-2026-01.md for clean energy comparison.
 See @analysis/biotech-development-2026-01.md for drug development analysis.
 See @analysis/commercial-real-estate-2026-01.md for office market analysis.
+See @analysis/consumer-spending-2026-05.md for K-shape consumer analysis.
+See @analysis/private-credit-2026-05.md for BDC and private credit analysis.
 See @predictions/tracker.md for full track record.
 See @docs/prediction-calendar.md for resolution calendar.
 See @docs/analyst-comparison.md for Wall Street consensus comparison.

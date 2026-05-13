@@ -154,3 +154,70 @@ By June 30, 2026:
 ---
 
 *Prepared: 2026-04-18*
+
+---
+
+## Addendum (May 8, 2026): Current state of 2027 forecasts (T-53 days)
+
+### Gartner
+
+**Headline 2026 forecast (Jan 15, 2026 release):** Total worldwide AI spending will reach $2.52T in 2026, +44% YoY ([Gartner press release Jan 15 2026](https://www.gartner.com/en/newsroom/press-releases/2026-1-15-gartner-says-worldwide-ai-spending-will-total-2-point-5-trillion-dollars-in-2026), [Next Platform analysis Jan 30 2026](https://www.nextplatform.com/2026/01/30/gartner-takes-another-stab-at-forecasting-ai-spending/)).
+
+**2027 outlook (per Gartner sub-forecasts and analyst commentary):**
+
+| Category | 2026 growth | 2027 growth | <25% threshold? |
+|----------|-------------|-------------|-----------------|
+| Total worldwide AI spending | +44% | reported "growth rate will slow in 2027 from 2026" — no specific number released | Indeterminate |
+| AI software (specific) | 17.8% (forecast), grows to $297B by 2027 | **20.4%** (Gartner 2023-2027 forecast, 19.1% CAGR) | **Yes** |
+| AI infrastructure | very high | slows but no number | Indeterminate |
+| GenAI models | 80.8% (Gartner Feb 2026) | not specified | Indeterminate |
+
+**Key Gartner data point that potentially resolves CORRECT:** The Gartner "Forecast Analysis: Artificial Intelligence Software, 2023-2027, Worldwide" report shows AI software market growth decelerating from 17.8% (2023-2026 average) to 20.4% in 2027, a 19.1% CAGR — both below 25%.
+
+**Caveat:** This is the AI software sub-segment, not total enterprise AI spending. Per the prep doc (Section "Category normalization"), this is **acceptable** as "AI software spending growth" is one of the listed acceptable definitions. Reject only if "only forecasting AI infrastructure" — software is broader and acceptable.
+
+### IDC
+
+**2025–2029 CAGR:** 31.9% (driven by Agentic AI to $1.3T by 2029) ([IDC press release](https://my.idc.com/getdoc.jsp?containerId=prUS53765225)).
+
+**2025 → 2028 trajectory:** $307B → $632B implies ~27% CAGR.
+
+**Specific 2027 YoY:** Not yet published in a single-year breakout. IDC's Worldwide AI Spending Guide H1 2026 release expected before EA-001 resolution date.
+
+**Read:** IDC remains above 25% on aggregate AI spending. Does NOT support CORRECT resolution from IDC alone.
+
+### Forrester
+
+**No 2027-specific public forecast yet found at time of writing.** Forrester typically publishes 2027 figures in Q4 2026 Predictions report (October–November 2026), which would be **after** the EA-001 resolution date.
+
+If Forrester does not publish a 2027 figure by June 30, 2026, it cannot contribute to CORRECT or INCORRECT.
+
+### Read at T-53 days
+
+| Source | 2027 forecast status | Potentially resolves CORRECT? |
+|--------|---------------------|-------------------------------|
+| **Gartner (AI software sub-segment)** | 20.4% YoY for 2027 (in 2023-2027 forecast doc) | **Yes** — already below threshold |
+| Gartner (total AI spending) | "Growth rate will slow" but no 2027 number released | Indeterminate |
+| IDC (total AI spending) | ~27% implicit, ~32% CAGR through 2029 | No |
+| Forrester | No 2027 figure expected pre-resolution | No |
+
+### Probability update
+
+The Gartner AI software 2027 figure of ~20.4% likely satisfies the EA-001 threshold under a fair reading of the prep doc's category-normalization rules. There is a reasonable INCORRECT-defense argument that the Gartner total (which is what most readers would think of as "enterprise AI spending") is still well above 25% and that the software sub-segment is too narrow.
+
+**Strict-reading resolution:** Likely **CORRECT** (Gartner AI software 19.1% CAGR / 20.4% 2027).
+
+**Conservative-reading resolution:** **INDETERMINATE** until Gartner or IDC publishes a top-line 2027 AI spending growth number specifically below 25%.
+
+**Subjective probability of CORRECT resolution by June 30, 2026: ~70%** (up from 65% at April prep, given the Gartner AI software figures already in the public domain).
+
+### Resolution actions in the next 4 weeks
+
+1. **By May 22:** Pull the most recent Gartner "Forecast Analysis: Artificial Intelligence Software, 2023-2027" or successor document. Confirm 20.4% / 19.1% figures stand.
+2. **By June 1:** Check whether IDC publishes its H1 2026 Worldwide AI Spending Guide update with explicit 2027 YoY rate.
+3. **By June 15:** Check Forrester for any 2027 AI spending update tied to mid-year planning cycles.
+4. **By June 30:** Final resolution. If Gartner AI software 20.4% figure is the strongest candidate, document the category-narrowness caveat in the resolution note.
+
+---
+
+*Addendum: 2026-05-08*

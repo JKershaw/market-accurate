@@ -115,6 +115,7 @@ Upcoming prediction verification dates and resolution requirements.
 | DA-003 | USDT+USDC combined supply >$300B in 2026 | DeFiLlama | Track daily supply |
 | DA-004 | No US stablecoin >2% peg break >24h | Price feeds | Monitor USDC/PYUSD/etc. |
 | DA-005 | 2026 BTC drawdown smaller than 77% | Price data | Compute peak-to-trough |
+| PC-004 | BIZD underperforms HYG by ≥10pp May→Dec 2026 | Yahoo Finance | Compare total returns |
 
 **AV-005 Resolution Details:**
 - **Claim:** Combined market cap of NVIDIA + AMD + Arm lower on Dec 31, 2026 than Jan 3, 2026
@@ -137,6 +138,10 @@ Upcoming prediction verification dates and resolution requirements.
 |----|-----------|-------------------|--------|
 | SC-004 | Foundry utilization divergence | TSMC reports/analyst data | Compare trailing vs leading edge |
 | CRE-002 | Class A office REITs outperform B/C by 15%+ | REIT performance data | Compare sector returns |
+| CS-005 | Fed governor/president cites K-shaped consumer | Fed speeches archive | Search 2026 speeches |
+| PC-002 | 5+ public BDCs cut base dividend ≥10% in 2026 | BDC press releases | Track BDC Investor list |
+| PC-003 | Major non-traded BDC redemption gating in 2026 | SEC EDGAR | Search non-traded BDC filings |
+| PC-005 | Major BDC sponsor announces credit business sale/wind-down | SEC 8-K, sponsor IR | Track sponsor announcements |
 
 ### February 2027
 
@@ -149,12 +154,17 @@ Upcoming prediction verification dates and resolution requirements.
 | CRE-004 | San Francisco vacancy >25% through 2026 | CoStar/CBRE | Check SF Q4 2026 vacancy |
 | LM-001 | US unemployment 3.8–4.5%, no AI attribution | BLS, Fed, CBO | Verify unemployment band + source scan |
 | DA-002 | BTC ETF flow/price correlation >0.5 | ETF data + price | Compute rolling correlation |
+| CS-001 | Subprime auto 60+ DPD >6% in ≥3/4 of 2026 quarters | NY Fed Household Debt | Check quarterly delinquency series |
+| CS-003 | Credit card 90+ DPD ≥4% in any 2026 quarter | NY Fed Household Debt | Check quarterly series |
+| CS-004 | 2026 retail sales growth below NRF 4.4% forecast | Census Monthly Retail Trade | Pull annual revision |
+| PC-001 | Median BDC non-accruals ≥4% in any 2026 quarter | KBRA BDC Compendium | Pull each quarterly report |
 
 ### May 2027
 
 | ID | Prediction | Verification Source | Action |
 |----|-----------|-------------------|--------|
 | LM-003 | CSR (BLS 43-4051) ≥5% decline 2024→2026 | BLS OES | Check 2026 OES release |
+| CS-002 | Discount basket beats mid-tier mall by ≥10pp May 2026→Apr 2027 | Yahoo Finance | Compute basket returns |
 
 ### June 30, 2027
 
@@ -190,4 +200,4 @@ When a prediction's verification date arrives:
 
 ---
 
-*Updated: 2026-04-18 (added LM, DA predictions; resolution prep docs now in `docs/prediction-prep/`)*
+*Updated: 2026-05-08 (added CS-001..005 and PC-001..005; resolved AV-002 INCORRECT)*

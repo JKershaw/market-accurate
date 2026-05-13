@@ -373,7 +373,7 @@ This section will be updated as predictions resolve.
 | Date Made | Prediction | Outcome Date | Result | Correct? |
 |-----------|-----------|--------------|--------|----------|
 | 2026-01-03 | NVIDIA DC revenue growth <50% Q4 FY26 | 2026-02-25 | DC revenue $62.3B (+75% YoY vs $35.6B) | **No** |
-| 2026-01-03 | Hyperscaler capex language moderation Q1 | 2026-05-XX | Pending | - |
+| 2026-01-03 | Hyperscaler capex language moderation Q1 | 2026-05-08 | All 4 raised/reiterated 2026 capex: MSFT $190B (+$25B for components), GOOGL $180–190B (raised), AMZN $200B (reiterated), META $125–145B (raised). No MSFT/GOOG/AMZN moderation language. | **No** |
 | 2026-01-03 | Open source GPT-4 parity on consumer GPU | 2026-06-30 | Pending | - |
 | 2026-01-03 | Enterprise AI spend growth <25% by Q3 | 2026-10-XX | Pending | - |
 | 2026-01-03 | NVIDIA+AMD+Arm market cap lower Dec 31 | 2026-12-31 | Pending | - |
@@ -383,14 +383,16 @@ This section will be updated as predictions resolve.
 **Accuracy Statistics:**
 
 - Total predictions: 7
-- Resolved: 1
+- Resolved: 2
 - Correct: 0
-- Incorrect: 1
-- Accuracy: 0% (n=1)
+- Incorrect: 2
+- Accuracy: 0% (n=2)
 
 **AV-001 resolution note (2026-04-19):** Prediction was wrong. NVIDIA reported Q4 FY26 Data Center revenue of $62.3B vs $35.6B prior-year, a 75% YoY increase — well above the 50% threshold. The efficiency thesis has **not** yet shown up in NVIDIA's reported growth; Blackwell/Rubin ramp offset whatever per-capability compute reduction was occurring. A single miss does not invalidate the broader thesis, but it is a concrete point against near-term deceleration. Longer-dated predictions (AV-005 Dec 2026, AV-007 end-2027) are still live and will test whether the efficiency dynamics eventually bind.
 
 The prep doc's prior-year baseline of $39.2B was wrong; the correct figure from NVIDIA's FY25 release is $35.6B. Outcome unaffected (75% >> 50%), but flagged as a data-discipline lesson for future prep docs.
+
+**AV-002 resolution note (2026-05-08):** Prediction was wrong. The Q1 2026 calendar earnings cycle (Apr 29 – May 1, 2026) produced no moderation language from MSFT/GOOG/AMZN. All four hyperscalers either raised or reiterated extremely aggressive 2026 capex: Microsoft pegged calendar 2026 at ~$190B (+~$25B vs prior expectations, attributed to "higher component pricing"); Alphabet raised to $180–190B (from $175–185B); Amazon reiterated $200B; Meta raised to $125–145B (from $115–135B). Combined Big-4 2026 guidance midpoint now ~$700B vs the $600B implicit in the January analysis — roughly a 17% upward revision in 4 months. The dominant exec narrative was **supply-side constraint**, not demand moderation: Pichai called Alphabet "compute constrained in the near term"; Hood said Microsoft "expects to remain constrained at least through 2026." The closest candidate for moderation language — Hood's "the efficiencies we're already driving across the platform" — was framed as confidence in returns *supporting more spend*, not as a brake. Two of the seven AI Valuation predictions have now resolved INCORRECT. The efficiency thesis remains live in its longer-dated forms (AV-005, AV-006, AV-007), but the near-term hyperscaler-moderation channel has clearly failed.
 
 ---
 
@@ -568,6 +570,7 @@ Updating this in the document rather than in a new file so the record remains au
 | 2026-01-03 | Initial publication |
 | 2026-04-19 | Resolved AV-001 as INCORRECT: NVIDIA Q4 FY26 DC revenue +75% YoY vs predicted <50% |
 | 2026-04-19 | Added April 2026 Interim Update: supply-constraint vs demand-destruction distinction; honest read on what the thesis got right/wrong |
+| 2026-05-08 | Resolved AV-002 as INCORRECT: no MSFT/GOOG/AMZN moderation language in Q1 2026 calendar earnings; all four hyperscalers raised or reiterated 2026 capex (combined ~$700B midpoint) |
 
 ---
 
