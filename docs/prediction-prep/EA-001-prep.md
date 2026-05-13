@@ -149,7 +149,7 @@ By June 30, 2026:
 - [IDC AI Spending Guide](https://www.idc.com/getdoc.jsp?containerId=IDC_P39198)
 - [Gartner IT Spending Forecast](https://www.gartner.com/en/information-technology/insights/it-spending)
 - [Forrester Predictions](https://www.forrester.com/predictions/)
-- [Enterprise AI Adoption Analysis](/analysis/enterprise-ai-adoption-2026-01.md)
+- [Enterprise AI Adoption Analysis]({{ '/analysis/enterprise-ai-adoption-2026-01/' | relative_url }})
 
 ---
 

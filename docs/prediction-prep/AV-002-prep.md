@@ -135,7 +135,7 @@ When all Q1 2026 earnings released (~May 7, 2026):
 - [Alphabet IR](https://abc.xyz/investor/)
 - [Amazon IR](https://ir.aboutamazon.com/)
 - [Meta IR](https://investor.atmeta.com/)
-- [Hyperscaler Capex Tracker](/analysis/hyperscaler-capex-2026-01.md)
+- [Hyperscaler Capex Tracker]({{ '/analysis/hyperscaler-capex-2026-01/' | relative_url }})
 
 ---
 

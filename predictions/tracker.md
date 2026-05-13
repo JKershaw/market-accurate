@@ -53,7 +53,7 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 | ID | Headline | Resolves | Probability |
 |----|----------|----------|-------------|
 {% for p in group -%}
-| 🟡 [{{ p.id }}]({{ p.url }}) | {{ p.short_title }} | {{ p.resolves }} | {% if p.probability %}{{ p.probability }}{% else %}—{% endif %} |
+| 🟡 [{{ p.id }}]({{ p.url | relative_url }}) | {{ p.short_title }} | {{ p.resolves }} | {% if p.probability %}{{ p.probability }}{% else %}—{% endif %} |
 {% endfor %}
 
 {% endif %}
@@ -69,7 +69,7 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 | ID | Prediction | Made | Resolved | Verdict |
 |----|-----------|------|----------|---------|
 {% for p in resolved_sorted -%}
-| {% if p.verdict == "CORRECT" %}✅{% else %}❌{% endif %} [{{ p.id }}]({{ p.url }}) | {{ p.short_title }} | {{ p.made }} | {{ p.resolved_date }} | **{{ p.verdict }}** |
+| {% if p.verdict == "CORRECT" %}✅{% else %}❌{% endif %} [{{ p.id }}]({{ p.url | relative_url }}) | {{ p.short_title }} | {{ p.made }} | {{ p.resolved_date }} | **{{ p.verdict }}** |
 {% endfor %}
 
 {% else %}
@@ -135,8 +135,8 @@ Detailed evidence and reasoning for each resolution. Predictions move from Pendi
 
 | Date | ID | Action | Evidence |
 |------|----|--------|----------|
-| 2026-04-19 | [AV-001](/predictions/AV-001/) | Resolved INCORRECT | NVIDIA Q4 FY26 Data Center revenue $62.3B (+75% YoY) reported Feb 25, 2026 — well above the <50% threshold. Sources: [CNBC](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html), [ServeTheHome](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/), [NVIDIA FY25 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025) for the $35.6B Q4 FY25 baseline. |
-| 2026-05-08 | [AV-002](/predictions/AV-002/) | Resolved INCORRECT | Q1 2026 calendar earnings cycle (April 29 – May 1, 2026) produced no moderation language from MSFT/GOOG/AMZN. All four hyperscalers raised or reiterated aggressive 2026 capex: Microsoft ~$190B for calendar 2026 (incl. ~$25B for higher component pricing); Alphabet raised range to $180–190B (from $175–185B); Amazon reiterated $200B; Meta raised to $125–145B (from $115–135B). Dominant exec language was supply-side ("compute constrained" — Pichai; "constrained at least through 2026" — Hood) and component-cost driven, not capex-rate moderation. Sources: [CNBC: Microsoft Q3 FY2026](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html), [The Register: $190B capex](https://www.theregister.com/2026/04/30/microsoft_q3_2026/), [CNBC: Alphabet Q1 2026](https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html), [Alphabet Q1 release](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm), [CNBC: Amazon Q1 2026](https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html), [Meta Q1 release](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx), [Fortune: Meta $145B](https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/). |
+| 2026-04-19 | [AV-001]({{ '/predictions/AV-001/' | relative_url }}) | Resolved INCORRECT | NVIDIA Q4 FY26 Data Center revenue $62.3B (+75% YoY) reported Feb 25, 2026 — well above the <50% threshold. Sources: [CNBC](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html), [ServeTheHome](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/), [NVIDIA FY25 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025) for the $35.6B Q4 FY25 baseline. |
+| 2026-05-08 | [AV-002]({{ '/predictions/AV-002/' | relative_url }}) | Resolved INCORRECT | Q1 2026 calendar earnings cycle (April 29 – May 1, 2026) produced no moderation language from MSFT/GOOG/AMZN. All four hyperscalers raised or reiterated aggressive 2026 capex: Microsoft ~$190B for calendar 2026 (incl. ~$25B for higher component pricing); Alphabet raised range to $180–190B (from $175–185B); Amazon reiterated $200B; Meta raised to $125–145B (from $115–135B). Dominant exec language was supply-side ("compute constrained" — Pichai; "constrained at least through 2026" — Hood) and component-cost driven, not capex-rate moderation. Sources: [CNBC: Microsoft Q3 FY2026](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html), [The Register: $190B capex](https://www.theregister.com/2026/04/30/microsoft_q3_2026/), [CNBC: Alphabet Q1 2026](https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html), [Alphabet Q1 release](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm), [CNBC: Amazon Q1 2026](https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html), [Meta Q1 release](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx), [Fortune: Meta $145B](https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/). |
 
 ---
 

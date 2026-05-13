@@ -3,8 +3,8 @@
 
 title: Market Accurate
 description: Open-source financial analysis optimized for accuracy, not attention.
-url: "" # Set to your domain when ready
-baseurl: "" # Leave empty if hosted at root
+url: "https://www.jkershaw.com"
+baseurl: "/market-accurate"
 
 # Build settings
 markdown: kramdown

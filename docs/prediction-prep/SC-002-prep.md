@@ -153,7 +153,7 @@ On July 1, 2026 (or first trading day after June 30):
 
 - [S&P Dow Jones Indices S&P 500 TR](https://www.spglobal.com/spdji/en/indices/equity/sp-500/)
 - [NASDAQ Semiconductor Index](https://www.nasdaq.com/market-activity/index/sox)
-- [Semiconductor Cycle Analysis](/analysis/semiconductor-cycle-2026-01.md)
+- [Semiconductor Cycle Analysis]({{ '/analysis/semiconductor-cycle-2026-01/' | relative_url }})
 
 ---
 

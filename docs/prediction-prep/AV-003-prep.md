@@ -166,7 +166,7 @@ On or before June 30, 2026:
 - [Open LLM Leaderboard](https://huggingface.co/spaces/open-llm-leaderboard/open_llm_leaderboard)
 - [Papers With Code MMLU](https://paperswithcode.com/sota/multi-task-language-understanding-on-mmlu)
 - [Artificial Analysis](https://artificialanalysis.ai/)
-- [Open-Source Benchmarks Analysis](/analysis/open-source-benchmarks-2026-01.md)
+- [Open-Source Benchmarks Analysis]({{ '/analysis/open-source-benchmarks-2026-01/' | relative_url }})
 
 ---
 
