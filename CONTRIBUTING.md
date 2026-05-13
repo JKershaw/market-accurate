@@ -98,14 +98,33 @@ analysis/{topic}-{YYYY-MM}.md
 [CC0 license notice, how to fork/improve]
 ```
 
-### 3. Add predictions to tracker
+### 3. Add predictions via the generator script
 
-Update `predictions/tracker.md` with new predictions.
+Each prediction lives in its own file at `_predictions/{ID}.md`, generated from `scripts/generate_prediction_pages.py`. **Never hand-edit the `_predictions/` files** — they're regenerated.
+
+To add a prediction:
+
+1. Open `scripts/generate_prediction_pages.py`
+2. Append a new `Prediction(...)` entry to the `PREDICTIONS` list with:
+   - `id` (e.g., `"XX-001"`)
+   - `short_title` (3–6 words)
+   - `headline` (one sentence, plain English, browseable)
+   - `why_matters` (one sentence explaining the stakes)
+   - `claim` (the exact published wording — immutable)
+   - `threshold` (specific pass/fail criteria)
+   - `base_rate` (the null hypothesis or historical base rate)
+   - `made`, `resolves` (YYYY-MM-DD)
+   - `analysis_file`, `analysis_title`
+   - `tags` (list)
+   - `probability` (ex-ante, as decimal)
+3. Run: `python3 scripts/generate_prediction_pages.py`
+4. The `_predictions/{ID}.md` files are regenerated; tracker tables auto-update on next Jekyll build
 
 ### 4. Commit with clear message
 
 ```bash
-git add analysis/{topic}-{YYYY-MM}.md predictions/tracker.md
+python3 scripts/generate_prediction_pages.py  # regenerate
+git add analysis/{topic}-{YYYY-MM}.md _predictions/ scripts/generate_prediction_pages.py
 git commit -m "Add: {Topic} Analysis - {brief description}"
 ```
 
@@ -120,23 +139,25 @@ When a prediction's verification date arrives:
 - Check primary sources (SEC filings, earnings reports, official data)
 - Document evidence with links
 
-### 2. Update tracker
+### 2. Update the generator script
 
-In `predictions/tracker.md`, move from Active to Resolved:
+In `scripts/generate_prediction_pages.py`, find the corresponding `Prediction(...)` entry and update:
 
-```markdown
-| ID | Prediction | Made | Resolved | Outcome | Correct? |
-|----|-----------|------|----------|---------|----------|
-| XX-001 | [prediction text] | 2026-01-03 | 2026-06-15 | [what happened] | Yes/No |
-```
+- `status="Resolved"`
+- `verdict="CORRECT"` or `verdict="INCORRECT"`
+- `resolved_date="YYYY-MM-DD"`
+- `resolution_one_liner="..."` (one-sentence summary of what happened)
+- `primary_source="[Title](URL)"` (one citation; the deeper resolution narrative goes in `predictions/tracker.md` Resolution Log)
 
-### 3. Update statistics
+Then run: `python3 scripts/generate_prediction_pages.py`
 
-Recalculate accuracy percentage.
+### 3. Append to Resolution Log
+
+`predictions/tracker.md` has a hand-maintained "Resolution Log" table at the bottom — that's where the detailed prose, multiple citations, and any data-discipline notes go. Append a new row.
 
 ### 4. Update analysis document
 
-Add outcome to the Track Record section of the original analysis.
+Add outcome to the Track Record section of the original analysis, and add a Changelog entry.
 
 ### 5. Commit
 
@@ -215,7 +236,7 @@ Before committing new analysis:
 - [ ] Confidence levels are stated
 - [ ] Limitations are acknowledged
 - [ ] Disclaimer is present
-- [ ] Added to predictions/tracker.md
+- [ ] Added to `scripts/generate_prediction_pages.py` and regenerated `_predictions/`
 
 ---
 

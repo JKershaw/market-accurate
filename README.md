@@ -1,14 +1,17 @@
 # Market Accurate
 
-Open-source financial analysis optimized for accuracy, not attention.
+**Falsifiable predictions about markets, policy, and technology — with a public track record.**
+
+Open-source, CC0, replication encouraged.
 
 ---
 
 > **Status: Experimental (v0.1)**
 >
-> This project is unproven. Track record is empty. Methodology is untested at scale.
-> The thesis may be wrong. Treat all analysis as one perspective among many, not as
-> established fact or financial advice.
+> This project is unproven. The methodology is untested at scale, and the first
+> resolved predictions are INCORRECT — see the [tracker](predictions/tracker.md)
+> for the live record. The thesis may be wrong. Treat all analysis as one
+> perspective among many, not as established fact or financial advice.
 
 ---
 
@@ -27,70 +30,30 @@ Market Accurate is an experiment in **distributed, accuracy-competitive informat
 
 ---
 
-## Current Analysis
+## Analyses
 
-### [AI Valuation Analysis (January 2026)](analysis/ai-valuation-2026-01.md)
+Each analysis is published with a falsifiable thesis, cited primary sources, pre-registered time-bound predictions, and a "what would prove this wrong" section. Original predictions are never modified; updates appear in changelogs.
 
-**Thesis:** AI infrastructure valuations embed assumptions about persistent compute scarcity that efficiency gains are actively eroding.
-
-**Key findings:**
-- Inference costs fell **280x** from Nov 2022 to Oct 2024
-- Parameter efficiency improved **20x** (Llama 3 8B matches GPT-3 175B)
-- Open-source closed **98%** of the frontier gap
-- **$800B gap** between required AI revenue and projections
-- **74%** of enterprises struggle to scale AI value
-
-**Assessment:** 20-40% correction in AI infrastructure valuations likely within 18-36 months.
-
-[Read full analysis →](analysis/ai-valuation-2026-01.md)
-
-### [Hyperscaler Capex Tracker (January 2026)](analysis/hyperscaler-capex-2026-01.md)
-
-**Focus:** Quarterly tracking of AI infrastructure spending by Microsoft, Google, Amazon, and Meta.
-
-**Key metrics:**
-- Combined 2025 capex: **$380-400B** (up ~60% YoY)
-- 2026 projected: **~$600B** (up ~36% YoY)
-- Q3 2025 record: **$106-113B** single quarter
-- Capex intensity: **23.3%** of revenue (vs 13.9% historical median)
-
-[Read full tracker →](analysis/hyperscaler-capex-2026-01.md)
-
-### [Open-Source Benchmark Tracking (January 2026)](analysis/open-source-benchmarks-2026-01.md)
-
-**Focus:** Tracking performance gap between proprietary and open-weights AI models.
-
-**Key metrics:**
-- MMLU gap to frontier: **-2.1 points** (open-source leads)
-- Frontier capability lag: **12-18 months** and shrinking
-- DeepSeek-R1 matched GPT-4 at **~5% of training cost**
-- Consumer GPU viable: **8B-70B parameter** models
-
-[Read full tracker →](analysis/open-source-benchmarks-2026-01.md)
-
-### [Enterprise AI Adoption Metrics (January 2026)](analysis/enterprise-ai-adoption-2026-01.md)
-
-**Focus:** Aggregating enterprise AI adoption surveys to track value realization.
-
-**Key metrics:**
-- Enterprise adoption rate: **88%**
-- AI initiatives delivering expected ROI: **25%**
-- Companies achieving measurable EBIT impact: **6%**
-- AI projects that fail: **70-85%**
-
-[Read full analysis →](analysis/enterprise-ai-adoption-2026-01.md)
+| Analysis | Published | Thesis (one line) |
+|----------|-----------|-------------------|
+| [AI Valuation](analysis/ai-valuation-2026-01.md) | Jan 2026 | Efficiency gains are eroding compute scarcity premiums in AI infrastructure valuations |
+| [Hyperscaler Capex Tracker](analysis/hyperscaler-capex-2026-01.md) | Jan 2026 | Quarterly tracking of Big-4 AI infrastructure spend and forward guidance |
+| [Semiconductor Cycle](analysis/semiconductor-cycle-2026-01.md) | Jan 2026 | AI-concentrated upcycle, correction likely 2027 but shallower than historical norms |
+| [Open-Source Benchmarks](analysis/open-source-benchmarks-2026-01.md) | Jan 2026 | Open-weights closing the frontier gap faster than priced in |
+| [Enterprise AI Adoption](analysis/enterprise-ai-adoption-2026-01.md) | Jan 2026 | Adoption-value gap: 88% adoption, 6% measurable EBIT impact |
+| [Energy & Climate](analysis/energy-climate-2026-01.md) | Jan 2026 | Clean-energy efficiency gains are already priced rationally, unlike AI |
+| [Biotech Development](analysis/biotech-development-2026-01.md) | Jan 2026 | AI may inflect Eroom's Law, but thesis speculative until first AI-discovered FDA approval |
+| [Commercial Real Estate](analysis/commercial-real-estate-2026-01.md) | Jan 2026 | Hybrid work is structural; office market has bottomed, with Class A vs B/C bifurcation |
+| [Labor Market & AI](analysis/labor-market-ai-2026-04.md) | Apr 2026 | AI labor disruption is concentrated, not aggregate |
+| [Digital Assets Cycle](analysis/digital-assets-2026-04.md) | Apr 2026 | Four-year crypto cycle intact in phase, dampened in amplitude post-ETF |
+| [Consumer Spending](analysis/consumer-spending-2026-05.md) | May 2026 | K-shape consumer pattern is structural, not cyclical |
+| [Private Credit & BDC](analysis/private-credit-2026-05.md) | May 2026 | Mark-to-model NAV smoothing breaks down once redemption gates are tested |
 
 ---
 
 ## Track Record
 
-| Predictions Made | Resolved | Correct | Accuracy |
-|-----------------|----------|---------|----------|
-| 21 | 0 | - | - |
-
-[View detailed tracker →](predictions/tracker.md)
-
-*Track record will populate as predictions resolve.*
+See [`predictions/tracker.md`](predictions/tracker.md) for the canonical, live record of all predictions, resolutions, accuracy, and Brier score. The tracker is the **single source of truth** — this README intentionally does not duplicate counts that go stale between sessions.
 
 ---
 
@@ -214,17 +177,19 @@ market-accurate/
 ├── CLAUDE.md                 # Project memory for AI agents
 ├── CONTRIBUTING.md           # How to contribute
 ├── methodology.md            # How we produce analysis
-├── analysis/
-│   ├── ai-valuation-2026-01.md           # AI efficiency thesis
-│   ├── hyperscaler-capex-2026-01.md      # Capex tracking
-│   ├── semiconductor-cycle-2026-01.md    # Silicon cycle analysis
-│   ├── open-source-benchmarks-2026-01.md # Open-source model tracking
-│   └── enterprise-ai-adoption-2026-01.md # Enterprise adoption metrics
+├── analysis/                 # One file per analysis; see README's Analyses table for the full list
+├── _predictions/             # One file per prediction (Jekyll collection). Single source of truth.
 ├── predictions/
-│   └── tracker.md            # Prediction outcomes
+│   └── tracker.md            # Auto-generated index of _predictions/ with counts, resolutions, statistics
+├── scripts/
+│   └── generate_prediction_pages.py  # Regenerates _predictions/ from a structured Python data source
 ├── docs/
-│   ├── agent-infrastructure.md  # Agent system documentation
-│   └── prediction-calendar.md   # Upcoming resolution dates
+│   ├── agent-infrastructure.md   # Agent system documentation
+│   ├── analyst-comparison.md     # Market Accurate vs Wall Street consensus
+│   ├── pre-registration.md       # Pre-registration framework
+│   ├── prediction-calendar.md    # Upcoming resolution dates
+│   └── prediction-prep/          # Per-prediction resolution prep docs
+├── scripts/                  # Data pipelines for reproducible metric snapshots
 └── .claude/
     ├── orchestrator.md       # Full orchestration protocol
     ├── bootstrap.md          # Session initialization

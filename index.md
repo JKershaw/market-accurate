@@ -5,121 +5,83 @@ title: Market Accurate
 
 # Market Accurate
 
-**Open-source financial analysis optimized for accuracy, not attention.**
+**Falsifiable predictions about markets, policy, and technology — with a public track record.**
+
+The thesis: as AI systems mediate information access, sources demonstrating accuracy get preferentially selected, creating evolutionary pressure toward truth.
+
+---
+
+## Open Predictions Resolving Next
+
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign upcoming = site.predictions | where: "status", "Pending" | sort: "resolves" %}
+
+The next predictions on the table. Click any ID for the full headline, threshold, and base rate.
+
+| ID | Headline | Resolves | Probability |
+|----|----------|----------|-------------|
+{% for p in upcoming limit: 8 -%}
+| 🟡 [{{ p.id }}]({{ p.url }}) | {{ p.short_title }} | {{ p.resolves }} | {% if p.probability %}{{ p.probability }}{% else %}—{% endif %} |
+{% endfor %}
+
+[See all {{ upcoming.size }} open predictions →](/predictions/)
+
+---
+
+## Recently Resolved
+
+{% assign resolved = site.predictions | where: "status", "Resolved" | sort: "resolved_date" | reverse %}
+
+{% if resolved.size > 0 %}
+| ID | Verdict | Resolved | One-line summary |
+|----|---------|----------|------------------|
+{% for p in resolved limit: 5 -%}
+| [{{ p.id }}]({{ p.url }}) | {% if p.verdict == "CORRECT" %}✅ **CORRECT**{% else %}❌ **INCORRECT**{% endif %} | {{ p.resolved_date }} | {{ p.short_title }} |
+{% endfor %}
+
+{% else %}
+*No predictions resolved yet.*
+{% endif %}
+
+[See full track record →](/predictions/)
 
 ---
 
 ## Track Record
 
-The thesis: as AI systems mediate information access, sources demonstrating accuracy get preferentially selected. This creates evolutionary pressure toward truth.
+{% assign total = site.predictions | size %}
+{% assign resolved_count = resolved | size %}
+{% assign correct = resolved | where: "verdict", "CORRECT" | size %}
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | **21** |
-| Resolved | 0 |
-| Correct | 0 |
-| Incorrect | 0 |
-| Accuracy | *Pending* |
+| Predictions made | {{ total }} |
+| Resolved | {{ resolved_count }} |
+| Correct | {{ correct }} |
+| Accuracy | {% if resolved_count > 0 %}{{ correct | times: 100.0 | divided_by: resolved_count | round: 0 }}% (n={{ resolved_count }}){% else %}*N/A*{% endif %} |
 
-**Status:** Experimental (v0.1). Track record empty. First predictions resolve February 2026.
-
----
-
-## Upcoming Predictions
-
-Predictions resolving in the next 6 months:
-
-| Date | ID | Prediction | Analysis |
-|------|-----|------------|----------|
-| Feb 2026 | AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | [AI Valuation](/analysis/ai-valuation-2026-01/) |
-| May 2026 | AV-002 | Hyperscaler uses moderating capex language in Q1 earnings | [Hyperscaler Capex](/analysis/hyperscaler-capex-2026-01/) |
-| Jun 30, 2026 | AV-003 | Open-weights model matches GPT-4 on consumer GPU | [AI Valuation](/analysis/ai-valuation-2026-01/) |
-| Jun 30, 2026 | EA-001 | Enterprise AI spending forecast <25% for 2027 | [Enterprise AI](/analysis/enterprise-ai-adoption-2026-01/) |
-| Jul 1, 2026 | SC-002 | SOX underperforms S&P 500 in H1 2026 | [Semiconductor Cycle](/analysis/semiconductor-cycle-2026-01/) |
-
-[View all 21 predictions →](/predictions/)
+Sample is small. Both resolved predictions came from the same source thesis (AI infrastructure efficiency); both missed because supply-side constraint, not demand destruction, is the binding mechanism in 2026. The full record — including the prep documents written before resolution and the resolution evidence — lives in the [tracker](/predictions/).
 
 ---
 
-## Current Analyses
+## Analyses
 
-### AI Valuation Analysis
-*January 2026*
+Each analysis is published with a falsifiable thesis, cited primary sources, pre-registered time-bound predictions, and a "what would prove this wrong" section. Original predictions are never modified; updates appear in changelogs.
 
-**Thesis:** Efficiency gains are eroding compute scarcity assumptions embedded in AI infrastructure valuations.
-
-- Inference costs fell **280x** from November 2022 to October 2024
-- Parameter efficiency improved **20x** (Llama 3 8B matches GPT-3 175B)
-- Open-source closed **98%** of the frontier gap
-- DeepSeek matched GPT-4 at ~5% training cost
-
-**Assessment:** 20-40% compression likely, not dot-com collapse (major players are profitable).
-
-[Read full analysis →](/analysis/ai-valuation-2026-01/)
-
----
-
-### Hyperscaler Capex Tracker
-*January 2026*
-
-**Key Finding:** $380-400B combined 2025 capex, ~$600B projected for 2026.
-
-| Company | 2025 Capex | YoY Change |
-|---------|-----------|------------|
-| Amazon | $125B | +62% |
-| Microsoft | $88.7B | +99% |
-| Google | $91-93B | +75% |
-| Meta | $70-72B | +90% |
-
-**ROI Gap:** AI services generating ~$25B revenue vs ~$300B+ infrastructure spend.
-
-[Read full analysis →](/analysis/hyperscaler-capex-2026-01/)
-
----
-
-### Semiconductor Cycle Analysis
-*January 2026*
-
-**Thesis:** Current cycle is AI-concentrated, not broad-based. Correction likely in late 2026/2027.
-
-- SOX P/E at ~41x (historical median: 20-25x)
-- AI-concentrated: <0.2% of wafer starts, ~20% of revenue
-- Automotive, industrial, consumer segments remain weak
-
-**Assessment:** 20-30% correction likely, shallower than historical norms due to AI demand floor.
-
-[Read full analysis →](/analysis/semiconductor-cycle-2026-01/)
-
----
-
-### Open-Source Benchmark Tracking
-*January 2026*
-
-**Thesis:** Open-source models are achieving frontier parity faster than anticipated, eroding AI moats.
-
-- MMLU gap to frontier: **-2.1 points** (open-source leads)
-- DeepSeek-R1 matched GPT-4 at **~5% training cost**
-- Consumer GPU viable: **8B-70B parameter** models on RTX 4090
-
-**Assessment:** Supports efficiency thesis—capability no longer requires frontier infrastructure.
-
-[Read full analysis →](/analysis/open-source-benchmarks-2026-01/)
-
----
-
-### Enterprise AI Adoption Metrics
-*January 2026*
-
-**Thesis:** Adoption-value gap threatens enterprise AI spending growth.
-
-- Enterprise adoption rate: **88%**
-- AI initiatives delivering expected ROI: **25%**
-- AI projects that fail: **70-85%**
-- Companies with measurable EBIT impact: **6%**
-
-**Assessment:** ROI pressure may constrain spending growth faster than projected.
-
-[Read full analysis →](/analysis/enterprise-ai-adoption-2026-01/)
+| Analysis | Published | Thesis (one line) |
+|----------|-----------|-------------------|
+| [AI Valuation](/analysis/ai-valuation-2026-01/) | Jan 2026 | Efficiency gains are eroding compute scarcity premiums in AI infrastructure valuations |
+| [Hyperscaler Capex Tracker](/analysis/hyperscaler-capex-2026-01/) | Jan 2026 | Quarterly tracking of Big-4 AI infrastructure spend and forward guidance |
+| [Semiconductor Cycle](/analysis/semiconductor-cycle-2026-01/) | Jan 2026 | AI-concentrated upcycle; correction likely 2027, shallower than historical norms |
+| [Open-Source Benchmarks](/analysis/open-source-benchmarks-2026-01/) | Jan 2026 | Open-weights closing the frontier gap faster than priced in |
+| [Enterprise AI Adoption](/analysis/enterprise-ai-adoption-2026-01/) | Jan 2026 | 88% adoption vs. 6% measurable EBIT impact: the adoption-value gap |
+| [Energy & Climate](/analysis/energy-climate-2026-01/) | Jan 2026 | Clean-energy efficiency gains already priced rationally, unlike AI |
+| [Biotech Development](/analysis/biotech-development-2026-01/) | Jan 2026 | AI may inflect Eroom's Law, but thesis speculative until first AI-discovered FDA approval |
+| [Commercial Real Estate](/analysis/commercial-real-estate-2026-01/) | Jan 2026 | Hybrid work is structural; office market has bottomed, with Class A vs B/C bifurcation |
+| [Labor Market & AI](/analysis/labor-market-ai-2026-04/) | Apr 2026 | AI labor disruption is concentrated, not aggregate |
+| [Digital Assets Cycle](/analysis/digital-assets-2026-04/) | Apr 2026 | Four-year crypto cycle intact in phase, dampened in amplitude post-ETF |
+| [Consumer Spending](/analysis/consumer-spending-2026-05/) | May 2026 | K-shape consumer pattern is structural, not cyclical |
+| [Private Credit & BDC](/analysis/private-credit-2026-05/) | May 2026 | Mark-to-model NAV smoothing breaks down once redemption gates are tested |
 
 ---
 
@@ -127,9 +89,9 @@ Predictions resolving in the next 6 months:
 
 All predictions are timestamped in git history. Anyone can verify:
 
-1. **Original prediction date:** Check git commit history
-2. **Prediction wording:** Never modified after publication
-3. **Outcome evidence:** Linked to primary sources when resolved
+1. **Original prediction date** — check git commit history
+2. **Prediction wording** — never modified after publication
+3. **Outcome evidence** — linked to primary sources when resolved
 
 [View on GitHub](https://github.com/JKershaw/market-accurate)
 
@@ -143,8 +105,10 @@ All predictions are timestamped in git history. Anyone can verify:
 | Primary sources | SEC filings, earnings transcripts, academic papers |
 | Confidence levels | High/Moderate/Low/Speculative stated explicitly |
 | Track record transparency | Wrong predictions get same prominence as correct |
+| Pre-registration | Thresholds and probabilities fixed at publication |
+| Single source of truth | Every prediction is one file in `_predictions/`; tracker auto-generates |
 
-[Read methodology →](/methodology/)
+[Read full methodology →](/methodology/) · [Pre-registration framework →](https://github.com/JKershaw/market-accurate/blob/main/docs/pre-registration.md)
 
 ---
 
@@ -153,7 +117,3 @@ All predictions are timestamped in git history. Anyone can verify:
 **CC0 Public Domain.** Replication encouraged.
 
 Fork this, improve it, build your own track record. Better analysis should win.
-
----
-
-*Updated: January 3, 2026*
