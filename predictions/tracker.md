@@ -39,6 +39,36 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 
 ---
 
+## Filter
+
+<div class="tracker-filter" id="tracker-filter">
+  <label class="tracker-filter-field">
+    <span>Search</span>
+    <input type="search" id="tracker-q" placeholder="ID, keyword…" autocomplete="off">
+  </label>
+  <label class="tracker-filter-field">
+    <span>Status</span>
+    <select id="tracker-status">
+      <option value="">All</option>
+      <option value="pending">Pending</option>
+      <option value="correct">Resolved correct</option>
+      <option value="incorrect">Resolved incorrect</option>
+    </select>
+  </label>
+  <label class="tracker-filter-field">
+    <span>Analysis</span>
+    <select id="tracker-analysis"><option value="">All analyses</option></select>
+  </label>
+  <label class="tracker-filter-field">
+    <span>Year</span>
+    <select id="tracker-year"><option value="">Any year</option></select>
+  </label>
+  <button type="button" id="tracker-reset" class="tracker-filter-reset">Reset</button>
+  <p class="tracker-filter-count" id="tracker-count" aria-live="polite"></p>
+</div>
+
+---
+
 ## Active Predictions
 
 🟡 = Pending · ✅ = Resolved CORRECT · ❌ = Resolved INCORRECT
@@ -47,15 +77,22 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 {% for analysis in analyses %}
 {% assign group = site.predictions | where: "analysis_title", analysis | where: "status", "Pending" | sort: "resolves" %}
 {% if group.size > 0 %}
-
-### {{ analysis }}
-
-| ID | Headline | Resolves | Probability |
-|----|----------|----------|-------------|
-{% for p in group -%}
-| 🟡 [{{ p.id }}]({{ p.url | relative_url }}) | {{ p.short_title }} | {{ p.resolves }} | {% if p.probability %}{{ p.probability }}{% else %}—{% endif %} |
-{% endfor %}
-
+<section class="tracker-section" data-analysis="{{ analysis | escape }}">
+<h3>{{ analysis }}</h3>
+<table class="tracker-table">
+  <thead><tr><th>ID</th><th>Headline</th><th>Resolves</th><th>Probability</th></tr></thead>
+  <tbody>
+  {% for p in group %}
+    <tr data-status="pending" data-analysis="{{ analysis | escape }}" data-year="{{ p.resolves | slice: 0, 4 }}" data-id="{{ p.id }}">
+      <td>🟡 <a href="{{ p.url | relative_url }}">{{ p.id }}</a></td>
+      <td>{{ p.short_title | escape }}</td>
+      <td>{{ p.resolves }}</td>
+      <td>{% if p.probability %}{{ p.probability }}{% else %}<span class="muted">—</span>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</section>
 {% endif %}
 {% endfor %}
 
@@ -65,12 +102,22 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 
 {% assign resolved_sorted = site.predictions | where: "status", "Resolved" | sort: "resolved_date" %}
 {% if resolved_sorted.size > 0 %}
-
-| ID | Prediction | Made | Resolved | Verdict |
-|----|-----------|------|----------|---------|
-{% for p in resolved_sorted -%}
-| {% if p.verdict == "CORRECT" %}✅{% else %}❌{% endif %} [{{ p.id }}]({{ p.url | relative_url }}) | {{ p.short_title }} | {{ p.made }} | {{ p.resolved_date }} | **{{ p.verdict }}** |
-{% endfor %}
+<section class="tracker-section" data-section="resolved">
+<table class="tracker-table">
+  <thead><tr><th>ID</th><th>Prediction</th><th>Made</th><th>Resolved</th><th>Verdict</th></tr></thead>
+  <tbody>
+  {% for p in resolved_sorted %}
+    <tr data-status="{{ p.verdict | downcase }}" data-analysis="{{ p.analysis_title | escape }}" data-year="{{ p.resolved_date | slice: 0, 4 }}" data-id="{{ p.id }}" class="verdict-{{ p.verdict | downcase }}">
+      <td>{% if p.verdict == "CORRECT" %}✅{% else %}❌{% endif %} <a href="{{ p.url | relative_url }}">{{ p.id }}</a></td>
+      <td>{{ p.short_title | escape }}</td>
+      <td>{{ p.made }}</td>
+      <td>{{ p.resolved_date }}</td>
+      <td><strong>{{ p.verdict }}</strong></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</section>
 
 {% else %}
 

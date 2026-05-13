@@ -236,6 +236,120 @@ hr {
 ul, ol { padding-left: 1.5rem; }
 li { margin: 0.25rem 0; }
 
+/* ---------- Tracker filter ---------- */
+
+.tracker-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.75rem 1rem;
+  margin: 1rem 0 0;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.tracker-filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  flex: 1 1 8rem;
+  min-width: 7rem;
+}
+
+.tracker-filter-field input,
+.tracker-filter-field select {
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  padding: 0.4rem 0.5rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  background: var(--bg-primary);
+}
+
+.tracker-filter-field input:focus,
+.tracker-filter-field select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+  border-color: var(--accent);
+}
+
+.tracker-filter-reset {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--border-strong);
+  border-radius: 4px;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  cursor: pointer;
+  align-self: end;
+  height: 2.1rem;
+}
+
+.tracker-filter-reset:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.tracker-filter-count {
+  flex: 1 0 100%;
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.tracker-section {
+  margin: 1.5rem 0;
+}
+
+.tracker-section h3 {
+  margin-top: 1.25rem;
+}
+
+.tracker-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.tracker-table th,
+.tracker-table td {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border-color);
+  vertical-align: top;
+}
+
+.tracker-table th {
+  background: var(--bg-secondary);
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.tracker-table tbody tr:nth-child(even) {
+  background: var(--bg-secondary);
+}
+
+.tracker-table tbody tr.verdict-correct,
+.tracker-table tbody tr.verdict-correct:nth-child(even) {
+  background: var(--correct-bg);
+}
+
+.tracker-table tbody tr.verdict-incorrect,
+.tracker-table tbody tr.verdict-incorrect:nth-child(even) {
+  background: var(--incorrect-bg);
+}
+
+.muted {
+  color: var(--text-muted);
+}
+
 /* ---------- Analysis layout ---------- */
 
 .analysis-back {

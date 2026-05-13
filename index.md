@@ -18,10 +18,10 @@ The thesis: as AI systems mediate information access, sources demonstrating accu
 
 The next predictions on the table. Click any ID for the full headline, threshold, and base rate.
 
-| ID | Headline | Resolves | Probability |
-|----|----------|----------|-------------|
+| ID | Headline | Resolves |
+|----|----------|----------|
 {% for p in upcoming limit: 8 -%}
-| 🟡 [{{ p.id }}]({{ p.url | relative_url }}) | {{ p.short_title }} | {{ p.resolves }} | {% if p.probability %}{{ p.probability }}{% else %}—{% endif %} |
+| 🟡 [{{ p.id }}]({{ p.url | relative_url }}) | {{ p.short_title }} | {{ p.resolves }} |
 {% endfor %}
 
 [See all {{ upcoming.size }} open predictions →]({{ '/predictions/' | relative_url }})
