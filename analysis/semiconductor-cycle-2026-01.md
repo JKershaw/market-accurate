@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: analysis
 title: Semiconductor Cycle Analysis
+published: 2026-01-03
 permalink: /analysis/semiconductor-cycle-2026-01/
 ---
 

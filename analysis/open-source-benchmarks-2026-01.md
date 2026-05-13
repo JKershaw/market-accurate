@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Open-Source Benchmarks Analysis
+published: 2026-01-03
+permalink: /analysis/open-source-benchmarks-2026-01/
+---
+
 # MARKET ACCURATE
 ## Open-Source Model Benchmark Tracking
 ### January 3, 2026

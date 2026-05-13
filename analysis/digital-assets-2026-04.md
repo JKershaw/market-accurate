@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Digital Assets Cycle Analysis
+published: 2026-04-18
+permalink: /analysis/digital-assets-2026-04/
+---
+
 # MARKET ACCURATE
 ## Digital Assets Cycle Analysis
 ### April 18, 2026

@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Consumer Spending & Retail Cycle Analysis
+published: 2026-05-08
+permalink: /analysis/consumer-spending-2026-05/
+---
+
 # MARKET ACCURATE
 ## Consumer Spending & Retail Cycle Analysis
 ### May 8, 2026

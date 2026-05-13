@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Commercial Real Estate Analysis
+published: 2026-01-03
+permalink: /analysis/commercial-real-estate-2026-01/
+---
+
 # MARKET ACCURATE
 ## Commercial Real Estate: Remote Work Impact Analysis
 ### January 3, 2026

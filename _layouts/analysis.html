@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="analysis">
+  <p class="analysis-back"><a href="{{ '/analysis/' | relative_url }}">← All analyses</a></p>
+
+  {% if page.published %}
+  <p class="analysis-meta">Published {{ page.published | date: "%B %-d, %Y" }}</p>
+  {% endif %}
+
+  <details class="analysis-toc" open>
+    <summary>Contents</summary>
+    <nav aria-label="On this page" id="analysis-toc-nav"></nav>
+  </details>
+
+  <div class="analysis-body">
+    {{ content }}
+  </div>
+</article>
+
+<script src="{{ '/assets/js/analysis-toc.js' | relative_url }}" defer></script>

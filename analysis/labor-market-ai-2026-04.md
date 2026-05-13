@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Labor Market & AI Impact Analysis
+published: 2026-04-18
+permalink: /analysis/labor-market-ai-2026-04/
+---
+
 # MARKET ACCURATE
 ## Labor Market & AI Impact Analysis
 ### April 18, 2026
