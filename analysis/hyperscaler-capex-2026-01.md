@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: analysis
 title: Hyperscaler Capex Tracker
+published: 2026-01-03
 permalink: /analysis/hyperscaler-capex-2026-01/
 ---
 

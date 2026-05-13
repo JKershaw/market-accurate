@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Labor Market & AI Impact Analysis
+published: 2026-04-18
+permalink: /analysis/labor-market-ai-2026-04/
+---
+
 # MARKET ACCURATE
 ## Labor Market & AI Impact Analysis
 ### April 18, 2026
@@ -270,7 +277,7 @@ Labor displacement would affect office demand. Stable employment in knowledge-wo
 - [Goldman Sachs 2023 AI Labor Report](https://www.gspublishing.com/content/research/en/reports/2023/03/27/d64e052b-0f6e-45d7-967b-d7be35fabd16.html)
 - [McKinsey Generative AI and the Future of Work](https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america)
 - [IMF Gen-AI: Artificial Intelligence and the Future of Work](https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379)
-- [Enterprise AI Adoption Analysis](/analysis/enterprise-ai-adoption-2026-01.md)
+- [Enterprise AI Adoption Analysis]({{ '/analysis/enterprise-ai-adoption-2026-01/' | relative_url }})
 
 ---
 

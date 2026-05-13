@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Energy & Climate Analysis
+published: 2026-01-03
+permalink: /analysis/energy-climate-2026-01/
+---
+
 # MARKET ACCURATE
 ## Energy & Climate: The Efficiency Thesis Comparison
 ### January 3, 2026

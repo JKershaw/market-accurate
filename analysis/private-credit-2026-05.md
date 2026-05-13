@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Private Credit & BDC Sector Analysis
+published: 2026-05-08
+permalink: /analysis/private-credit-2026-05/
+---
+
 # MARKET ACCURATE
 ## Private Credit & BDC Sector Analysis
 ### May 8, 2026

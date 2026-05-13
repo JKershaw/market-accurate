@@ -39,6 +39,36 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 
 ---
 
+## Filter
+
+<div class="tracker-filter" id="tracker-filter">
+  <label class="tracker-filter-field">
+    <span>Search</span>
+    <input type="search" id="tracker-q" placeholder="ID, keyword…" autocomplete="off">
+  </label>
+  <label class="tracker-filter-field">
+    <span>Status</span>
+    <select id="tracker-status">
+      <option value="">All</option>
+      <option value="pending">Pending</option>
+      <option value="correct">Resolved correct</option>
+      <option value="incorrect">Resolved incorrect</option>
+    </select>
+  </label>
+  <label class="tracker-filter-field">
+    <span>Analysis</span>
+    <select id="tracker-analysis"><option value="">All analyses</option></select>
+  </label>
+  <label class="tracker-filter-field">
+    <span>Year</span>
+    <select id="tracker-year"><option value="">Any year</option></select>
+  </label>
+  <button type="button" id="tracker-reset" class="tracker-filter-reset">Reset</button>
+  <p class="tracker-filter-count" id="tracker-count" aria-live="polite"></p>
+</div>
+
+---
+
 ## Active Predictions
 
 🟡 = Pending · ✅ = Resolved CORRECT · ❌ = Resolved INCORRECT
@@ -47,15 +77,22 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 {% for analysis in analyses %}
 {% assign group = site.predictions | where: "analysis_title", analysis | where: "status", "Pending" | sort: "resolves" %}
 {% if group.size > 0 %}
-
-### {{ analysis }}
-
-| ID | Headline | Resolves | Probability |
-|----|----------|----------|-------------|
-{% for p in group -%}
-| 🟡 [{{ p.id }}]({{ p.url }}) | {{ p.short_title }} | {{ p.resolves }} | {% if p.probability %}{{ p.probability }}{% else %}—{% endif %} |
-{% endfor %}
-
+<section class="tracker-section" data-analysis="{{ analysis | escape }}">
+<h3>{{ analysis }}</h3>
+<table class="tracker-table">
+  <thead><tr><th>ID</th><th>Headline</th><th>Resolves</th><th>Probability</th></tr></thead>
+  <tbody>
+  {% for p in group %}
+    <tr data-status="pending" data-analysis="{{ analysis | escape }}" data-year="{{ p.resolves | slice: 0, 4 }}" data-id="{{ p.id }}">
+      <td>🟡 <a href="{{ p.url | relative_url }}">{{ p.id }}</a></td>
+      <td>{{ p.short_title | escape }}</td>
+      <td>{{ p.resolves }}</td>
+      <td>{% if p.probability %}{{ p.probability }}{% else %}<span class="muted">—</span>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</section>
 {% endif %}
 {% endfor %}
 
@@ -65,12 +102,22 @@ To add a prediction or record a resolution, edit `scripts/generate_prediction_pa
 
 {% assign resolved_sorted = site.predictions | where: "status", "Resolved" | sort: "resolved_date" %}
 {% if resolved_sorted.size > 0 %}
-
-| ID | Prediction | Made | Resolved | Verdict |
-|----|-----------|------|----------|---------|
-{% for p in resolved_sorted -%}
-| {% if p.verdict == "CORRECT" %}✅{% else %}❌{% endif %} [{{ p.id }}]({{ p.url }}) | {{ p.short_title }} | {{ p.made }} | {{ p.resolved_date }} | **{{ p.verdict }}** |
-{% endfor %}
+<section class="tracker-section" data-section="resolved">
+<table class="tracker-table">
+  <thead><tr><th>ID</th><th>Prediction</th><th>Made</th><th>Resolved</th><th>Verdict</th></tr></thead>
+  <tbody>
+  {% for p in resolved_sorted %}
+    <tr data-status="{{ p.verdict | downcase }}" data-analysis="{{ p.analysis_title | escape }}" data-year="{{ p.resolved_date | slice: 0, 4 }}" data-id="{{ p.id }}" class="verdict-{{ p.verdict | downcase }}">
+      <td>{% if p.verdict == "CORRECT" %}✅{% else %}❌{% endif %} <a href="{{ p.url | relative_url }}">{{ p.id }}</a></td>
+      <td>{{ p.short_title | escape }}</td>
+      <td>{{ p.made }}</td>
+      <td>{{ p.resolved_date }}</td>
+      <td><strong>{{ p.verdict }}</strong></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</section>
 
 {% else %}
 
@@ -135,8 +182,8 @@ Detailed evidence and reasoning for each resolution. Predictions move from Pendi
 
 | Date | ID | Action | Evidence |
 |------|----|--------|----------|
-| 2026-04-19 | [AV-001](/predictions/AV-001/) | Resolved INCORRECT | NVIDIA Q4 FY26 Data Center revenue $62.3B (+75% YoY) reported Feb 25, 2026 — well above the <50% threshold. Sources: [CNBC](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html), [ServeTheHome](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/), [NVIDIA FY25 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025) for the $35.6B Q4 FY25 baseline. |
-| 2026-05-08 | [AV-002](/predictions/AV-002/) | Resolved INCORRECT | Q1 2026 calendar earnings cycle (April 29 – May 1, 2026) produced no moderation language from MSFT/GOOG/AMZN. All four hyperscalers raised or reiterated aggressive 2026 capex: Microsoft ~$190B for calendar 2026 (incl. ~$25B for higher component pricing); Alphabet raised range to $180–190B (from $175–185B); Amazon reiterated $200B; Meta raised to $125–145B (from $115–135B). Dominant exec language was supply-side ("compute constrained" — Pichai; "constrained at least through 2026" — Hood) and component-cost driven, not capex-rate moderation. Sources: [CNBC: Microsoft Q3 FY2026](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html), [The Register: $190B capex](https://www.theregister.com/2026/04/30/microsoft_q3_2026/), [CNBC: Alphabet Q1 2026](https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html), [Alphabet Q1 release](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm), [CNBC: Amazon Q1 2026](https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html), [Meta Q1 release](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx), [Fortune: Meta $145B](https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/). |
+| 2026-04-19 | [AV-001]({{ '/predictions/AV-001/' | relative_url }}) | Resolved INCORRECT | NVIDIA Q4 FY26 Data Center revenue $62.3B (+75% YoY) reported Feb 25, 2026 — well above the <50% threshold. Sources: [CNBC](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html), [ServeTheHome](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/), [NVIDIA FY25 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025) for the $35.6B Q4 FY25 baseline. |
+| 2026-05-08 | [AV-002]({{ '/predictions/AV-002/' | relative_url }}) | Resolved INCORRECT | Q1 2026 calendar earnings cycle (April 29 – May 1, 2026) produced no moderation language from MSFT/GOOG/AMZN. All four hyperscalers raised or reiterated aggressive 2026 capex: Microsoft ~$190B for calendar 2026 (incl. ~$25B for higher component pricing); Alphabet raised range to $180–190B (from $175–185B); Amazon reiterated $200B; Meta raised to $125–145B (from $115–135B). Dominant exec language was supply-side ("compute constrained" — Pichai; "constrained at least through 2026" — Hood) and component-cost driven, not capex-rate moderation. Sources: [CNBC: Microsoft Q3 FY2026](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html), [The Register: $190B capex](https://www.theregister.com/2026/04/30/microsoft_q3_2026/), [CNBC: Alphabet Q1 2026](https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html), [Alphabet Q1 release](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm), [CNBC: Amazon Q1 2026](https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html), [Meta Q1 release](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx), [Fortune: Meta $145B](https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/). |
 
 ---
 

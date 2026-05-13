@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: analysis
 title: AI Valuation Analysis
+published: 2026-01-03
 permalink: /analysis/ai-valuation-2026-01/
 ---
 

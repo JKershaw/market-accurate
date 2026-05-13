@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Enterprise AI Adoption Metrics
+published: 2026-01-03
+permalink: /analysis/enterprise-ai-adoption-2026-01/
+---
+
 # MARKET ACCURATE
 ## Enterprise AI Adoption Metrics
 ### January 3, 2026

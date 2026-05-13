@@ -1,3 +1,10 @@
+---
+layout: analysis
+title: Biotech Development Cost Analysis
+published: 2026-01-03
+permalink: /analysis/biotech-development-2026-01/
+---
+
 # MARKET ACCURATE
 ## Biotech Development Cost Analysis
 ### January 3, 2026

@@ -931,7 +931,7 @@ def render(p: Prediction) -> str:
         |-------|-------|
         | Made | {p.made} |
         | Resolves | {p.resolves} |
-        | Source analysis | [{p.analysis_title}](/analysis/{p.analysis_file}/) |
+        | Source analysis | [{p.analysis_title}]({{{{ '/analysis/{p.analysis_file}/' | relative_url }}}}) |
         | Tags | {', '.join(p.tags) if p.tags else '—'} |
         | Ex-ante probability | {p.probability if p.probability else '*not pre-registered*'} |
     """).strip()
@@ -943,7 +943,7 @@ def render(p: Prediction) -> str:
         body += f"**One-line summary:** {p.resolution_one_liner}\n\n"
         if p.primary_source:
             body += f"**Primary source:** {p.primary_source}\n\n"
-        body += "**Full resolution analysis:** see [tracker resolution log](/predictions/#resolution-log).\n"
+        body += "**Full resolution analysis:** see [tracker resolution log]({{ '/predictions/#resolution-log' | relative_url }}).\n"
     else:
         body += "\n\n---\n\n## Tracking assessment\n\n"
         body += "*Interim assessments are added quarterly.*\n"
