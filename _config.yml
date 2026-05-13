@@ -41,7 +41,8 @@ exclude:
   - docs/agent-infrastructure.md
 
 # Navigation
+# Note: /predictions/ is rendered from predictions/tracker.md (single source of truth)
 header_pages:
   - index.md
-  - predictions.md
+  - predictions/tracker.md
   - methodology.md

@@ -23,12 +23,14 @@ Execute in order:
 ```
 1. ORIENT
    ├── Parse current date
-   ├── Load predictions/tracker.md
+   ├── Load predictions/tracker.md (canonical source of truth)
    ├── Load CLAUDE.md (current focus)
+   ├── Run Documentation Sync Check (see below)
    └── Check gh issue list (if available)
 
 2. ASSESS
    ├── Predictions past due? → IMMEDIATE priority
+   ├── Public-facing docs out of sync with tracker? → IMMEDIATE priority
    ├── Predictions within 30 days? → HIGH priority
    ├── Data > 1 quarter stale? → MEDIUM priority
    └── Expansion capacity? → LOW priority
@@ -43,9 +45,82 @@ Execute in order:
 
 5. REPORT
    ├── Summarize actions taken
-   ├── Update relevant files
+   ├── Update relevant files (see "Files That Must Stay Synchronized")
+   ├── Re-run Documentation Sync Check before commit
    └── Commit with proper message format
 ```
+
+---
+
+## Documentation Architecture (Single Source of Truth)
+
+The project deliberately avoids duplicating prediction counts and analysis lists across multiple files. The architecture:
+
+| File | Role | Updated When |
+|------|------|--------------|
+| `predictions/tracker.md` | **Single source of truth** for predictions, resolutions, statistics. Also rendered at `/predictions/` via Jekyll front matter. | Every prediction added or resolved |
+| `CLAUDE.md` | Agent-facing project state: current focus, per-analysis summaries, upcoming dates table | Every new analysis or resolution |
+| `index.md` | Jekyll homepage. Lists analyses (no per-analysis metrics that drift); points to tracker for live counts. | New analysis published |
+| `README.md` | GitHub front door. Lists analyses (no metrics that drift); points to tracker for live counts. | New analysis published |
+| `CONTRIBUTING.md` | Roadmap & contribution guide. Roadmap checkmarks. | Roadmap item completed |
+| `docs/prediction-calendar.md` | Per-date prediction resolution checklist | Every prediction added or resolved |
+| `docs/analyst-comparison.md` | MA-vs-consensus comparison record | Every resolution with consensus comparison |
+| `.claude/orchestrator.md` | This file | Roadmap or protocol changes |
+
+**Anti-pattern:** Do NOT introduce a new file that holds "total prediction count" or "accuracy %". These belong in `tracker.md` only. Other files link to them.
+
+## Documentation Sync Check
+
+Run this every session in ORIENT, and again before commit in REPORT.
+
+```
+1. tracker.md count of "Total Predictions" must equal count of unique prediction-ID rows
+   (sum of all "Active Predictions" + "Resolved Predictions" tables)
+
+2. tracker.md "By Analysis" table rows must match all analyses listed in CLAUDE.md
+   current-focus section
+
+3. No other file should contain a hardcoded number for "total predictions" or "accuracy".
+   Grep for stale counts:
+     grep -rn "Total Predictions\|Total predictions:" --include="*.md" .
+   Expected: only predictions/tracker.md and CLAUDE.md (Active predictions line).
+
+4. README.md and index.md "Analyses" list must match the set of files in analysis/
+   directory. New analysis file added → both must be updated.
+
+5. CONTRIBUTING.md roadmap "completed" markers must match published analyses.
+
+6. docs/prediction-calendar.md must contain every active prediction by resolution date.
+
+If any check fails, fix in the same session as a sync action before continuing with other priorities.
+```
+
+## Files That Must Stay Synchronized
+
+When `predictions/tracker.md` changes (new prediction or resolution):
+- Update `CLAUDE.md` Upcoming Prediction Dates table
+- Update `docs/prediction-calendar.md` if resolution date differs
+- Update `docs/analyst-comparison.md` if there's a consensus comparison
+- Update the source analysis file's Track Record section
+- Update the source analysis file's Changelog
+
+When a new analysis is published:
+- Add to `predictions/tracker.md` (Active Predictions section + By Analysis row)
+- Add to `CLAUDE.md` current-focus section
+- Add to `README.md` Analyses table
+- Add to `index.md` Analyses section
+- Tick the corresponding roadmap item in `CONTRIBUTING.md`
+- Tick the corresponding roadmap item in `.claude/orchestrator.md`
+- Add resolution dates to `docs/prediction-calendar.md`
+
+When a prediction is resolved:
+- Move from Active to Resolved in `predictions/tracker.md`
+- Update cumulative statistics in `predictions/tracker.md`
+- Update Resolution Log in `predictions/tracker.md`
+- Update source analysis Track Record section
+- Update source analysis Changelog
+- Update `docs/analyst-comparison.md` if applicable
+- Mark resolution status in `CLAUDE.md` Upcoming Prediction Dates table (e.g., "**Resolved INCORRECT**")
 
 ---
 

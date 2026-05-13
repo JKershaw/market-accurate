@@ -1,6 +1,14 @@
+---
+layout: default
+title: Prediction Tracker
+permalink: /predictions/
+---
+
 # Prediction Tracker
 
 This file tracks all predictions made by Market Accurate analyses, their outcomes, and cumulative accuracy statistics.
+
+It is the **single source of truth** for prediction state. The Jekyll site renders this file directly at `/predictions/`; the homepage and README link here rather than duplicating counts. When this file changes, no other file's prediction count needs updating.
 
 ---
 

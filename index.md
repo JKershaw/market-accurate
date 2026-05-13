@@ -7,119 +7,79 @@ title: Market Accurate
 
 **Open-source financial analysis optimized for accuracy, not attention.**
 
+The thesis: as AI systems mediate information access, sources demonstrating accuracy get preferentially selected, creating evolutionary pressure toward truth.
+
 ---
 
 ## Track Record
 
-The thesis: as AI systems mediate information access, sources demonstrating accuracy get preferentially selected. This creates evolutionary pressure toward truth.
+The canonical record lives in the [prediction tracker](/predictions/). It is updated on every resolution and is the single source of truth for prediction counts, accuracy, and Brier score.
 
-| Metric | Value |
-|--------|-------|
-| Total Predictions | **21** |
-| Resolved | 0 |
-| Correct | 0 |
-| Incorrect | 0 |
-| Accuracy | *Pending* |
-
-**Status:** Experimental (v0.1). Track record empty. First predictions resolve February 2026.
+Predictions are timestamped in git history, never modified after publication, and resolved against pre-registered thresholds. Wrong predictions are logged with the same prominence as correct ones.
 
 ---
 
-## Upcoming Predictions
+## Analyses
 
-Predictions resolving in the next 6 months:
-
-| Date | ID | Prediction | Analysis |
-|------|-----|------------|----------|
-| Feb 2026 | AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | [AI Valuation](/analysis/ai-valuation-2026-01/) |
-| May 2026 | AV-002 | Hyperscaler uses moderating capex language in Q1 earnings | [Hyperscaler Capex](/analysis/hyperscaler-capex-2026-01/) |
-| Jun 30, 2026 | AV-003 | Open-weights model matches GPT-4 on consumer GPU | [AI Valuation](/analysis/ai-valuation-2026-01/) |
-| Jun 30, 2026 | EA-001 | Enterprise AI spending forecast <25% for 2027 | [Enterprise AI](/analysis/enterprise-ai-adoption-2026-01/) |
-| Jul 1, 2026 | SC-002 | SOX underperforms S&P 500 in H1 2026 | [Semiconductor Cycle](/analysis/semiconductor-cycle-2026-01/) |
-
-[View all 21 predictions →](/predictions/)
-
----
-
-## Current Analyses
-
-### AI Valuation Analysis
+### [AI Valuation Analysis](/analysis/ai-valuation-2026-01/)
 *January 2026*
 
 **Thesis:** Efficiency gains are eroding compute scarcity assumptions embedded in AI infrastructure valuations.
 
-- Inference costs fell **280x** from November 2022 to October 2024
-- Parameter efficiency improved **20x** (Llama 3 8B matches GPT-3 175B)
-- Open-source closed **98%** of the frontier gap
-- DeepSeek matched GPT-4 at ~5% training cost
-
-**Assessment:** 20-40% compression likely, not dot-com collapse (major players are profitable).
-
-[Read full analysis →](/analysis/ai-valuation-2026-01/)
-
----
-
-### Hyperscaler Capex Tracker
+### [Hyperscaler Capex Tracker](/analysis/hyperscaler-capex-2026-01/)
 *January 2026*
 
-**Key Finding:** $380-400B combined 2025 capex, ~$600B projected for 2026.
+**Focus:** Tracks Big-4 (MSFT/GOOG/AMZN/META) AI infrastructure spending and forward guidance, with quarterly updates.
 
-| Company | 2025 Capex | YoY Change |
-|---------|-----------|------------|
-| Amazon | $125B | +62% |
-| Microsoft | $88.7B | +99% |
-| Google | $91-93B | +75% |
-| Meta | $70-72B | +90% |
-
-**ROI Gap:** AI services generating ~$25B revenue vs ~$300B+ infrastructure spend.
-
-[Read full analysis →](/analysis/hyperscaler-capex-2026-01/)
-
----
-
-### Semiconductor Cycle Analysis
+### [Semiconductor Cycle Analysis](/analysis/semiconductor-cycle-2026-01/)
 *January 2026*
 
-**Thesis:** Current cycle is AI-concentrated, not broad-based. Correction likely in late 2026/2027.
+**Thesis:** Current cycle is AI-concentrated, not broad-based. Correction likely in late 2026 / 2027, shallower than historical norms.
 
-- SOX P/E at ~41x (historical median: 20-25x)
-- AI-concentrated: <0.2% of wafer starts, ~20% of revenue
-- Automotive, industrial, consumer segments remain weak
+### [Open-Source Benchmark Tracking](/analysis/open-source-benchmarks-2026-01/)
+*January 2026 (refreshed May 2026)*
 
-**Assessment:** 20-30% correction likely, shallower than historical norms due to AI demand floor.
+**Thesis:** Open-source models are achieving frontier parity faster than anticipated, eroding pricing power of proprietary APIs.
 
-[Read full analysis →](/analysis/semiconductor-cycle-2026-01/)
-
----
-
-### Open-Source Benchmark Tracking
+### [Enterprise AI Adoption Metrics](/analysis/enterprise-ai-adoption-2026-01/)
 *January 2026*
 
-**Thesis:** Open-source models are achieving frontier parity faster than anticipated, eroding AI moats.
+**Thesis:** Adoption-value gap threatens enterprise AI spending growth. 88% adoption vs. 6% measurable EBIT impact.
 
-- MMLU gap to frontier: **-2.1 points** (open-source leads)
-- DeepSeek-R1 matched GPT-4 at **~5% training cost**
-- Consumer GPU viable: **8B-70B parameter** models on RTX 4090
-
-**Assessment:** Supports efficiency thesis—capability no longer requires frontier infrastructure.
-
-[Read full analysis →](/analysis/open-source-benchmarks-2026-01/)
-
----
-
-### Enterprise AI Adoption Metrics
+### [Energy & Climate Efficiency Comparison](/analysis/energy-climate-2026-01/)
 *January 2026*
 
-**Thesis:** Adoption-value gap threatens enterprise AI spending growth.
+**Thesis:** Unlike AI infrastructure, clean energy efficiency gains are already priced rationally (ICLN at 14.4x P/E). Primary risk is policy, not efficiency.
 
-- Enterprise adoption rate: **88%**
-- AI initiatives delivering expected ROI: **25%**
-- AI projects that fail: **70-85%**
-- Companies with measurable EBIT impact: **6%**
+### [Biotech Development Cost Analysis](/analysis/biotech-development-2026-01/)
+*January 2026*
 
-**Assessment:** ROI pressure may constrain spending growth faster than projected.
+**Thesis:** AI may be inflecting Eroom's Law (rising drug development costs), but the thesis is speculative until AI-discovered drugs complete regulatory approval.
 
-[Read full analysis →](/analysis/enterprise-ai-adoption-2026-01/)
+### [Commercial Real Estate Analysis](/analysis/commercial-real-estate-2026-01/)
+*January 2026*
+
+**Thesis:** Hybrid work is structural, but the office market has bottomed. Class A vs. Class B/C bifurcation is the story now.
+
+### [Labor Market & AI Impact](/analysis/labor-market-ai-2026-04/)
+*April 2026*
+
+**Thesis:** AI labor disruption is concentrated (support, entry-level SWE, translation, legal drafting) rather than aggregate.
+
+### [Digital Assets Cycle](/analysis/digital-assets-2026-04/)
+*April 2026*
+
+**Thesis:** The four-year crypto cycle is intact in phase but dampened in amplitude post-spot-ETF.
+
+### [Consumer Spending & Retail Cycle](/analysis/consumer-spending-2026-05/)
+*May 2026*
+
+**Thesis:** The K-shape consumer pattern is structural rather than cyclical. Subprime auto delinquencies at 32-year record while top-quintile spending continues to expand.
+
+### [Private Credit & BDC Sector](/analysis/private-credit-2026-05/)
+*May 2026*
+
+**Thesis:** Mark-to-model NAV smoothing breaks down once redemption gates are tested. BCRED redemptions and sponsor equity drawdowns mark a discrete repricing.
 
 ---
 
@@ -127,9 +87,9 @@ Predictions resolving in the next 6 months:
 
 All predictions are timestamped in git history. Anyone can verify:
 
-1. **Original prediction date:** Check git commit history
-2. **Prediction wording:** Never modified after publication
-3. **Outcome evidence:** Linked to primary sources when resolved
+1. **Original prediction date:** check git commit history
+2. **Prediction wording:** never modified after publication
+3. **Outcome evidence:** linked to primary sources when resolved
 
 [View on GitHub](https://github.com/JKershaw/market-accurate)
 
@@ -143,8 +103,9 @@ All predictions are timestamped in git history. Anyone can verify:
 | Primary sources | SEC filings, earnings transcripts, academic papers |
 | Confidence levels | High/Moderate/Low/Speculative stated explicitly |
 | Track record transparency | Wrong predictions get same prominence as correct |
+| Pre-registration | Thresholds and probabilities fixed at publication |
 
-[Read methodology →](/methodology/)
+[Read full methodology →](/methodology/) · [Pre-registration framework →](https://github.com/JKershaw/market-accurate/blob/main/docs/pre-registration.md)
 
 ---
 
@@ -153,7 +114,3 @@ All predictions are timestamped in git history. Anyone can verify:
 **CC0 Public Domain.** Replication encouraged.
 
 Fork this, improve it, build your own track record. Better analysis should win.
-
----
-
-*Updated: January 3, 2026*
