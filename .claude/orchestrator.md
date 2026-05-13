@@ -414,6 +414,10 @@ From `CONTRIBUTING.md`, prioritized:
 5. ✅ Energy/climate efficiency thesis — COMPLETED
 6. ✅ Biotech development costs — COMPLETED
 7. ✅ Commercial real estate vs. remote work — COMPLETED
+8. ✅ Labor market & AI impact — COMPLETED (April 2026)
+9. ✅ Digital assets cycle — COMPLETED (April 2026)
+10. ✅ Consumer spending / retail cycle — COMPLETED (May 2026)
+11. ✅ Private credit / BDC sector — COMPLETED (May 2026)
 
 ### Methodology Improvements
 

@@ -171,3 +171,49 @@ On or before June 30, 2026:
 ---
 
 *Prepared: 2026-04-18*
+
+---
+
+## Addendum (May 8, 2026): Updated candidate list (T-53 days)
+
+With ~7 weeks until resolution, the field of qualifying candidates has expanded substantially since the April prep. The threshold (MMLU ≥86.4 / HumanEval ≥67 / GSM8K ≥92, single RTX 4090) is now cleared by **multiple** independent models, not just DeepSeek-R1-Distill-32B.
+
+### Current top candidates (open-weights, ≤35B parameters, RTX-4090-viable)
+
+| Model | Params | Quant | RTX 4090 fit | MMLU | HumanEval | GSM8K | Source |
+|-------|--------|-------|--------------|------|-----------|-------|--------|
+| DeepSeek-R1-Distill-32B | 32B | Q4 | 20GB ✓ | 87.5% | 85.4% | 95.6% | Jan 2025 release; verified by community reproductions |
+| Qwen 3 32B | 32B | Q4 | 22GB ✓ (~38 tok/s on RTX 4090) | reported ≥87% | reported ≥85% | reported ≥93% | [Awesome Agents leaderboard](https://awesomeagents.ai/leaderboards/home-gpu-llm-leaderboard/), [ToolHalla 2026 RTX 4090 guide](https://toolhalla.ai/blog/best-local-llms-rtx-4090-2026) |
+| Qwen 3 14B | 14B | Q4 | <12GB ✓ | 81.1% | — | — | Below MMLU threshold; flagged for completeness |
+| Qwen3.6-27B | 27B | Q4 | ~16GB ✓ | competitive | reported "beats 397B on coding" | — | [BuildFastWithAI](https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026) — needs strict-eval verification |
+| Llama 3.3 70B (Q4 K_M) | 70B | Q4_K_M | ~40GB ✗ | 88% | 89% | 90% | Reportedly does **not** fit single 24GB; multi-GPU only — fails AV-003 hardware criterion |
+
+### Verification status
+
+The DeepSeek-R1-Distill-32B candidate alone is sufficient to resolve AV-003 CORRECT subject to the strict-eval verification steps in the original prep doc. As of May 8, 2026:
+
+- ✅ Weights publicly downloadable (HuggingFace)
+- ✅ Q4 GGUF format usable in llama.cpp / Ollama / vLLM
+- ✅ Fits in 24GB VRAM with usable context window
+- ⚠️ Need to confirm: Q4-quantized scores (not FP16 reference scores) clear all three thresholds
+- ⚠️ Need to confirm: at least one independent community reproduction posted
+
+### Failure modes still in play
+
+1. **Quant degradation:** If Q4 quantization drops MMLU below 86.4%, falls back to needing FP8 or higher precision, which doesn't fit in 24GB.
+2. **Benchmark contamination claim:** If a credible analysis emerges that DeepSeek's training data included GSM8K or HumanEval test sets, scores get discounted.
+3. **Llama 3.3 confusion:** Llama 3.3 70B reportedly hits all three thresholds but requires multi-GPU — does NOT satisfy AV-003 hardware constraint.
+
+### Updated probability: ~95% CORRECT
+
+(Up from ~90% at April prep. Multiple independent candidates now exist.)
+
+### Resolution actions in the next 4 weeks
+
+1. **By May 30:** Pull Q4 GGUF for DeepSeek-R1-Distill-32B and Qwen 3 32B. Run LM Eval Harness for MMLU 5-shot, HumanEval pass@1, GSM8K 8-shot CoT on a single RTX 4090 (or document a community result that has).
+2. **By June 15:** If primary candidate fails on quantized eval, fall back to next candidate. If all candidates fail, prepare INCORRECT resolution doc.
+3. **By June 30:** Final resolution.
+
+---
+
+*Addendum: 2026-05-08*

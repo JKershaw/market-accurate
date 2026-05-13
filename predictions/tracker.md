@@ -11,7 +11,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | ID | Prediction | Made | Resolves | Status |
 |----|-----------|------|----------|--------|
 | AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02 | **Resolved: INCORRECT** |
-| AV-002 | Hyperscaler capex language moderation in Q1 2026 | 2026-01-03 | 2026-05 | Pending |
+| AV-002 | Hyperscaler capex language moderation in Q1 2026 | 2026-01-03 | 2026-05 | **Resolved: INCORRECT** |
 | AV-003 | Open-weights model matches GPT-4 on consumer GPU | 2026-01-03 | 2026-06-30 | Pending |
 | AV-004 | Enterprise AI spend growth intentions <25% YoY | 2026-01-03 | 2026-10 | Pending |
 | AV-005 | NVIDIA+AMD+Arm combined market cap lower than Jan 3 | 2026-01-03 | 2026-12-31 | Pending |
@@ -98,6 +98,26 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | DA-004 | No US-regulated stablecoin >2% peg break for >24 hours in 2026 | 2026-04-18 | 2026-12-31 | Pending | 80% |
 | DA-005 | 2026 BTC drawdown (if any) smaller than 77% (2022 analogue) | 2026-04-18 | 2026-12-31 | Pending | 60% |
 
+### Consumer Spending & Retail Cycle (2026-05-08)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| CS-001 | Subprime auto 60+ DPD stays >6.0% in ≥3/4 quarters of 2026 | 2026-05-08 | 2027-02-28 | Pending | 70% |
+| CS-002 | Discount retailer basket (DG/DLTR/FIVE) beats mid-tier mall (M/KSS/GPS) by ≥10pp May 2026→Apr 2027 | 2026-05-08 | 2027-05-07 | Pending | 55% |
+| CS-003 | Aggregate credit card 90+ DPD ≥4.0% in any 2026 quarter | 2026-05-08 | 2027-02-28 | Pending | 45% |
+| CS-004 | 2026 US retail sales growth below NRF's 4.4% forecast | 2026-05-08 | 2027-02-17 | Pending | 55% |
+| CS-005 | Fed governor or Reserve Bank president cites "K-shaped" consumer in 2026 | 2026-05-08 | 2027-01-31 | Pending | 75% |
+
+### Private Credit & BDC Sector (2026-05-08)
+
+| ID | Prediction | Made | Resolves | Status | Confidence |
+|----|-----------|------|----------|--------|------------|
+| PC-001 | KBRA-universe median BDC non-accruals at cost ≥4.0% in any 2026 quarter | 2026-05-08 | 2027-02-28 | Pending | 55% |
+| PC-002 | 5+ public BDCs (>$500M cap) cut base dividend by ≥10% in 2026 | 2026-05-08 | 2027-01-31 | Pending | 70% |
+| PC-003 | Major non-traded BDC (>$10B AUM) invokes redemption gate or suspends repurchases in 2026 | 2026-05-08 | 2027-01-31 | Pending | 50% |
+| PC-004 | BIZD underperforms HYG by ≥10pp May 8 → Dec 31, 2026 | 2026-05-08 | 2027-01-01 | Pending | 55% |
+| PC-005 | At least one major BDC sponsor announces strategic transaction (sale/merger/wind-down) of credit business in 2026 | 2026-05-08 | 2027-01-31 | Pending | 40% |
+
 ---
 
 ## Resolved Predictions
@@ -105,6 +125,7 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | ID | Prediction | Made | Resolved | Outcome | Correct? |
 |----|-----------|------|----------|---------|----------|
 | AV-001 | NVIDIA Q4 FY26 datacenter revenue YoY growth <50% | 2026-01-03 | 2026-02-25 | Data Center $62.3B (+75% YoY vs $35.6B prior year) | **No** |
+| AV-002 | Hyperscaler capex language moderation in Q1 2026 | 2026-01-03 | 2026-05-08 | All four hyperscalers raised or reiterated 2026 capex; no MSFT/GOOG/AMZN exec used moderation language. MSFT $190B (+~$96B), GOOGL $180–190B (raised from $175–185B), AMZN $200B (reiterated), META $125–145B (raised from $115–135B). Dominant narrative: "compute constrained" + component pricing. | **No** |
 
 ---
 
@@ -112,21 +133,21 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 
 | Metric | Value |
 |--------|-------|
-| Total Predictions | 42 |
-| Resolved | 1 |
+| Total Predictions | 52 |
+| Resolved | 2 |
 | Correct | 0 |
-| Incorrect | 1 |
-| Accuracy | 0% (n=1) |
-| Brier Score | 0.25 (n=1; see note) |
+| Incorrect | 2 |
+| Accuracy | 0% (n=2) |
+| Brier Score | 0.25 (n=2; see note) |
 | Calibration | Insufficient data (need n≥30) |
 
-**Brier score note:** AV-001 did not state an explicit ex-ante probability (the AI Valuation Analysis predates the pre-registration framework's probability-disclosure requirement). Per the framework, predictions without stated probability are scored at 0.50 — yielding (0.50 − 0)² = 0.25. Future predictions must carry explicit probabilities to enable proper Brier calculation.
+**Brier score note:** Neither AV-001 nor AV-002 stated an explicit ex-ante probability at publication (the original AI Valuation Analysis predates the pre-registration framework's probability-disclosure requirement). Per the framework, predictions without stated probability are scored at 0.50 — yielding (0.50 − 0)² = 0.25 each. The AV-002 prep-doc addendum noted a subjective probability of ~75% before resolution, but that was not the published ex-ante; using the published-default 0.50 per protocol. Future predictions must carry explicit probabilities at publication to enable proper Brier calculation.
 
 ### By Analysis
 
 | Analysis | Predictions | Resolved | Correct | Accuracy |
 |----------|-------------|----------|---------|----------|
-| AI Valuation | 7 | 1 | 0 | 0% |
+| AI Valuation | 7 | 2 | 0 | 0% |
 | Hyperscaler Capex | 2 | 0 | 0 | N/A |
 | Semiconductor Cycle | 6 | 0 | 0 | N/A |
 | Open-Source Benchmarks | 3 | 0 | 0 | N/A |
@@ -136,6 +157,8 @@ This file tracks all predictions made by Market Accurate analyses, their outcome
 | Commercial Real Estate | 4 | 0 | 0 | N/A |
 | Labor Market & AI | 4 | 0 | 0 | N/A |
 | Digital Assets Cycle | 5 | 0 | 0 | N/A |
+| Consumer Spending | 5 | 0 | 0 | N/A |
+| Private Credit & BDC | 5 | 0 | 0 | N/A |
 
 ---
 
@@ -209,6 +232,7 @@ Under-confidence = accuracy higher than stated confidence.
 | Date | ID | Action | Evidence |
 |------|----|--------|----------|
 | 2026-04-19 | AV-001 | Resolved INCORRECT | NVIDIA Q4 FY26 Data Center revenue $62.3B (+75% YoY) reported Feb 25, 2026 — well above the <50% threshold. Sources: [CNBC](https://www.cnbc.com/2026/02/25/nvidia-nvda-earnings-report-q4-2026.html), [ServeTheHome](https://www.servethehome.com/nvidia-reports-q4-fy2026-earnings-data-center-and-proviz-drive-revenue-records/), [NVIDIA FY25 press release](https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2025) for the $35.6B Q4 FY25 baseline. |
+| 2026-05-08 | AV-002 | Resolved INCORRECT | Q1 2026 calendar earnings cycle (April 29 – May 1, 2026) produced no moderation language from MSFT/GOOG/AMZN. All four hyperscalers raised or reiterated aggressive 2026 capex: Microsoft ~$190B for calendar 2026 (incl. ~$25B for higher component pricing); Alphabet raised range to $180–190B (from $175–185B); Amazon reiterated $200B; Meta raised to $125–145B (from $115–135B). Dominant exec language was supply-side ("compute constrained" — Pichai; "constrained at least through 2026" — Hood) and component-cost driven, not capex-rate moderation. The single ambiguous candidate — Hood's reference to "the efficiencies we're already driving across the platform" — was framed as confidence in returns supporting *more* spend, not moderation. Sources: [CNBC: Microsoft Q3 FY2026](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html), [The Register: $190B capex](https://www.theregister.com/2026/04/30/microsoft_q3_2026/), [CNBC: Alphabet Q1 2026](https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html), [Alphabet Q1 release](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm), [CNBC: Amazon Q1 2026](https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html), [Meta Q1 release](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx), [Fortune: Meta $145B](https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/). |
 
 ---
 
@@ -226,4 +250,4 @@ Under-confidence = accuracy higher than stated confidence.
 
 ---
 
-*Updated: 2026-04-19 (resolved AV-001 as INCORRECT; added LM-001 through LM-004, DA-001 through DA-005; see [docs/pre-registration.md](/docs/pre-registration.md) for resolution protocol)*
+*Updated: 2026-05-08 (resolved AV-002 as INCORRECT after Q1 2026 hyperscaler earnings cycle)*

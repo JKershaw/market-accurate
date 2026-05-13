@@ -192,8 +192,8 @@ git commit -m "Update: Refresh {metric} in {analysis}"
 3. ✅ **Real estate** — commercial real estate vs. remote work *(completed 2026-01-03)*
 4. ✅ **Labor market & AI impact** — aggregate vs. concentrated disruption *(completed 2026-04-18)*
 5. ✅ **Digital assets cycle** — post-ETF institutionalization thesis *(completed 2026-04-18)*
-6. ⬜ Consumer spending / retail cycle
-7. ⬜ Private credit / BDC sector
+6. ✅ **Consumer spending / retail cycle** — K-shape thesis with 5 predictions *(completed 2026-05-08)*
+7. ✅ **Private credit / BDC sector** — mark-to-model breakdown thesis with 5 predictions *(completed 2026-05-08)*
 
 ### Methodology improvements
 

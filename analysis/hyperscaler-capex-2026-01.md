@@ -400,12 +400,84 @@ These are reconcilable: hyperscalers can guide capex higher *and* underdeliver b
 
 ---
 
+# May 2026 Update: Q1 2026 Earnings Cycle
+
+The Q1 2026 calendar-quarter earnings cycle (Apr 29 – May 1, 2026) has now closed. Reported results contradict the AV-002 prediction outright and force a substantial upward revision to the 2026 capex baseline.
+
+## Q1 2026 reported capex (calendar quarter)
+
+| Company | Q1 2026 Capex | YoY change | Source |
+|---------|---------------|-----------|--------|
+| Amazon | $43.2B | +56% (vs $27.7B Q1 2025 cash capex) | [CNBC Q1](https://www.cnbc.com/2026/04/29/amazon-amzn-q1-earnings-report-2026.html), Amazon IR |
+| Alphabet | $35.7B | +107% YoY | [CNBC GOOGL Q1](https://www.cnbc.com/2026/04/29/alphabet-googl-q1-2026-earnings.html), [Q1 release](https://www.sec.gov/Archives/edgar/data/1652044/000165204426000043/googexhibit991q12026.htm) |
+| Microsoft | $31.9B (Q3 FY26) | +49% YoY | [CNBC MSFT Q3](https://www.cnbc.com/2026/04/29/microsoft-msft-q3-earnings-report-2026.html), [The Register](https://www.theregister.com/2026/04/30/microsoft_q3_2026/) |
+| Meta | $19.8B | +~85% (vs ~$10.7B Q1 2025) | [Meta Q1 release](https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-First-Quarter-2026-Results/default.aspx) |
+| **Combined Big 4** | **$130.6B** | — | — |
+
+Q1 2026 alone was $130.6B — already 86% of the HC-001 $150B threshold, and Q4 is conventionally the highest-capex quarter.
+
+## Updated 2026 full-year guidance
+
+| Company | Old 2026 guidance (Q4 2025) | New 2026 guidance (Q1 2026) | Direction |
+|---------|----------------------------|----------------------------|-----------|
+| Microsoft | FY26 ~$94B; calendar 2026 implicit ~$170–175B | **~$190B calendar 2026** (incl. ~$25B for higher component pricing) | Raised |
+| Alphabet | $175–185B | **$180–190B** | Raised |
+| Amazon | ~$200B | **~$200B** | Reiterated |
+| Meta | $115–135B | **$125–145B** | Raised |
+| **Combined midpoint** | **~$625B** | **~$700B** | **+$75B in 4 months** |
+
+The combined midpoint moved from $625B (April-update baseline) to ~$700B in a single earnings cycle — a 12% upward revision.
+
+## Why guidance went up: the component-pricing wrinkle
+
+Microsoft and Meta both attributed material guidance increases to **higher component pricing** (memory/HBM, networking, transformers). This is mechanically distinct from "more capacity built":
+
+- Microsoft: ~$25B of the $190B is component-cost pass-through, not additional capacity
+- Meta: capex range raised "to reflect higher component pricing this year and, to a lesser extent, additional data center costs"
+
+This means a portion of the headline guidance increase is **inflation in unit costs** rather than additional unit volume. From an HC-001 perspective this still counts (it's reported capex), but it complicates the read on whether physical buildout is accelerating or merely getting more expensive.
+
+## Language audit: AV-002
+
+Despite the supply-constraint context, no MSFT/GOOG/AMZN executive used moderation language at the Q1 2026 earnings calls:
+
+| Company | Key capex language | Moderation? |
+|---------|-------------------|-------------|
+| Microsoft (Hood) | "remain constrained at least through 2026"; "the efficiencies we're already driving across the platform" (in context of confidence in returns) | No — efficiency mention frames *more spend*, not less |
+| Alphabet (Pichai) | "compute constrained in the near term"; CFO Ashkenazi: 2027 capex "will significantly increase" | No |
+| Amazon (Jassy) | Compared spending to "first major AWS growth wave" — i.e. justified upfront investment for compounding returns | No |
+| Meta (Li, contextual) | Capex raise "reflects higher component pricing... and additional data center costs to support future year capacity" | No |
+
+AV-002 resolved INCORRECT on May 8, 2026.
+
+## Implications for remaining predictions
+
+| Prediction | April Read | May Read |
+|-----------|-----------|----------|
+| **AV-002** (Q1 2026 moderation) | More likely CORRECT | **Resolved INCORRECT** |
+| **AV-007** (absolute capex reduction by end-2027) | Speculative | Still speculative; the path to a YoY reduction in 2027 now requires either a demand collapse or a hyperscaler exiting the AI capex race entirely. Microsoft's lease cancellations remain the closest precedent but were redirected to Oracle/Stargate, not eliminated. |
+| **HC-001** (Big-4 quarterly capex <$150B in 2026) | More likely INCORRECT | **Almost certainly INCORRECT.** Q1 2026 already $130.6B; with $700B annual midpoint implying ~$175B average quarterly and Q4 historically highest, Q4 2026 likely $180–200B+. |
+| **HC-002** (one hyperscaler lowers FY guidance mid-2026) | Unclear | **Tracking INCORRECT.** All four raised or held in Q1 2026; mid-year reduction would require an unusual demand reversal. Resolution date Oct 31, 2026 — Q2 2026 earnings (late July / early August) is the next gating event. |
+
+## What this means for the broader thesis
+
+The April update flagged a "two-narrative problem": efficiency-driven demand destruction (the original January thesis) vs. supply-side physical constraints. Q1 2026 earnings now strongly favor the **supply-constraint reading**:
+
+- Hyperscalers explicitly say they cannot build fast enough ("compute constrained")
+- Component pricing is up sharply (~$25B incremental for MSFT alone), suggesting demand >> supply for memory/HBM
+- Despite reported lease pullbacks (MSFT, AWS), aggregate guidance is up, not down
+
+Implication: the near-term hyperscaler capex story is no longer compatible with the original AI-Valuation-Analysis efficiency thesis at the *capex* level. It may still play out at the *valuation* level (compression in NVDA/AMD/ARM if the supply unblocks faster than expected, or if HBM/memory pricing rolls over) — but the "capex moderation" channel is closed.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
 | 2026-04-19 | Added April 2026 Interim Update: MSFT/AWS pullbacks, supply-constraint story, updated 2026 guidance ($650–690B combined), read on AV-002/007 and HC-001/002 |
+| 2026-05-08 | Added May 2026 Update with Q1 2026 reported capex ($130.6B Big-4), upward-revised 2026 guidance ($700B midpoint), AV-002 resolution, HC-001/002 read |
 
 ---
 

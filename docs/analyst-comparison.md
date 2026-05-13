@@ -85,6 +85,24 @@ Comparing predictions to analyst consensus serves two goals:
 
 ---
 
+### AV-002: Hyperscaler Capex Language Moderation in Q1 2026
+
+| Metric | Market Accurate | Wall Street Consensus |
+|--------|----------------|----------------------|
+| **Prediction** | At least one of MSFT/GOOG/AMZN moderates capex language in Q1 2026 | Continued aggressive expansion |
+| **Direction** | Bearish on demand sustainability | Bullish |
+| **Made** | 2026-01-03 | — |
+| **Contrarian?** | Yes | — |
+
+**Consensus Sources (going into Q1 2026 earnings):**
+- Sell-side aggregations (Bloomberg, Reuters, Futurum) showed combined Big-4 2026 expectations of ~$625–690B before Q1 2026 earnings
+- Goldman Sachs ($500B+ in 2026) and Morgan Stanley (~$600B+) both bullish on durability into 2026
+- No major sell-side firm forecasted explicit moderation language at Q1 2026 calls
+
+**Outcome:** Resolved 2026-05-08. Combined Big-4 2026 guidance now ~$700B midpoint (MSFT $190B; GOOGL $180–190B; AMZN $200B; META $125–145B). No MSFT/GOOG/AMZN moderation language. **Market Accurate INCORRECT; consensus directionally CORRECT.** This is the first resolved comparison where consensus clearly beat us. Contributing factor: the supply-constraint mechanism (Pichai "compute constrained"; Hood "constrained at least through 2026") that emerged in Q1 2026 was not in *either* our or consensus models — but it operates against the demand-moderation thesis, so consensus was right by accident as much as by analysis.
+
+---
+
 ## Tracking Template
 
 When adding new comparisons:
@@ -112,11 +130,11 @@ When adding new comparisons:
 
 | Metric | Value |
 |--------|-------|
-| Total Comparisons | 3 |
-| Contrarian Predictions | 3 |
-| Resolved | 1 |
+| Total Comparisons | 4 |
+| Contrarian Predictions | 4 |
+| Resolved | 2 |
 | Our Correct, Consensus Wrong | 0 |
-| Consensus Correct, We Wrong | 0 |
+| Consensus Correct, We Wrong | 1 (AV-002) |
 | Both Correct | 0 |
 | Both Wrong | 1 (AV-001: actual 75% > both our <50% and consensus ~65%) |
 
@@ -156,4 +174,4 @@ This document will be updated:
 
 ---
 
-*Updated: 2026-01-03*
+*Updated: 2026-05-08 (added AV-002 resolution; consensus beat us for the first time)*

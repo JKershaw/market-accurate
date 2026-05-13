@@ -287,11 +287,59 @@ Rough estimates of training cost to achieve benchmark performance:
 
 ---
 
+# May 2026 Refresh
+
+Data updated as of May 8, 2026. The original January data is preserved above. This section updates the metrics dashboard and identifies which models have shipped between January and May 2026.
+
+## New open-weights releases (Jan–May 2026)
+
+| Release | Date | Family | Notable claims |
+|---------|------|--------|----------------|
+| Qwen 3 (0.6B–32B base + 235B MoE) | Q1 2026 | Alibaba | 32B Q4 fits single RTX 4090 at ~38 tok/s; reported MMLU >87%, HumanEval >85%, GSM8K >93% on a Q4 quant |
+| Qwen 3.5 397B (Reasoning) | Q1 2026 | Alibaba | MMLU 91, GPQA 89; multi-GPU only (not RTX-4090-viable) |
+| Qwen 3.6-27B / 35B-A3B (MoE) | Apr 2026 | Alibaba | 27B variant reported to "beat 397B on coding" benchmarks; 35B-A3B MoE+SSM hybrid runs on RTX 4090 |
+| Llama 3.3 70B | Late 2025/early 2026 | Meta | 88% MMLU, 89% HumanEval, 90% GSM8K — but 70B Q4 ~40GB, requires multi-GPU |
+| DeepSeek V4 Pro (Max) | 2026 | DeepSeek | 91% MMLU, 91% HumanEval, 98% GSM8K; ~670B total parameters, NOT RTX-4090-viable |
+
+Sources: [BenchLM 2026 leaderboard](https://benchlm.ai/blog/posts/best-open-source-llm), [LLM-Stats Open LLM Leaderboard](https://llm-stats.com/leaderboards/open-llm-leaderboard), [Awesome Agents Home GPU Leaderboard](https://awesomeagents.ai/leaderboards/home-gpu-llm-leaderboard/), [ToolHalla Best Local LLMs RTX 4090 2026](https://toolhalla.ai/blog/best-local-llms-rtx-4090-2026), [BuildFastWithAI Qwen 3.6-27B review](https://www.buildfastwithai.com/blogs/qwen3-6-27b-review-2026).
+
+## Refreshed Metrics Dashboard
+
+| Metric | January 2026 value | May 2026 value | Trend |
+|--------|-------------------|----------------|-------|
+| Best open MMLU | 90.8% (DeepSeek-R1) | ~91% (DeepSeek V4 Pro Max) | Holding parity / leads |
+| Best open MMLU on single RTX 4090 | 87.5% (DeepSeek-R1-Distill-32B) | ~87% (Qwen 3 32B Q4) | Multiple candidates |
+| Best open HumanEval | 96.3% (DeepSeek-R1) | ~91% (DeepSeek V4 Pro Max reported) | Stable to lower (different eval methodology) |
+| Best open GSM8K | 97.3% (DeepSeek-R1) | ~98% (DeepSeek V4 Pro Max) | Stable |
+| Frontier gap (MMLU vs proprietary) | -2.1 (open leads) | Open still ≥ proprietary on MMLU | Holding |
+| Cost per frontier-class training | ~$5–10M | New runs reported in $5–8M range | Stable / slightly down |
+
+## Implications for OB-001 / OB-002 / OB-003
+
+| Prediction | January read | May 2026 read |
+|-----------|--------------|---------------|
+| **OB-001** (open-weights maintains <2pt gap to frontier through 2026) | Tracking favorably | **Tracking strongly favorable.** Open-weights still at parity with proprietary on MMLU; DeepSeek V4 Pro Max ~91 MMLU vs proprietary frontier (~90–91 from Claude Opus 4.6 / GPT-5 / Gemini 3 reported clusters). Through 2026 looks safe absent a 5+ point proprietary breakaway in H2. |
+| **OB-002** (4B model matches Llama 2 70B / MMLU ≥68% on mobile by Dec 2026) | Tracking favorably | Indeterminate. Qwen 3 4B has not been individually benchmarked at MMLU 68%+ in public sources reviewed; smaller 7–8B models clearly clear it. Need targeted check of Qwen 3 small variants and Phi-4-mini class models in next refresh. |
+| **OB-003** (frontier-class training MMLU >85% for under $1M) | Tracking favorably | Borderline. Multiple sub-$10M frontier-class runs reported, but **strict <$1M with documented training cost and MMLU >85%** is harder to verify. Need primary-source training-cost disclosure (not estimate). |
+
+## Implications for AV-003 (RTX 4090 GPT-4 parity)
+
+The expansion of qualifying RTX-4090-viable candidates from one (DeepSeek-R1-Distill-32B in Jan) to ≥3 (add Qwen 3 32B and Qwen 3.6 35B-A3B) materially strengthens the case for AV-003 CORRECT. See `docs/prediction-prep/AV-003-prep.md` May 2026 addendum for the full candidate list.
+
+## What this refresh does NOT change
+
+- The **proprietary breakaway risk** (a closed-source model opens a >2pt MMLU lead) has not yet materialized but cannot be ruled out for Q3/Q4 2026.
+- **Benchmark contamination concerns** remain. MMLU saturation (multiple models clustered at 87–91%) means benchmark-as-discriminator is decaying; future tracking should add GPQA, LiveCodeBench, and SWE-Bench Verified.
+- The original thesis that "compute scarcity premiums are eroding" is not refuted by these data — but as the AV-002 May 2026 resolution shows, the *capex transmission channel* has not yet bound.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-05-08 | Added May 2026 Refresh: new releases (Qwen 3, Qwen 3.5/3.6, DeepSeek V4 Pro, Llama 3.3); updated metrics dashboard; OB-001/002/003 status reads; AV-003 strengthening |
 
 ---
 
