@@ -10,6 +10,12 @@ baseurl: "" # Leave empty if hosted at root
 markdown: kramdown
 highlighter: rouge
 
+# Collections: one file per prediction (single source of truth)
+collections:
+  predictions:
+    output: true
+    permalink: /predictions/:name/
+
 # Theme - using minimal built-in support
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
@@ -21,10 +27,15 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
 
-# Defaults - apply layout to all pages
+# Defaults
 defaults:
   - scope:
       path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: predictions
     values:
       layout: "default"
 

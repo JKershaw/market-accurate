@@ -1,6 +1,8 @@
 # Market Accurate
 
-Open-source financial analysis optimized for accuracy, not attention.
+**Falsifiable predictions about markets, policy, and technology — with a public track record.**
+
+Open-source, CC0, replication encouraged.
 
 ---
 
@@ -176,8 +178,11 @@ market-accurate/
 ├── CONTRIBUTING.md           # How to contribute
 ├── methodology.md            # How we produce analysis
 ├── analysis/                 # One file per analysis; see README's Analyses table for the full list
+├── _predictions/             # One file per prediction (Jekyll collection). Single source of truth.
 ├── predictions/
-│   └── tracker.md            # Single source of truth: counts, resolutions, statistics
+│   └── tracker.md            # Auto-generated index of _predictions/ with counts, resolutions, statistics
+├── scripts/
+│   └── generate_prediction_pages.py  # Regenerates _predictions/ from a structured Python data source
 ├── docs/
 │   ├── agent-infrastructure.md   # Agent system documentation
 │   ├── analyst-comparison.md     # Market Accurate vs Wall Street consensus

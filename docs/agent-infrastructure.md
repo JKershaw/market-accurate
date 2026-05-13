@@ -47,8 +47,9 @@ Every autonomous session follows this sequence:
 ┌─────────────────────────────────────────────────────────────┐
 │  1. ORIENT                                                  │
 │     • Parse current date                                    │
-│     • Load predictions/tracker.md                           │
+│     • Load scripts/generate_prediction_pages.py (SSOT)      │
 │     • Load CLAUDE.md (current focus)                        │
+│     • Run Documentation Sync Check (orchestrator.md)        │
 │     • Check gh issue list (if available)                    │
 └─────────────────────────────────────────────────────────────┘
                               │
@@ -56,6 +57,7 @@ Every autonomous session follows this sequence:
 ┌─────────────────────────────────────────────────────────────┐
 │  2. ASSESS                                                  │
 │     • Predictions past due? → IMMEDIATE                     │
+│     • Docs out of sync with SSOT? → IMMEDIATE               │
 │     • Predictions within 30 days? → HIGH                    │
 │     • Data > 1 quarter stale? → MEDIUM                      │
 │     • Expansion capacity? → LOW                             │
@@ -76,6 +78,8 @@ Every autonomous session follows this sequence:
                               ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  5. REPORT                                                  │
+│     • Re-run Documentation Sync Check                       │
+│     • Regenerate _predictions/ if script changed            │
 │     • Summarize actions taken                               │
 │     • Commit with proper message format                     │
 │     • Push changes                                          │
@@ -114,19 +118,24 @@ The orchestrator delegates specific tasks to specialized sub-agents:
 1. Research outcome using primary sources
 2. Gather evidence with links
 3. Determine CORRECT or INCORRECT
-4. Update `predictions/tracker.md`
-5. Update original analysis Track Record section
-6. Recalculate cumulative statistics
+4. **Update the corresponding `Prediction(...)` entry in `scripts/generate_prediction_pages.py`** — set `status="Resolved"`, `verdict`, `resolved_date`, `resolution_one_liner`, `primary_source`
+5. Run `python3 scripts/generate_prediction_pages.py` to regenerate `_predictions/{ID}.md`
+6. Append a narrative row to the Resolution Log table in `predictions/tracker.md` (this section is hand-maintained for citation depth)
+7. Update original analysis Track Record section
+8. Update `docs/analyst-comparison.md` if applicable
 
 **Outputs:**
-- Resolved prediction entry
-- Updated statistics
+- Updated generator script entry
+- Regenerated `_predictions/{ID}.md`
+- New Resolution Log row in `predictions/tracker.md`
+- Updated analysis Track Record + Changelog
 - Commit: `Resolve: {ID} - {outcome summary}`
 
 **Quality Gates:**
 - Evidence must be from primary sources (SEC filings, earnings transcripts)
 - Outcome must be unambiguous
-- Original prediction wording never modified
+- Original prediction wording never modified (the `claim` field is the published wording)
+- Tracker statistics auto-update from the regenerated collection — do not hand-edit them
 
 ---
 
@@ -167,16 +176,21 @@ The orchestrator delegates specific tasks to specialized sub-agents:
 **Process:**
 1. Research topic using primary sources
 2. Form falsifiable thesis
-3. Develop specific, time-bound predictions
+3. Develop specific, time-bound predictions (with headlines, why-matters, base rates, ex-ante probabilities)
 4. Draft analysis following template
 5. Pass quality checklist
-6. Add predictions to tracker.md
-7. Update CLAUDE.md
+6. **Add each prediction as a `Prediction(...)` entry in `scripts/generate_prediction_pages.py`**
+7. Run `python3 scripts/generate_prediction_pages.py` to create `_predictions/{ID}.md` files
+8. Update CLAUDE.md current-focus section and upcoming-dates table
+9. Add the analysis to README.md and index.md Analyses tables
+10. Add resolution dates to `docs/prediction-calendar.md`
+11. Tick the corresponding roadmap item in CONTRIBUTING.md
 
 **Outputs:**
 - New analysis file: `analysis/{topic}-{YYYY-MM}.md`
-- Updated tracker.md
-- Updated CLAUDE.md
+- New entries in `scripts/generate_prediction_pages.py`
+- Regenerated `_predictions/{ID}.md` files
+- Updated CLAUDE.md, README.md, index.md, CONTRIBUTING.md, docs/prediction-calendar.md
 - Commit: `Add: {Topic} Analysis - {description}`
 
 **Quality Gates:**
