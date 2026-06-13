@@ -116,6 +116,7 @@ Upcoming prediction verification dates and resolution requirements.
 | DA-004 | No US stablecoin >2% peg break >24h | Price feeds | Monitor USDC/PYUSD/etc. |
 | DA-005 | 2026 BTC drawdown smaller than 77% | Price data | Compute peak-to-trough |
 | PC-004 | BIZD underperforms HYG by ≥10pp May→Dec 2026 | Yahoo Finance | Compare total returns |
+| SD-004 | No verified one-person $1B company in 2026 | WSJ/FT/Bloomberg/TechCrunch | Scan for single-employee $1B valuation/revenue |
 
 **AV-005 Resolution Details:**
 - **Claim:** Combined market cap of NVIDIA + AMD + Arm lower on Dec 31, 2026 than Jan 3, 2026
@@ -158,6 +159,7 @@ Upcoming prediction verification dates and resolution requirements.
 | CS-003 | Credit card 90+ DPD ≥4% in any 2026 quarter | NY Fed Household Debt | Check quarterly series |
 | CS-004 | 2026 retail sales growth below NRF 4.4% forecast | Census Monthly Retail Trade | Pull annual revision |
 | PC-001 | Median BDC non-accruals ≥4% in any 2026 quarter | KBRA BDC Compendium | Pull each quarterly report |
+| SD-001 | AI-code security ≥30% vuln rate (controlled study) | Veracode / controlled benchmark | Check next GenAI code-security report |
 
 ### May 2027
 
@@ -165,6 +167,7 @@ Upcoming prediction verification dates and resolution requirements.
 |----|-----------|-------------------|--------|
 | LM-003 | CSR (BLS 43-4051) ≥5% decline 2024→2026 | BLS OES | Check 2026 OES release |
 | CS-002 | Discount basket beats mid-tier mall by ≥10pp May 2026→Apr 2027 | Yahoo Finance | Compute basket returns |
+| SD-005 | Aggregate software employment (BLS 15-1252) ≥90% of 2024 | BLS OES | Check 2026 OES release |
 
 ### June 30, 2027
 
@@ -183,6 +186,8 @@ Upcoming prediction verification dates and resolution requirements.
 | BT-001 | First AI-discovered FDA approval | FDA database | Check approvals with AI discovery claim |
 | BT-002 | 3+ AI drugs Phase III with >55% success | Clinical trial databases | Track AI drug outcomes |
 | DA-001 | BTC ≥40% peak-to-trough drawdown (Apr 2026 – Dec 2027) | Price data | Compute max drawdown |
+| SD-002 | No >50% autonomous-authored production PRs | Eng blogs / filings / studies | Scan top-50 software-firm disclosures |
+| SD-003 | <2x measured speedup, expert devs/mature repos | METR / peer-reviewed RCT | Check next controlled study |
 
 ---
 
@@ -200,4 +205,4 @@ When a prediction's verification date arrives:
 
 ---
 
-*Updated: 2026-05-08 (added CS-001..005 and PC-001..005; resolved AV-002 INCORRECT)*
+*Updated: 2026-06-13 (added SD-001..005 from the AI Software Automation analysis)*

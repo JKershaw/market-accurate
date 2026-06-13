@@ -215,6 +215,7 @@ git commit -m "Update: Refresh {metric} in {analysis}"
 5. ✅ **Digital assets cycle** — post-ETF institutionalization thesis *(completed 2026-04-18)*
 6. ✅ **Consumer spending / retail cycle** — K-shape thesis with 5 predictions *(completed 2026-05-08)*
 7. ✅ **Private credit / BDC sector** — mark-to-model breakdown thesis with 5 predictions *(completed 2026-05-08)*
+8. ✅ **AI software-development automation & reliability** — capability-vs-reliability gap thesis with 5 predictions *(completed 2026-06-13)*
 
 ### Methodology improvements
 

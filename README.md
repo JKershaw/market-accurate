@@ -48,6 +48,7 @@ Each analysis is published with a falsifiable thesis, cited primary sources, pre
 | [Digital Assets Cycle](analysis/digital-assets-2026-04.md) | Apr 2026 | Four-year crypto cycle intact in phase, dampened in amplitude post-ETF |
 | [Consumer Spending](analysis/consumer-spending-2026-05.md) | May 2026 | K-shape consumer pattern is structural, not cyclical |
 | [Private Credit & BDC](analysis/private-credit-2026-05.md) | May 2026 | Mark-to-model NAV smoothing breaks down once redemption gates are tested |
+| [AI Software Automation](analysis/ai-software-automation-2026-06.md) | Jun 2026 | Reliability, not capability, is the binding constraint on autonomous software production |
 
 ---
 

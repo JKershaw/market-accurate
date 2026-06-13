@@ -503,6 +503,7 @@ From `CONTRIBUTING.md`, prioritized:
 9. ✅ Digital assets cycle — COMPLETED (April 2026)
 10. ✅ Consumer spending / retail cycle — COMPLETED (May 2026)
 11. ✅ Private credit / BDC sector — COMPLETED (May 2026)
+12. ✅ AI software-development automation & reliability — COMPLETED (June 2026)
 
 ### Methodology Improvements
 

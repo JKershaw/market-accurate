@@ -194,7 +194,13 @@ Private Credit & BDC Sector Analysis (May 2026):
 - Key metrics: KBRA BDC non-accruals, BIZD vs HYG, BDC dividends, sponsor strategic actions
 - Supports predictions PC-001 through PC-005
 
-**Active predictions:** 52 total (50 pending, 2 resolved INCORRECT), resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
+AI Software Development Automation & Reliability (June 2026):
+- Tests whether reliability/verification — not raw capability — is the binding constraint on autonomous software production
+- Key finding: SWE-bench Verified SOTA ~88.6% (Opus 4.8) but Veracode 45% AI-code vuln rate, GitClear rising churn, DORA negative stability, METR RCT −19% for expert devs on mature repos
+- Key metrics: SWE-bench (standardized harness), Veracode/GitClear/DORA reliability, METR productivity RCT, BLS OES 15-1252
+- Supports predictions SD-001 through SD-005
+
+**Active predictions:** 57 total (55 pending, 2 resolved INCORRECT), resolution dates through 2027. See @docs/pre-registration.md for resolution protocol and @docs/prediction-prep/ for per-prediction resolution docs. Data pipelines in @scripts/ for reproducible metric snapshots.
 
 ### Upcoming Prediction Dates
 
@@ -225,6 +231,11 @@ Private Credit & BDC Sector Analysis (May 2026):
 | BT-003 | Biopharma M&A >$100B | Feb 2027 |
 | CRE-001 | Office vacancy <18% | Feb 2027 |
 | CRE-004 | SF vacancy >25% through 2026 | Feb 2027 |
+| SD-004 | No one-person $1B company in 2026 | Dec 31, 2026 |
+| SD-001 | AI-code security ≥30% vuln rate (controlled study) | Feb 28, 2027 |
+| SD-005 | Aggregate software employment ≥90% of 2024 | May 31, 2027 |
+| SD-002 | No >50% autonomous-authored production PRs | Dec 31, 2027 |
+| SD-003 | <2x measured speedup, expert devs/mature repos | Dec 31, 2027 |
 
 See @analysis/ai-valuation-2026-01.md for AI valuation thesis.
 See @analysis/hyperscaler-capex-2026-01.md for capex tracking.
@@ -236,6 +247,7 @@ See @analysis/biotech-development-2026-01.md for drug development analysis.
 See @analysis/commercial-real-estate-2026-01.md for office market analysis.
 See @analysis/consumer-spending-2026-05.md for K-shape consumer analysis.
 See @analysis/private-credit-2026-05.md for BDC and private credit analysis.
+See @analysis/ai-software-automation-2026-06.md for AI software-development automation analysis.
 See @predictions/tracker.md for full track record.
 See @docs/prediction-calendar.md for resolution calendar.
 See @docs/analyst-comparison.md for Wall Street consensus comparison.
