@@ -217,3 +217,25 @@ The DeepSeek-R1-Distill-32B candidate alone is sufficient to resolve AV-003 CORR
 ---
 
 *Addendum: 2026-05-08*
+
+---
+
+## Addendum (June 13, 2026): Final pre-resolution candidate set (T-17 days)
+
+The field has only widened. Qualifying open-weights, ≤32B, RTX-4090-viable candidates clearing MMLU 86.4 / HumanEval 67 / GSM8K 92:
+
+| Model | Params | RTX 4090 fit | Clears all three? |
+|-------|--------|--------------|-------------------|
+| DeepSeek-R1-Distill-32B | 32.8B | Q4_K_M ~20GB ✓ | Yes (87.5 / 85.4 / 95.6 per original distill model card) |
+| Qwen 3 32B | 32.8B | Q4_K_M ~22GB ✓ (tight context) | Yes (>87 / >85 / >93 at Q4) |
+| Gemma 4 31B | 30.7B | Q4 ✓ | MMLU 88.4; HumanEval/GSM8K not separately verified |
+
+### ⚠️ Data-discipline escalation
+
+Third-party aggregators now disagree materially on the *same* model (DeepSeek-R1-Distill-32B MMLU appears as both ~72.6 and ~87.5; HumanEval as 85.4 and 94.3). **The resolution MUST cite the official model card / technical report, not SEO leaderboards.** DeepSeek-R1-Distill-32B remains the cleanest anchor because its scores were in the original January analysis and trace to the MIT-licensed HuggingFace card. Note also that MMLU is now saturated (most 2026 models cluster 87–94%), which makes the 2023 GPT-4 bar easy to clear but degrades MMLU as a discriminator — a methodology note, not a resolution obstacle.
+
+### Read at T-17 days
+
+**Strongly tracking CORRECT (~95%).** Resolve on June 30 by: (1) anchoring on DeepSeek-R1-Distill-32B's model-card numbers; (2) confirming the Q4 GGUF is publicly downloadable and runs in 24GB; (3) documenting the aggregator-noise caveat in the resolution note.
+
+*Addendum: 2026-06-13*

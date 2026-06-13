@@ -472,6 +472,21 @@ Implication: the near-term hyperscaler capex story is no longer compatible with 
 
 ---
 
+# June 2026 Update: No Guidance Change; Demand Signal Reconfirmed Downstream
+
+Data as of June 13, 2026. No new hyperscaler earnings since the May update — **Q2 2026 earnings (late July) are the next gating event** for HC-002 (mid-year guidance cut, resolves Oct 31, 2026). No guidance changes or new data-center cancellations surfaced in the interim. Combined Big-4 2026 capex consensus holds at **~$700B** (some analysts to $725B, ~+77% YoY). Source: [Tom's Hardware ($725B)](https://www.tomshardware.com/tech-industry/big-tech/big-techs-ai-spending-plans-reach-725-billion), [Futurum ($690B)](https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/).
+
+**Downstream confirmation:** NVIDIA's Q1 FY27 (Data Center $75.2B, +92% YoY, ~50% hyperscale) is the supplier-side mirror of this capex — the spend is landing as record GPU revenue, not softening. This reinforces the supply-constraint reading.
+
+| Prediction | May read | June read |
+|-----------|----------|-----------|
+| **HC-001** (Big-4 quarterly capex <$150B in 2026) | Almost certainly INCORRECT | **Tracking INCORRECT** — Q1 already $130.6B; $700B annual implies ~$175B avg quarter |
+| **HC-002** (one hyperscaler cuts FY guidance mid-2026) | Tracking INCORRECT | **Tracking INCORRECT** — no cut; Q2 earnings (late July) is the decisive window |
+
+(Note: some June aggregators cite MSFT 2026 capex as ~$110–120B on a *fiscal-year* basis vs the ~$190B *calendar-year* figure used above — an accounting-frame difference, not a guidance change.)
+
+---
+
 # Changelog
 
 | Date | Change |
@@ -479,6 +494,7 @@ Implication: the near-term hyperscaler capex story is no longer compatible with 
 | 2026-01-03 | Initial publication |
 | 2026-04-19 | Added April 2026 Interim Update: MSFT/AWS pullbacks, supply-constraint story, updated 2026 guidance ($650–690B combined), read on AV-002/007 and HC-001/002 |
 | 2026-05-08 | Added May 2026 Update with Q1 2026 reported capex ($130.6B Big-4), upward-revised 2026 guidance ($700B midpoint), AV-002 resolution, HC-001/002 read |
+| 2026-06-13 | Added June 2026 Update: no new earnings/guidance change; ~$700B consensus holds; NVIDIA Q1 FY27 as downstream demand confirmation; HC-001/002 tracking INCORRECT |
 
 ---
 

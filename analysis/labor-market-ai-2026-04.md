@@ -281,11 +281,51 @@ Labor displacement would affect office demand. Stable employment in knowledge-wo
 
 ---
 
+# June 2026 Update: Aggregate Stable, Concentration Confirmed
+
+Data as of June 13, 2026. Original April data preserved above. Interim read only; LM predictions resolve Dec 2026 – Jun 2027.
+
+## LM-001 (unemployment 3.8–4.5%, no AI attribution) — tracking CORRECT
+
+- **May 2026 unemployment: 4.3%** (unchanged); +172,000 nonfarm payrolls (beat ~85K expected). The rate has held in a narrow **4.3–4.5% band since July 2025**; U-6 at 8.1%. Source: [BLS Employment Situation](https://www.bls.gov/news.release/empsit.nr0.htm), [CNBC](https://www.cnbc.com/2026/06/05/jobs-report-may-2026.html).
+
+**Read:** 4.3% sits inside the 3.8–4.5% band; no official BLS/Fed report attributes the aggregate rate to AI. Job gains are concentrated in leisure/hospitality, government, healthcare — consistent with the "concentrated, not aggregate" thesis. **Tracking CORRECT.**
+
+## LM-003 (customer-service-rep headcount ≥5% decline 2024→2026) — tracking CORRECT, not yet resolvable
+
+- **BLS OES: customer service reps −130,180 jobs (−4.8%) in the year through May 2025.** The 18 BLS-flagged AI-exposed occupations (~10M jobs) fell −0.2% (May 2024→May 2025) vs +0.8% for total employment. Source: [Detroit News (BLS OES)](https://www.detroitnews.com/story/business/2026/05/16/ai-artificial-intelligence-job-losses-customer-service-sales-secretaries/90118520007/).
+
+**Read:** One year already at −4.8% makes the **two-year** (2024→2026) ≥5% threshold very likely — but it requires the **May 2026 OES release (publishes ~spring 2027)** and is **not yet confirmable**. Tracking CORRECT; do not resolve early.
+
+## LM-002 (new-grad tech hiring ≥15% down YoY) — tracking CORRECT directionally (source caveat)
+
+- Big-tech entry-level hiring fell >50% over three years; entry-level was just 7% of new hires in 2024 (−25% YoY); US entry-level tech postings −67% (2023→2024). Source: [Rest of World / SignalFire](https://restofworld.org/2025/engineering-graduates-ai-job-losses/), [CNBC](https://www.cnbc.com/2025/09/07/ai-entry-level-jobs-hiring-careers.html).
+
+**Read:** Directionally on-thesis, but the cleanest data is VC/job-board, not the **LinkedIn Workforce Insights / BLS OES** the prediction names. Resolution (Jun 2027) must use the specified source. **Flag — do not resolve early.**
+
+## LM-004 (no Tier-1 consulting AI-unemployment-wave report) — tracking CORRECT
+
+- No McKinsey/BCG/Bain/Deloitte report declaring an AI-driven *aggregate* unemployment wave surfaced; coverage frames AI labor impact as occupation-concentrated. **Tracking CORRECT** (negative finding; resolves Dec 31, 2026).
+
+## Refreshed reads
+
+| Prediction | Resolves | June 2026 read |
+|-----------|----------|----------------|
+| LM-001 (unemployment 3.8–4.5%, no AI attribution) | Feb 2027 | **Tracking CORRECT** (4.3% May) |
+| LM-002 (new-grad tech hiring ≥15% down) | Jun 2027 | Tracking CORRECT directionally; named-source caveat |
+| LM-003 (CSR ≥5% decline 2024→2026) | May 2027 | **Tracking CORRECT** (−4.8% one-year); needs 2026 OES |
+| LM-004 (no consulting AI-unemployment claim) | Dec 2026 | **Tracking CORRECT** |
+
+The April thesis — disruption concentrated, not aggregate — is holding cleanly across all four predictions at this checkpoint.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-04-18 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: LM-001 (4.3% May unemployment, in band), LM-003 (CSR −4.8% one-year), LM-002 (entry-level tech down, source caveat), LM-004 (none) — all four tracking CORRECT |
 
 ---
 

@@ -244,11 +244,56 @@ To replicate the predictions:
 
 ---
 
+# June 2026 Update: K-Shape Confirmed by the Fed Itself
+
+Data as of June 13, 2026. Original May data preserved above. Interim read only. The NY Fed Q1 2026 Household Debt & Credit report (released May 12, 2026) is the key new input.
+
+## NY Fed Q1 2026 (released May 12, 2026)
+
+- Total household debt **$18.8T** (+0.1% QoQ); credit cards $1.25T (−$25B QoQ); auto loans $1.69T (+$18B). The NY Fed flagged the **"highest auto-loan delinquency rates ever recorded"** and credit-card delinquency near 2008 levels. Source: [NY Fed](https://www.newyorkfed.org/newsevents/news/research/2026/20260512), [CNBC](https://www.cnbc.com/2026/05/12/new-york-fed-credit-card-debt-stands-at-1point25-trillion.html).
+
+## CS-001 (subprime auto 60+ DPD >6% in ≥3/4 of 2026 quarters) — tracking strongly CORRECT
+
+- **Subprime auto 60+ DPD: Jan 2026 6.90% (32-year record, since 1994), Feb 2026 6.80%.** Prime auto 60+ DPD: 0.42%. Source: [Wolf Street Q1 2026 auto](https://wolfstreet.com/2026/05/19/auto-loan-balances-debt-to-income-ratio-and-delinquencies-of-subprime-prime-auto-loans-in-q1-2026-how-bad-is-it/), [CarEdge](https://caredge.com/guides/auto-loan-crisis-32-year-record).
+
+**Read:** Q1 monthly readings all >6%. **Tracking strongly CORRECT.** The borrower-segment-specific stress (subprime 6.9% vs prime 0.42%) is exactly the K-shape signature the thesis predicted.
+
+## CS-005 (Fed official cites "K-shaped" consumer in 2026) — condition already met
+
+- **Chair Powell** called a "K-shaped economy… clearly a thing" the Fed sees in the data; **Governor Lisa Cook** described a "K-shaped"/"two-speed" economy leaving low-income families behind. The NY Fed hosted a **"K-Shaped Economy" symposium (Apr 3, 2026)**. Source: [Fortune/AOL on Powell](https://www.aol.com/articles/fed-powell-voices-fear-k-115858881.html), [Cook](https://finviz.com/news/301097/feds-lisa-cook-says-inflation-is-still-too-hot-and-a-k-shaped-economy-is-leaving-low-income-americans-behind), [NY Fed symposium](https://www.newyorkfed.org/research/conference/2026/amec-symposium-on-the-k-shaped-economy).
+
+**Read:** The threshold condition (a Fed governor or Reserve Bank president cites "K-shaped" in 2026) is **irreversibly met**. Per this session's no-early-resolution discipline, CS-005 will be **formally resolved on its verification date (Jan 31, 2027)**; the resolver should anchor on the exact Powell or Cook transcript. Effectively CORRECT.
+
+## CS-003 (credit card 90+ DPD ≥4% any 2026 quarter) — tracking INCORRECT/unlikely
+
+- Credit card 60+ DPD (all cards) is **2.97%** in Q1 2026; 30+ is 2.92% (lowest since Q2 2023). The 90+ figure sits **below** the 2.97% 60+ level. Source: [Wolf Street CC Q1 2026](https://wolfstreet.com/2026/05/20/credit-card-delinquencies-balances-debt-to-income-credit-limits-and-collections-in-q1-2026-americans-and-their-revolving-credit/).
+
+**Read:** Reaching 4.0% on 90+ would require a sharp deterioration. **Tracking INCORRECT/unlikely.** **Definitional flag:** the NY Fed reports both a per-account 90+ rate (~low single digits) and a per-balance "serious delinquency" flow (historically ~11–12%); the resolver must confirm exactly which series CS-003 targets, because the two give opposite verdicts.
+
+## CS-004 (2026 retail sales growth < NRF 4.4% forecast) — too early, mixed
+
+- Census: **April 2026 +4.9% YoY; May 2026 +2.3% YoY** (core +2.9%). NRF still forecasts +4.4% full-year. Source: [Census](https://www.census.gov/retail/marts/www/marts_current.pdf), [NRF on May data](https://nrf.com/media-center/press-releases/census-retail-sales-data-may-shows-reasonably-healthy-consumer).
+
+**Read:** May's deceleration to +2.3% leans toward a miss, but April was +4.9%. **Too early** — resolves on the Census annual figure (Feb 2027).
+
+## Refreshed reads
+
+| Prediction | Resolves | June 2026 read |
+|-----------|----------|----------------|
+| CS-001 (subprime auto >6% in ≥3/4 quarters) | Feb 2027 | **Tracking strongly CORRECT** (6.9%/6.8%) |
+| CS-002 (discount beats mid-tier mall by 10pp) | May 2027 | Not refreshed this cycle (basket-return measure) |
+| CS-003 (credit card 90+ DPD ≥4%) | Feb 2027 | **Tracking INCORRECT/unlikely** (60+ at ~3%); definitional flag |
+| CS-004 (retail growth < NRF 4.4%) | Feb 2027 | Too early; May +2.3% leans miss |
+| CS-005 (Fed cites "K-shaped") | Jan 2027 | **Condition met** (Powell + Cook); resolve on date |
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-05-08 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: NY Fed Q1 2026 data; CS-001 strongly CORRECT (subprime auto 6.9%); CS-005 condition met (Powell + Cook cite "K-shaped"); CS-003 tracking INCORRECT (cc 90+ definitional flag); CS-004 too early |
 
 ---
 

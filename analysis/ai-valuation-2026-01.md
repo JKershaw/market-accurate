@@ -564,6 +564,60 @@ Updating this in the document rather than in a new file so the record remains au
 
 ---
 
+# June 2026 Interim Update: NVIDIA Q1 FY27 and the Acceleration Problem
+
+Added June 13, 2026. The January thesis and prior updates are preserved above unchanged. This update incorporates NVIDIA's Q1 FY2027 report (May 20, 2026) — the single most important data point since the May update — and refreshes the longer-dated AV predictions.
+
+## NVIDIA Q1 FY2027 (reported May 20, 2026): a second straight acceleration
+
+| Metric | Q1 FY27 | YoY | Note |
+|--------|---------|-----|------|
+| Total revenue | $81.6B | +85% | Beat ~$78.8B consensus |
+| Data Center revenue | $75.2B | **+92%** | ~92% of total; ~50% hyperscale / ~50% diversified |
+| DC networking | $14.8B | +199% | Record (NVLink/Spectrum-X/InfiniBand) |
+| GAAP gross margin | 74.9% | +14.4pp | vs 60.5% prior year |
+| Non-GAAP EPS | $1.87 | — | Beat ~$1.75 |
+| Q2 FY27 revenue guide | $91.0B ±2% | — | China excluded entirely |
+| China DC (Hopper) | $0 | vs $4.6B Q1 FY26 | Street models China at ~zero |
+
+The company also raised its dividend 25× ($0.01 → $0.25) and authorized +$80B buyback. Jensen Huang: *"The buildout of AI factories — the largest infrastructure expansion in human history — is accelerating at extraordinary speed."*
+
+Sources: [SEC 8-K via StockTitan](https://www.stocktitan.net/sec-filings/NVDA/8-k-nvidia-corp-reports-material-event-56086a88bbb4.html), [CNBC](https://www.cnbc.com/2026/05/20/nvidia-nvda-earnings-report-q1-2027.html), [heygotrade earnings detail](https://www.heygotrade.com/en/blog/nvidia-q1-fy27-earnings-preview-may-20-2026/).
+
+**Why this matters for the thesis:** Data Center revenue grew +92% YoY — an *acceleration* from the +75% that resolved AV-001 INCORRECT in February, and it did so with China contributing **zero**. The near-term efficiency-thesis transmission channel (per-capability compute reduction showing up as decelerating NVIDIA growth) has now been wrong for two consecutive quarters by a widening margin. Gross margin expanding to ~75% is the opposite of the pricing-power erosion the January analysis anticipated.
+
+## AV-005 interim read: tracking strongly INCORRECT
+
+AV-005 claims NVIDIA + AMD + Arm combined market cap will be **lower** on Dec 31, 2026 than at the Jan 3, 2026 baseline.
+
+| Company | ~Baseline (≈Jan 2, 2026) | Current (~Jun 12, 2026) | Change |
+|---------|--------------------------|--------------------------|--------|
+| NVIDIA | ~$4.64T | ~$4.97T | +7% |
+| AMD | ~$350B | ~$834B | +138% |
+| Arm | ~$117B | ~$407B | +~250% |
+| **Combined** | **~$5.11T** | **~$6.21T** | **+22%** |
+
+Source: [companiesmarketcap (NVDA](https://companiesmarketcap.com/nvidia/marketcap/) / [AMD](https://companiesmarketcap.com/amd/marketcap/) / [ARM)](https://companiesmarketcap.com/arm-holdings/marketcap/). AMD's Q1 2026 ($10.3B revenue, +38%; Data Center $5.8B, +57%) and MI350/MI450 traction drove its re-rating.
+
+**Data-discipline note:** The baseline figures above are **Dec-31-2025 proxies**, not verified exact Jan-2-2026 closes — the directional conclusion (combined up ~22%) is robust to the 1–3% this could move, but the exact baseline should be locked from a paid terminal before the Dec 31 resolution. The combined trio would need to fall **~18%** just to revert to baseline. **AV-005 is tracking strongly INCORRECT**, consistent with the supply-constraint reading from the April update (scarcity makes these three *more* valuable, not less).
+
+## The June 5, 2026 semiconductor selloff
+
+On June 5, the SOX fell ~10% in a single session (steepest since 2020) — triggered by a soft Broadcom AI guide, memory-glut fears, and 10Y yields above 4.5%. It was substantially **bought back within days**. This is a notable volatility data point (a ~12–13% intraday drawdown that mean-reverted) but did not change the trend; it's more relevant to the longer-dated SC-005 (2027 correction) call than to the AV thesis. Source: [heygotrade](https://www.heygotrade.com/en/blog/semiconductor-stocks-selloff-2026/).
+
+## Refreshed read on longer-dated AV predictions
+
+| Prediction | May read | June read |
+|-----------|----------|-----------|
+| **AV-003** (open = GPT-4 on RTX 4090, Jun 30) | Strengthening | Strongly tracking CORRECT; resolve on date |
+| **AV-005** (NVDA+AMD+Arm lower Dec 31) | More likely INCORRECT | **Tracking strongly INCORRECT** (combined +22%) |
+| **AV-006** (efficiency narrative mainstream by mid-2027) | Likely CORRECT | Still likely CORRECT — coverage growing even as numbers contradict it |
+| **AV-007** (hyperscaler absolute capex cut by end-2027) | Speculative | Still speculative; no hyperscaler has cut absolute capex; path now requires a demand reversal |
+
+**Honest read (unchanged in direction, stronger in degree):** The efficiency dynamics remain real at the technical layer (see the open-source June update — AV-003 clears its bar), but the translation to AI-infrastructure financials keeps going the *wrong* way for the bearish near-term predictions. Two NVIDIA prints (+75%, then +92%) and a +22% move in the AV-005 basket are concrete evidence against near-term compute-demand erosion. The thesis's surviving form is the longer-dated, valuation-level bet (AV-005's Dec-31 snapshot, AV-007's 2027 capex), and AV-005 in particular is now a likely miss.
+
+---
+
 # Changelog
 
 | Date | Change |
@@ -572,6 +626,7 @@ Updating this in the document rather than in a new file so the record remains au
 | 2026-04-19 | Resolved AV-001 as INCORRECT: NVIDIA Q4 FY26 DC revenue +75% YoY vs predicted <50% |
 | 2026-04-19 | Added April 2026 Interim Update: supply-constraint vs demand-destruction distinction; honest read on what the thesis got right/wrong |
 | 2026-05-08 | Resolved AV-002 as INCORRECT: no MSFT/GOOG/AMZN moderation language in Q1 2026 calendar earnings; all four hyperscalers raised or reiterated 2026 capex (combined ~$700B midpoint) |
+| 2026-06-13 | Added June 2026 Interim Update: NVIDIA Q1 FY27 (DC $75.2B, +92% YoY); AV-005 interim (combined +22%, tracking INCORRECT); June 5 SOX selloff; refreshed AV-003/005/006/007 reads |
 
 ---
 

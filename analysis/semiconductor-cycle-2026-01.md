@@ -460,11 +460,77 @@ If you can produce more accurate cycle analysis:
 
 ---
 
+# June 2026 Update: The Cycle Refuses to Turn
+
+Data as of June 13, 2026. The original January analysis is preserved above. This update refreshes the four near-dated semiconductor predictions ahead of their resolution windows. **The honest headline: every near-term "cycle is turning" signal the January analysis bet on is currently going the other way.**
+
+## NVIDIA Q1 FY27 confirms AI-segment acceleration
+
+NVIDIA reported Data Center revenue of **$75.2B, +92% YoY** for Q1 FY2027 (May 20, 2026), with gross margin at ~75% and Q2 guidance of $91B — an acceleration, not the deceleration the cycle-correction thesis required. See the [AI Valuation June update](ai-valuation-2026-01.md) for detail. AMD's Q1 2026 ($10.3B total, +38%; Data Center $5.8B, +57%) corroborates: the AI silicon segment is still in expansion.
+
+## SC-002 (SOX underperforms S&P 500 in H1 2026) — tracking firmly INCORRECT
+
+Resolves **July 1, 2026** (preparing only; not resolving early).
+
+| Metric | Value | Source |
+|--------|-------|--------|
+| SOX level (Jun 12, 2026) | 13,371.47 | [Barchart $SOX](https://www.barchart.com/stocks/quotes/$SOX/performance) |
+| SOX 2026 YTD (price) | **+88.8%** | Barchart |
+| SOX 2026 intraday high | 13,998 (Jun 3) | Barchart |
+| S&P 500 close Dec 31, 2025 | 6,845.50 | [CNBC](https://www.cnbc.com/2025/12/30/stock-market-today-live-updates.html) |
+| S&P 500 2026 YTD | low single digits (implied) | — |
+
+SOX is up ~89% YTD vs the S&P 500's low-single-digit gain. The gap is far too wide for dividends (total- vs price-return) to flip. **SC-002 is tracking firmly INCORRECT** — the "extreme 2025 outperformance → H1 2026 mean reversion" bet failed; the outperformance simply continued. (SC-002 prep doc now carries the populated Dec-31-2025 baselines and interim spread.)
+
+## SC-001 (DRAM peaks Q1/Q2 2026, declines Q3) — tracking INCORRECT
+
+TrendForce data cuts directly against this prediction:
+
+| Data point | Value | Source |
+|-----------|-------|--------|
+| Q2 2026 conventional DRAM contract price | **+58% to +63% QoQ** | [Tom's Hardware / TrendForce](https://www.tomshardware.com/pc-components/dram/dram-and-nand-contract-prices-to-climb-again-in-q2), [TrendForce](https://www.trendforce.com/presscenter/news/20260331-12995.html) |
+| Q3/Q4 2026 outlook | **Forecasts RAISED — upward momentum extends into H2 2026** | TrendForce |
+| Server DDR5 vs HBM3e profitability | DDR5 **surpassed** HBM3e (historic first, early 2026) | [TrendForce](https://www.trendforce.com/presscenter/news/20251029-12758.html) |
+
+No QoQ peak is in sight; TrendForce explicitly raised H2 forecasts on aggressive restocking, server demand, and low supplier inventory. The "memory glut" cited in the June 5 selloff is a market narrative not yet reflected in contract-price data. **SC-001 tracking INCORRECT** (resolves Oct 2026 — the required Q3 QoQ decline looks unlikely).
+
+## SC-003 (equipment vendor YoY revenue decline in 2026) — tracking INCORRECT
+
+All major WFE vendors are reporting records and **raising** 2026 outlooks:
+
+| Vendor | Latest | Source |
+|--------|--------|--------|
+| ASML | Q1 2026 sales €8.8B, 53% GM; **raised FY26 guide to €36–40B** | [TIKR](https://www.tikr.com/blog/asml-stock-raises-2026-guidance-after-e8-8b-q1-revenue-beat) |
+| Applied Materials | Record fiscal Q2 2026 $7.91B; **raised CY2026 outlook**; WFE +20%+ | [TIKR](https://www.tikr.com/blog/applied-materials-beat-q2-estimates-and-raised-its-2026-outlook-the-stock-dipped-heres-what-investors-should-know) |
+| KLA | Record quarterly $3.30B, +7.2% YoY | earnings coverage |
+
+No YoY declines anywhere. **SC-003 tracking INCORRECT** (resolves Feb 2027). (KLA/Lam exact figures are from earnings-coverage aggregators; confirm from IR before any resolution.)
+
+## SC-005 (20%+ SOX correction in 2027) — live; one rehearsal already happened
+
+On **June 5, 2026** the SOX fell ~10% in a session (Broadcom weak AI guide, memory-glut fears, yields >4.5%), a peak-to-trough intraday drawdown of ~12–13% from the June 3 high — then was bought back within days. This is a 2026 event (outside SC-005's 2027 window) but a useful base-rate data point: a sharp drawdown occurred and mean-reverted fast, which is what a still-expanding cycle does. SC-005 remains live and untested on its own timeframe.
+
+## Refreshed prediction reads
+
+| Prediction | Resolves | June 2026 read |
+|-----------|----------|----------------|
+| SC-001 (DRAM Q3 decline) | Oct 2026 | **Tracking INCORRECT** — TrendForce raised H2 forecasts |
+| SC-002 (SOX < S&P H1) | Jul 1 2026 | **Tracking firmly INCORRECT** — SOX +89% YTD |
+| SC-003 (equipment YoY decline) | Feb 2027 | **Tracking INCORRECT** — ASML/AMAT/KLA records + raises |
+| SC-004 (foundry utilization divergence) | Jan 2027 | Not refreshed this cycle — needs TSMC node-level data |
+| SC-005 (SOX 20%+ correction in 2027) | Dec 2027 | Live; June 5 2026 ~12% drop bought back |
+| SC-006 (auto semi growth > AI growth) | Dec 2027 | Live; AI growth (+92% NVDA DC) still dominant |
+
+**Honest read:** The January thesis priced a 2026–2027 cycle correction with a higher AI floor. So far the floor keeps rising and the correction keeps not arriving. The cleanest framing is unchanged from the AI Valuation update: the binding 2026 reality is **supply constraint and pricing power**, not the volume-and-margin rollover a classic cycle turn would show. The 2027-dated calls (SC-005, SC-006) are where the thesis still has its strongest shot.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: NVIDIA Q1 FY27 (+92% DC); SC-002 tracking INCORRECT (SOX +89% YTD); SC-001 INCORRECT (DRAM H2 forecasts raised); SC-003 INCORRECT (ASML/AMAT/KLA records); June 5 selloff; refreshed SC-001..006 reads |
 
 ---
 

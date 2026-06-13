@@ -247,11 +247,60 @@ To replicate the predictions:
 
 ---
 
+# June 2026 Update: Gating Confirmed, but the Median Held
+
+Data as of June 13, 2026. Original May data preserved above. Interim read only. The KBRA Q1 2026 Compendium and Q1 BDC earnings are the key new inputs — and they split the thesis: the *redemption/gating* call is confirmed, but the *median-non-accrual* call is so far wrong.
+
+## PC-003 (non-traded BDC gating event in 2026) — condition met
+
+- **Q1 2026: industry-wide $13.9B redemption requests; $7.4B honored; >$4.6B "trapped behind gates"** — the first quarter with pro-rata gating across the non-traded BDC product type. Prorated/gated funds included **Apollo Debt Solutions ~45%, HPS ~54%, Vista Credit ~50%; BlackRock Private Credit exceeded its 5% cap for the first time since inception**. BCRED held a 5% repurchase cap (prorating) after Q1 demand hit ~10% of NAV. Source: [AltsWire](https://altswire.com/nontraded-bdc-outflows-exceed-inflows-for-first-time-as-q1-fundraising-drops-59-year-over-year/), [Benzinga](https://www.benzinga.com/markets/private-markets/26/05/52607793/bdc-fundraising-slumps-redemptions-overtake-inflows-first-time).
+
+**Read:** The threshold (a major >$10B non-traded BDC invokes a gate / prorates repurchases in 2026) is **irreversibly met**. Per no-early-resolution discipline, PC-003 will be **formally resolved on its verification date (Jan 31, 2027)**. Effectively CORRECT.
+
+## PC-001 (median BDC non-accruals ≥4% at cost any 2026 quarter) — tracking INCORRECT
+
+- KBRA Q1 2026 Compendium: non-accruals **"remained muted for most BDCs,"** with exceptions — **FSK at 8.1% at cost is the outlier; OBDC only 2.0% cost / 1.0% FV.** Q3 2025 median was 2.5%. Source: [KBRA Q1 2026](https://www.kbra.com/publications/NpWYRCCv), [Blue Owl/OBDC 8-K](https://www.sec.gov/Archives/edgar/data/0001655888/000165588826000034/exhibit991-obdcxpressrelea.htm).
+
+**Read:** **Tracking INCORRECT.** This is the most important honest catch of the update: the May thesis predicted *median* non-accruals reaching 4%, but Q1 2026 shows the **median still muted (~2.5%) while the worst names (FSK 8.1%) are very stressed.** The thesis underestimated dispersion — the cycle is hitting the tail hard but has not yet moved the median. Watch H2, but as worded this is currently failing.
+
+## PC-002 (5+ public BDCs cut base dividend ≥10% in 2026) — tracking, 2 of 5
+
+- **FS KKR Capital (FSK): cut $0.70 → $0.48 (−31%)**; non-accruals 8.1% cost / 4.2% FV; NAV $20.89 → $18.83. Source: [Bloomberg](https://www.bloomberg.com/news/articles/2026-02-26/fs-kkr-private-credit-fund-cuts-dividend-amid-rise-in-bad-loans).
+- **Prospect Capital (PSEC): cut monthly $0.045 → $0.035 (−22%).** Source: [MSN/Reuters](https://www.msn.com/en-us/news/other/prospect-capital-cuts-dividend-as-earnings-beat-estimates/gm-GM2AB971F1).
+- Barings BDC (BBDC) signaling a 10–15% cut (not yet declared); industry base-dividend coverage averaging ~99%.
+
+**Read:** **2 of 5 confirmed** (FSK, PSEC, both ≥10%). Multiple others signaling. **Tracking** toward CORRECT; the next gating events are Q2/Q3 earnings. Resolves Jan 31, 2027.
+
+## PC-004 (BIZD underperforms HYG by ≥10pp, May 8 → Dec 31, 2026) — tracking CORRECT directionally
+
+- **BIZD 2026 YTD: ~−9% total return** (through early June). HYG (high-yield bonds) is roughly flat-to-positive in 2026. Source: [TotalRealReturns BIZD](https://totalrealreturns.com/n/BIZD).
+
+**Read:** A gap approaching/exceeding 10pp is plausible already, but the window is **May 8 → Dec 31** (not YTD) and **HYG's exact period return is unverified** in this pass. **Flag:** pull both from the May 8 baseline at resolution. Tracking CORRECT directionally.
+
+## PC-005 (sponsor M&A or wind-down of a credit business in 2026) — not triggered
+
+- No confirmed 2026 sponsor sale/merger/wind-down of a credit unit surfaced. FSK faces a securities class-action (May 2026), but that is not an M&A/wind-down event. **Tracking — not yet triggered** (resolves Jan 31, 2027).
+
+## Refreshed reads
+
+| Prediction | Resolves | June 2026 read |
+|-----------|----------|----------------|
+| PC-001 (median non-accruals ≥4%) | Feb 2027 | **Tracking INCORRECT** — median muted (~2.5%); only tail names stressed |
+| PC-002 (5+ BDC dividend cuts ≥10%) | Jan 2027 | Tracking — 2 of 5 (FSK, PSEC) |
+| PC-003 (non-traded BDC gating) | Jan 2027 | **Condition met** ($4.6B gated); resolve on date |
+| PC-004 (BIZD underperforms HYG 10pp) | Jan 2027 | Tracking CORRECT directionally; HYG period return to verify |
+| PC-005 (sponsor M&A/wind-down) | Jan 2027 | Not triggered |
+
+**Honest read:** The repricing/redemption thesis is being confirmed in real time (PC-003 gating, PC-002 cuts, PC-004 equity discount). But the headline PC-001 prediction — keyed to the *median* — is currently wrong, because the stress is concentrated in the tail (FSK) rather than the middle of the distribution. That dispersion is itself the more accurate description of the cycle, and the prediction's framing (median) was the weaker choice.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-05-08 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: PC-003 condition met (Q1 gating, $4.6B trapped); PC-002 2-of-5 (FSK −31%, PSEC −22%); PC-001 tracking INCORRECT (median muted ~2.5%, only tail stressed); PC-004 directional; PC-005 not triggered |
 
 ---
 

@@ -327,11 +327,45 @@ If AI efficiency is real, biotech benefits. If AI efficiency fails, biotech retu
 
 ---
 
+# June 2026 Update: M&A Threshold Already Cleared; No AI Approval Yet
+
+Data as of June 13, 2026. Original January data preserved above. Interim read only.
+
+## BT-003 (biopharma M&A >$100B in 2026) — effectively CORRECT
+
+- **2026 YTD biopharma M&A: $106B across 201 deals as of early June** — already past the $100B threshold with 6+ months left. Average deal value $527M (up from $365M in 2025). IQVIA forecasts full-year $140–160B. Source: [CNBC (PitchBook data, Jun 4, 2026)](https://www.cnbc.com/2026/06/04/biotech-ma-dealmaking-pharma-106-billion.html), [IQVIA](https://www.iqvia.com/locations/emea/blogs/2026/01/biopharma-m-and-a-outlook-for-2026).
+
+**Read:** **Effectively CORRECT** (resolves Feb 2027) — driven by patent-cliff pressure plus buoyant markets, exactly the January mechanism. Confirm at resolution that PitchBook's "biotech" framing matches the prediction's "biopharma" scope; the margin is comfortable.
+
+## BT-001 (first AI-discovered FDA approval by Dec 31, 2027) — pending, none yet
+
+- **No AI-discovered drug has received FDA approval as of mid-2026.** Insilico Medicine's rentosertib (ISM001-055, IPF) is the leading candidate, in pivotal Phase III discussions. Recursion's lead pre-merger asset REC-994 was **discontinued May 2025**. ~173 AI-originated programs are in clinical development; 15–20 expected to enter pivotal trials in 2026. Source: [Axis Intelligence](https://axis-intelligence.com/ai-drug-discovery-2026-complete-analysis/), [HumAI](https://www.humai.blog/ai-discovered-drugs-reach-phase-iii-and-2026-will-determine-whether-all-the-promises-were-real/).
+
+**Read:** Consistent with the January timeline (first approval 2027–2028). **No resolution event yet**; BT-001 (Dec 2027 deadline) remains live.
+
+## BT-004 (XBI 20% drawdown in 2026 if no AI approval) — tracking INCORRECT
+
+- **XBI ~$129 (Jun 10, 2026); 52-week range $80.90–$139.19.** From the high (~$139) to current is only ~−7%. Biotech has been in an **M&A-driven rally**, not a drawdown. Source: [stockinvest.us XBI](https://stockinvest.us/stock/XBI), [CNBC XBI](https://www.cnbc.com/quotes/XBI).
+
+**Read:** The conditional (no AI approval) holds, but the consequent (20% drawdown) has **not** occurred — the sector is up, not down. **Tracking INCORRECT** barring an H2 2026 selloff. (Caveat: a clean resolution needs the exact 2026 intraday peak/trough; the ~−7% above is from the trailing-52-week high.)
+
+## Refreshed reads
+
+| Prediction | Resolves | June 2026 read |
+|-----------|----------|----------------|
+| BT-001 (first AI FDA approval) | Dec 2027 | Pending; Insilico leads, none yet |
+| BT-002 (3+ AI drugs Phase III, >55%) | Dec 2027 | Pending; 15–20 pivotal entries expected 2026 |
+| BT-003 (M&A >$100B in 2026) | Feb 2027 | **Effectively CORRECT** ($106B YTD) |
+| BT-004 (XBI −20% if no approval) | Dec 2026 | **Tracking INCORRECT** (XBI rallying) |
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: BT-003 effectively CORRECT ($106B YTD M&A); BT-001 pending (no AI approval; Insilico in Phase III); BT-004 tracking INCORRECT (XBI rallying) |
 
 ---
 

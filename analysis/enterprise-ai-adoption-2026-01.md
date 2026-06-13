@@ -371,11 +371,55 @@ A large gap indicates:
 
 ---
 
+# June 2026 Update: ROI Gap Persists; EA-001 / EA-002 Pre-Resolution Reads
+
+Data as of June 13, 2026. Original January data preserved above. This update sets up EA-001 (resolves June 30, 2026) and EA-002 (Dec 31, 2026), and refreshes the ROI-gap evidence.
+
+## EA-001 (analyst forecast <25% for 2027) — tracking CORRECT, but metric-dependent
+
+The claim: at least one of IDC / Gartner / Forrester publishes enterprise AI spending growth **below 25% YoY for 2027** by June 30, 2026.
+
+| Source | Relevant 2027 figure | Below 25%? |
+|--------|----------------------|------------|
+| **Gartner — AI software sub-segment** | ~**20.4%** YoY for 2027 (19.1% CAGR to $297.9B) | **Yes** |
+| Gartner — total worldwide AI spending | +47% in 2026 (to ~$2.5T); "slows in 2027" but no sub-25% number | No |
+| IDC — total AI spending | >$512B by 2027; implied ~30%+ CAGR | No |
+| Forrester | No 2027 figure expected before resolution (Q4 publishing cycle) | — |
+
+Sources: [Gartner AI software forecast (doc 4925331)](https://www.gartner.com/en/documents/4925331), [Gartner/Businesswire: +47% in 2026](https://www.businesswire.com/news/home/20260519405832/en/Gartner-Forecasts-Worldwide-AI-Spending-to-Grow-47-in-2026), [IDC](https://my.idc.com/getdoc.jsp?containerId=prAP53135925).
+
+**Read:** Tracking **CORRECT on a fair reading** — the prep doc's category-normalization rules explicitly accept "AI software spending growth," and Gartner's AI-software 2027 figure (~20.4%) clears the bar. But there's a legitimate INCORRECT-defense: total/headline AI spending (what most readers picture) is still growing 30–47%. The resolution note on June 30 must flag this software-vs-total narrowness honestly rather than claim a clean win. See `docs/prediction-prep/EA-001-prep.md`.
+
+## EA-002 (consulting firm publishes >80% failure rate) — finding exists; named-source check pending
+
+>80%-failure findings are now well-documented:
+
+| Source | Finding | Source type |
+|--------|---------|-------------|
+| **RAND** | "More than 80% of AI projects fail" (80.3%: 33.8% abandoned, 28.4% no value, 18.1% cost-unjustified) | [RAND RRA2680-1](https://www.rand.org/pubs/research_reports/RRA2680-1.html) — research org |
+| **MIT NANDA** | 95% of GenAI pilots fail to deliver measurable ROI ("The GenAI Divide," Aug 2025) | [MIT NANDA](https://mlq.ai/news/mit-study-95-of-generative-ai-pilots-fail-to-deliver-business-impact-in-enterprises/) — academic |
+| **McKinsey** (Nov 2025) | >80% report no meaningful enterprise-wide EBIT impact | named consulting firm — but EBIT-impact, not "project failure rate" |
+
+**Read:** The >80% *finding* clearly exists (high confidence). But EA-002 as written names a **consulting firm (McKinsey/BCG/Bain/Deloitte)** specifically, and the cleanest >80% numbers are from RAND (research org) and MIT (academic). McKinsey's >80% is an *EBIT-impact* statistic, not a *project-failure-rate* statistic. Per the pre-registration tie-break (default to INCORRECT on ambiguity), this should be resolved strictly against the prep doc's source specification at year-end, not waved through. **Tracking — do not pre-call.**
+
+## ROI gap persists into 2026
+
+| Metric | 2024/25 | 2026 update | Source |
+|--------|---------|-------------|--------|
+| Orgs with no meaningful enterprise EBIT impact | — | >80% | McKinsey (Nov 2025) |
+| Orgs generating no material value (BCG) | 74% (2024) | ~60% (Sept 2025) — improving | BCG |
+| Global AI spend failing to deliver value (RAND) | — | >$547B of ~$684B (2025) | RAND |
+
+The directional improvement in the BCG "no value" figure (74% → 60%) is worth noting honestly — the gap is still enormous but narrowing slightly. The core January framing (88% adoption / 6% EBIT impact) is corroborated, not refuted.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: EA-001 pre-resolution read (Gartner AI software ~20.4% for 2027, metric-dependent); EA-002 (>80% findings from RAND/MIT/McKinsey, named-source caveat); ROI-gap refresh |
 
 ---
 

@@ -325,11 +325,49 @@ This fundamental difference explains why:
 
 ---
 
+# June 2026 Update: All Four EC Predictions Tracking Toward CORRECT
+
+Data as of June 13, 2026. Original January data preserved above. All four EC predictions resolve Dec 31, 2026; this update is an interim read (no early resolution).
+
+## EC-001 (solar remains cheapest new electricity) — tracking CORRECT
+
+- Lazard's latest LCOE+ shows **solar and wind retain the lowest unsubsidized LCOEs for the 10th consecutive year.** Source: [RTO Insider](https://www.rtoinsider.com/108308-lazard-solar-wind-retain-lowest-lcoes/).
+- BNEF global benchmark fixed-axis solar LCOE: **$39/MWh (2025)** vs onshore wind $40, offshore wind $100; solar-plus-storage ~$57. Solar projected −30% by 2035. Source: [pv magazine / BNEF (Feb 23, 2026)](https://www.pv-magazine.com/2026/02/23/solar-lcoe-to-fall-30-by-2035-says-bloombergnef/).
+
+**Nuance:** Benchmark solar costs actually *rose* ~6% in 2025 (supply chain, China market reform, FEOC rules) — the margin over alternatives narrowed — but solar still wins. **Tracking CORRECT.**
+
+## EC-002 (EV battery pack <$100/kWh) — tracking CORRECT (threshold split flagged)
+
+- **BEV (EV) pack price: $99/kWh in 2025 — below $100 for the second consecutive year.** All-segment average: $108/kWh (−8% YoY). 2026 forecast: all-segment ~$105; BEV-specific lower. Source: [BloombergNEF](https://about.bnef.com/insights/clean-transport/lithium-ion-battery-pack-prices-fall-to-108-per-kilowatt-hour-despite-rising-metal-prices-bloombergnef/), [Energy-Storage.News](https://www.energy-storage.news/li-ion-battery-pack-prices-fell-8-since-last-year-despite-metals-prices-rising-bloombergnef-says/).
+
+**Resolution-critical flag:** EC-002 says "<$100/kWh **for EV applications**." The **BEV figure ($99) already clears it**; the all-segment average ($108/~$105) does **not**. The prediction text points to CORRECT on the BEV number, but the resolver must confirm against the EC-002 prep doc which series counts.
+
+## EC-003 ($50B+ clean-energy cancellations citing policy) — tracking CORRECT
+
+- 2025 full year: **$34.8B cancelled/downsized, ~38,000 jobs lost.** Source: [E2 Dec 2025](https://e2.org/releases/december-2025-cleaneconomyworks-analysis/).
+- **Q1 2026 alone: ~$14B cancelled, 45 projects, ~41,000 jobs** — an accelerating pace (~$56B annualized). Source: [E2 Q1 2026](https://e2.org/reports/clean-economy-works-q1-2026/).
+- **Cause = policy:** the "One Big Beautiful Bill" (OBBBA, enacted July 2025) terminates §45Y/§48E credits for wind/solar placed in service after Dec 31, 2027, with a **July 4, 2026 construction-start cliff**; FEOC restrictions from Jan 1, 2026; ~$11B IRA funds rescinded. Source: [Steptoe](https://www.steptoe.com/en/news-publications/the-one-big-beautiful-bill-impact-on-the-iras-clean-energy-tax-credits.html), [SEIA](https://seia.org/research-resources/clean-energy-provisions-big-beautiful-bill/).
+
+**Read:** $14B in Q1 alone puts the 2026-only $50B threshold within reach; the July 4 construction cliff could trigger an H2 surge. **Tracking CORRECT.** (Note: E2 reports quarterly; a single consolidated "2026-only ≥$50B" figure will need aggregation at resolution.)
+
+## EC-004 (3+ utilities cite AI data-center demand) — effectively CORRECT
+
+- **30+ utilities cited data centers as a top growth driver** in 2026 earnings; Duke Energy committing $102.2B capex, Southern Company $81.2B. US data-center IT load projected to roughly double from ~80 GW (2025) to ~150 GW (2028). Source: [Deloitte 2026 P&U Outlook](https://www.deloitte.com/us/en/insights/industry/power-and-utilities/power-and-utilities-industry-outlook.html), [Bloom Energy 2026 Power Report](https://www.bloomenergy.com/wp-content/uploads/2026-power-report.pdf).
+
+**Read:** The 3-utility threshold is far exceeded. **Effectively CORRECT** — needs only formal citation of named transcripts at resolution.
+
+## Cross-thesis note
+
+The supply-constraint story dominating the AI/semiconductor analyses shows up here from the other side: AI data-center electricity demand is now a *primary* utility-capex driver (EC-004) and a binding grid constraint — reinforcing the April "physical infrastructure, not efficiency, is the 2026 bottleneck" reading.
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: EC-001 (solar 10th yr cheapest), EC-002 (BEV $99/kWh, threshold split flagged), EC-003 ($14B Q1 cancellations, OBBBA July 4 cliff), EC-004 (30+ utilities) — all four tracking CORRECT |
 
 ---
 

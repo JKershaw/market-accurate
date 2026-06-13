@@ -341,12 +341,62 @@ The expansion of qualifying RTX-4090-viable candidates from one (DeepSeek-R1-Dis
 
 ---
 
+# June 2026 Update — Pre-Resolution Read (T-17 days on AV-003)
+
+Data as of June 13, 2026. The original January data and May refresh are preserved above. This update sets the field going into the AV-003 resolution date (June 30, 2026) and refreshes the proprietary-vs-open picture.
+
+## New / clarified open-weights releases (Feb–Apr 2026, surfaced this cycle)
+
+The May refresh under-counted releases that had already shipped earlier in 2026. Adding for completeness:
+
+| Release | Date | Family | License | Note |
+|---------|------|--------|---------|------|
+| GLM-5 | Feb 11, 2026 | Zhipu / Z.ai | MIT | 744B MoE (~40B active); weights on HuggingFace (`zai-org/GLM-5`) |
+| GLM-5.1 | API Mar 27; open weights Apr 7, 2026 | Zhipu / Z.ai | open | Among strongest open models; GSM8K ~94.8% corroborated, **MMLU "96" claim unverified** |
+| Qwen 3.5 397B-A17B | Feb 2026 | Alibaba | open | 88.5 MMLU on a strict leaderboard (best open MMLU there); 397B → **not** RTX-4090-viable |
+| Gemma 4 31B / 26B-A4B | ~Apr 2026 | Google | open | 31B reported 88.4 MMLU; 26B-A4B ~86.3 MMLU; dense/MoE, RTX-4090-viable at Q4 |
+
+Sources: [HuggingFace GLM-5 blog](https://huggingface.co/blog/mlabonne/glm-5), [llm-stats open LLM leaderboard](https://llm-stats.com/leaderboards/open-llm-leaderboard), [BenchLM rankings](https://benchlm.ai/blog/posts/best-open-source-llm). **No distinctly new frontier open-weights release surfaced in the May–June 2026 window itself** beyond these earlier-2026 lines.
+
+## ⚠️ Data-discipline flag: benchmark aggregators now disagree materially
+
+Third-party leaderboard/SEO aggregators give **inconsistent** numbers for the same model (e.g., DeepSeek-R1-Distill-32B MMLU appears as both ~72.6 and ~87.5; HumanEval as 85.4 and 94.3 across sites). For any resolution, cite the **official model card / technical report**, not aggregator pages. This project's January figures for DeepSeek-R1-Distill-32B trace to the original distill model card, which remains the cleanest anchor.
+
+## AV-003 final pre-resolution read (resolves June 30, 2026)
+
+Threshold: a single open-weights model ≥ GPT-4 (Mar 2023) on **MMLU 86.4 / HumanEval 67 / GSM8K 92**, running on a single RTX 4090 (24GB). As of mid-June, **multiple** sub-32B candidates clear it:
+
+| Model | Params | RTX 4090 fit | Clears all three? | Confidence |
+|-------|--------|--------------|-------------------|------------|
+| DeepSeek-R1-Distill-32B | 32.8B | Q4_K_M ~20GB ✓ | Yes (87.5 / 85.4 / 95.6 per model card) | med-high |
+| Qwen 3 32B | 32.8B | Q4_K_M ~22GB ✓ (tight) | Yes (>87 / >85 / >93 at Q4) | med |
+| Gemma 4 31B | 30.7B | Q4 ✓ | MMLU 88.4; HumanEval/GSM8K not separately verified | med |
+
+**Read: AV-003 is strongly on track to resolve CORRECT.** The bottleneck is no longer capability — it's clean primary-source verification. Per protocol, resolution will occur **on** June 30, not before; it will anchor on DeepSeek-R1-Distill-32B's model-card numbers and document the aggregator-noise caveat. See `docs/prediction-prep/AV-003-prep.md`.
+
+## Proprietary frontier has moved off MMLU
+
+- **Claude Opus 4.8** (released May 28, 2026) tops the Artificial Analysis Intelligence Index at **61.4**, edging GPT-5.5, with strong agentic / SWE-bench Pro (~69.2%) results. Sources: [Artificial Analysis / Swfte leaderboard](https://www.swfte.com/ai/leaderboard), [llm-stats AI news](https://llm-stats.com/ai-news).
+- On **MMLU specifically there is no >2pt proprietary breakaway** over open-weights — both clusters sit ~90%+. MMLU is saturated and no longer discriminates frontier capability, which has migrated to **GPQA Diamond, SWE-Bench Verified, Humanity's Last Exam, and agentic** benchmarks.
+
+## Refreshed prediction reads
+
+| Prediction | May read | June read |
+|-----------|----------|-----------|
+| **AV-003** (open = GPT-4 on RTX 4090) | Strengthening | **Strongly tracking CORRECT** (≥3 qualifying models); resolve June 30 |
+| **OB-001** (open keeps <2pt MMLU gap to frontier) | Strongly favorable | **Tracking CORRECT** — open still ≥ proprietary on MMLU; no breakaway. Caveat: keyed to saturated benchmarks, so it may resolve CORRECT *on a technicality* even as proprietary pulls ahead on harder evals |
+| **OB-002** (≤4B matches Llama 2 70B / MMLU ≥69% on mobile) | Indeterminate | **Still indeterminate** — no sourced ≤4B model at MMLU ≥69% *demonstrated on a mobile chipset*; Qwen3-4B / Phi-4-mini class are plausible but unverified |
+| **OB-003** (frontier MMLU >85% trained <$1M, documented) | Borderline | **Tracking NOT-MET as stated** — sub-$10M frontier runs are documented (DeepSeek-R1 ~$5.9M), but a strict **<$1M AND documented AND MMLU >85%** conjunction is unverified. A circulated "$1,500 foundation model" is not frontier-class and not credibly sourced |
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
 | 2026-05-08 | Added May 2026 Refresh: new releases (Qwen 3, Qwen 3.5/3.6, DeepSeek V4 Pro, Llama 3.3); updated metrics dashboard; OB-001/002/003 status reads; AV-003 strengthening |
+| 2026-06-13 | Added June 2026 Update: GLM-5/5.1, Qwen 3.5 397B, Gemma 4 releases; aggregator data-discipline flag; AV-003 pre-resolution read (strongly CORRECT-tracking); Claude Opus 4.8 frontier; OB-001/002/003 refreshed reads |
 
 ---
 

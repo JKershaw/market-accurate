@@ -158,3 +158,28 @@ On July 1, 2026 (or first trading day after June 30):
 ---
 
 *Prepared: 2026-04-18*
+
+---
+
+## Addendum (June 13, 2026): Baseline populated; interim spread (T-17 days)
+
+The Dec-31-2025 baseline action item is now populated (partly by derivation — flagged):
+
+| Index | Dec 31, 2025 close | Source |
+|-------|-------------------|--------|
+| S&P 500 (price) | **6,845.50** | [CNBC year-end](https://www.cnbc.com/2025/12/30/stock-market-today-live-updates.html) — high confidence |
+| SOX (^SOX) | **~7,083 (derived)** | Back-derived from SOX 13,371.47 (Jun 12, 2026) ÷ 1.8878 (YTD +88.78% per [Barchart](https://www.barchart.com/stocks/quotes/$SOX/performance)) — **medium confidence, not a directly sourced Dec-31-2025 print.** Confirm exact close from NASDAQ/terminal before locking. |
+
+### Interim monitoring (updated)
+
+| Date | SOX | SOX YTD | S&P 500 YTD (price) | Spread (SOX − S&P) |
+|------|-----|---------|---------------------|--------------------|
+| Jun 12, 2026 | 13,371.47 | **+88.8%** | low single digits | **≈ +85pp (SOX ahead)** |
+
+Spread is massively **positive** (SOX far outperforming) — the opposite of what SC-002 predicts. Note the June 3 intraday high was 13,998 and a ~10% one-session drop hit on June 5 (then bought back), so there is short-window volatility, but nowhere near enough to close an ~85pp gap in 17 days.
+
+### Read at T-17 days
+
+**Tracking firmly INCORRECT.** Barring an extraordinary collapse in the final two weeks of June, SOX total return will exceed S&P 500 total return for H1 2026. Resolution on July 1, 2026 will use total return (SOXX/SPY dividend-inclusive) but the gap is far too wide for the ~1% dividend differential to matter.
+
+*Addendum: 2026-06-13*

@@ -280,11 +280,61 @@ Direct connections to other Market Accurate analyses are limited; crypto is a di
 
 ---
 
+# June 2026 Update: Cycle Drawdown Materializing; Stablecoin Threshold Misread
+
+Data as of June 13, 2026. Original April data preserved above. Interim read only.
+
+## Bitcoin price action 2026
+
+| Point | Value | Source |
+|-------|-------|--------|
+| 2025 all-time high | $126,296 (Oct 6, 2025) | [CoinDesk](https://www.coindesk.com/markets/2026/01/10/bitcoin-s-price-hasn-t-peaked-yet-and-its-just-a-mid-cycle-correction-historical-data-shows) |
+| 2026 local high | ~$97,963 (Jan 14, 2026) | CoinDesk |
+| 2026 low | ~$60,001 (Feb 6, 2026; re-tested early June) | [Fortune](https://fortune.com/article/price-of-bitcoin-06-10-2026/) |
+| Current (Jun 10, 2026) | ~$61,531 | Fortune |
+
+Peak-to-trough from the Oct 2025 ATH to the Feb 2026 low is **−52.5%**.
+
+## DA-001 (≥40% BTC drawdown, Apr 2026–Dec 2027) — tracking CORRECT (anchor flag)
+
+A −52.5% peak-to-trough already occurred, and the $60K low was re-tested in June 2026 (inside the measurement window). **Anchor caveat:** the −52.5% uses the Oct 2025 ATH, which **predates** the Apr 2026 window start. Measured strictly *within* the window (≈$90K April → ~$60K June), the drawdown is ~−33%. Whether DA-001 is already satisfied depends on the prep-doc's peak-anchoring rule — **flag for the resolver**; with 18 months left in the window and BTC at cycle lows, reaching a clean within-window −40% is likely regardless.
+
+## DA-005 (2026 drawdown smaller than 77%) — tracking CORRECT
+
+Largest 2026 drawdown is ~−39% (Jan high → Feb low), well under the prior cycle's 77%. **Tracking CORRECT** — consistent with the institutional-dampening thesis.
+
+## DA-003 (USDT+USDC combined >$300B in 2026) — tracking INCORRECT (misread flag)
+
+- **USDT ~$186.8B + USDC ~$75.8B = ~$262.6B combined** (June 2026). *Total* stablecoin market cap did top $321B, but that includes DAI/PYUSD/others. Source: [Bitcoin Foundation](https://bitcoinfoundation.org/news/stablecoin-news/stablecoin-market-cap-tops-321b/).
+
+**Read:** **Tracking INCORRECT as worded.** The prediction names USDT+USDC specifically (~$262.6B), not all stablecoins. This is an honest data-discipline catch — the headline "$300B+ stablecoins" number does **not** satisfy the claim. Would need ~$38B of additional USDT+USDC growth in H2 2026.
+
+## DA-004 (no US stablecoin >2% depeg >24h) — tracking CORRECT
+
+No 2026 depeg events found among US-regulated issuers. **Tracking CORRECT.**
+
+## DA-002 (ETF flow/price correlation >0.5) — plausible
+
+2026 flows and price co-moved: Jan–Feb outflows + weak price; April **+$2.44B** inflows + bounce; late-May/June **−$1.26B** outflows + selloff. Source: [Investing.com](https://www.investing.com/analysis/bitcoin-etf-inflows-hit-244bn-in-april-as-institutional-demand-returns-200679435). Needs formal rolling-correlation computation at resolution (Jan 2027).
+
+## Refreshed reads
+
+| Prediction | Resolves | June 2026 read |
+|-----------|----------|----------------|
+| DA-001 (≥40% drawdown by 2027) | Dec 2027 | Tracking CORRECT; within-window anchor flag |
+| DA-002 (ETF flow corr >0.5) | Jan 2027 | Plausible; needs computation |
+| DA-003 (USDT+USDC >$300B) | Dec 2026 | **Tracking INCORRECT** (~$262.6B; don't conflate with total stablecoins) |
+| DA-004 (no US stablecoin depeg) | Dec 2026 | **Tracking CORRECT** |
+| DA-005 (2026 drawdown <77%) | Dec 2026 | **Tracking CORRECT** (~−39% max) |
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-04-18 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: BTC ~$61.5K, −52.5% from Oct 2025 ATH; DA-001 anchor flag; DA-003 tracking INCORRECT (USDT+USDC ~$262.6B, not the $321B total); DA-004/005 tracking CORRECT; ETF-flow refresh |
 
 ---
 

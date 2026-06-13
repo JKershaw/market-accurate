@@ -339,11 +339,51 @@ The office market is increasingly two markets:
 
 ---
 
+# June 2026 Update: Vacancy Stabilizing but Not Falling Fast Enough
+
+Data as of June 13, 2026. Original January data preserved above. Interim read only; CRE predictions resolve Jan–Feb 2027.
+
+## CRE-001 (national office vacancy <18% by Q4 2026) — tracking INCORRECT
+
+- **National office vacancy held at 20.2% in Q1 2026** (+5 bps YoY — the smallest annual increase since the pandemic; vacancy declined in 46 of 92 markets). Source: [Cushman & Wakefield Q1 2026](https://www.cushmanwakefield.com/en/united-states/news/2026/04/us-office-market-stabilizes-as-demand-concentrates-in-leading-markets).
+
+**Read:** The market is stabilizing (the January "office has bottomed" thesis is holding directionally) but at **20.2%**, reaching <18% by Q4 2026 is very unlikely. **Tracking INCORRECT.** **Methodology flag:** the January analysis cited Yardi (18.6%); Cushman reads higher at 20.2%. Different providers will give different verdicts — the prep doc must pin the source before resolution.
+
+## CRE-004 (San Francisco vacancy >25% through 2026) — tracking CORRECT but tightening
+
+- **SF office vacancy fell to 28.0% in Q1 2026** (−370 bps YoY, second consecutive quarterly decline), with AI-driven leasing surging (3.4M sq ft leased Q1, strongest net absorption since 2019). Source: [CBRE SF Q1 2026](https://www.cbre.com/insights/figures/san-francisco-office-figures-q1-2026).
+
+**Read:** At 28.0% and falling ~3.7 pp/year, SF stays >25% through 2026 — **tracking CORRECT** — but the AI-driven recovery is fast enough that Q4 2026 could approach 25%. Worth monitoring. (Provider figures range 28–32%; pin the series.)
+
+## CRE-003 (50M sq ft conversions announced in 2026) — plausible, not yet verified
+
+- Active 2026 conversion pieces: NYC ~10.3M sq ft (~12M could qualify by mid-2026), Boston 1.2M, DC 2.8M, plus large individual deals (5 Times Square, 1,250 units). Source: [NYC Comptroller](https://comptroller.nyc.gov/reports/office-to-residential-conversions-in-nyc-economics-and-fiscal-estimates/), [Boston.gov](https://www.boston.gov/news/office-residential-conversion-program-extended-it-surpasses-1500-new-homes).
+
+**Read:** Conversions are accelerating; a 50M sq ft *cumulative announced* national total in 2026 is plausible but **not yet verified at the threshold**. Needs a national aggregator (CBRE/Yardi conversion tracker) at resolution.
+
+## CRE-002 (Class A REITs outperform B/C by 15pp) — indeterminate
+
+- Six office REITs (incl. BXP, Vornado) posted Q1 2026 total returns of −23% to −18%; the big public office REITs (mostly Class A) are themselves **down** in 2026. Source: [S&P Global](https://www.spglobal.com/market-intelligence/en/news-insights/articles/2026/4/us-reit-stocks-outperform-broader-stock-market-in-q1-2026-100206526).
+
+**Read:** Insufficient public data for a clean Class-A-vs-B/C basket split, and the fact that Class A REITs are themselves down complicates the "Class A outperforms" thesis. **Indeterminate** — needs a constructed basket at resolution.
+
+## Refreshed reads
+
+| Prediction | Resolves | June 2026 read |
+|-----------|----------|----------------|
+| CRE-001 (vacancy <18% Q4 2026) | Feb 2027 | **Tracking INCORRECT** (20.2% Q1; source caveat) |
+| CRE-002 (Class A beats B/C 15pp) | Jan 2027 | Indeterminate; office REITs broadly down |
+| CRE-003 (50M sq ft conversions) | Dec 2026 | Plausible, not yet verified at threshold |
+| CRE-004 (SF vacancy >25%) | Feb 2027 | **Tracking CORRECT** (28.0%, falling on AI demand) |
+
+---
+
 # Changelog
 
 | Date | Change |
 |------|--------|
 | 2026-01-03 | Initial publication |
+| 2026-06-13 | Added June 2026 Update: CRE-001 tracking INCORRECT (20.2% Q1, source methodology flag); CRE-004 tracking CORRECT (SF 28%); CRE-003 plausible/unverified; CRE-002 indeterminate |
 
 ---
 

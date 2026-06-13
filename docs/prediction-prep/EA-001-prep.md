@@ -221,3 +221,22 @@ The Gartner AI software 2027 figure of ~20.4% likely satisfies the EA-001 thresh
 ---
 
 *Addendum: 2026-05-08*
+
+---
+
+## Addendum (June 13, 2026): Final pre-resolution read (T-17 days)
+
+| Source | 2027 figure | Below 25%? |
+|--------|-------------|------------|
+| **Gartner — AI software sub-segment** | ~**20.4%** YoY for 2027 (19.1% CAGR to $297.9B) | **Yes** |
+| Gartner — total worldwide AI spending | +47% in 2026 (~$2.5T); "slows in 2027," no sub-25% number | No |
+| IDC — total AI spending | >$512B by 2027; implied ~30%+ CAGR | No |
+| Forrester | No 2027 figure expected before resolution | — |
+
+Sources: [Gartner AI software (doc 4925331)](https://www.gartner.com/en/documents/4925331), [Gartner +47% 2026 (Businesswire, May 19 2026)](https://www.businesswire.com/news/home/20260519405832/en/Gartner-Forecasts-Worldwide-AI-Spending-to-Grow-47-in-2026), [IDC](https://my.idc.com/getdoc.jsp?containerId=prAP53135925).
+
+### Resolution recommendation
+
+The Gartner **AI-software** 2027 figure (~20.4%) clears the threshold and is an accepted category under this prep doc's normalization rules. **Strict-reading: CORRECT.** But the resolution note must honestly flag that Gartner/IDC **total** AI spending (the headline number most readers picture) is still 30–47% — i.e., this is a CORRECT-on-the-software-sub-segment, not a clean win on aggregate enterprise AI spend. Do not overstate. If a reviewer judges the software sub-segment too narrow, the fallback is INDETERMINATE, not a favorable default. Resolve on June 30, 2026.
+
+*Addendum: 2026-06-13*
