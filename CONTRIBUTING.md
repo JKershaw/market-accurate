@@ -232,6 +232,7 @@ Before committing new analysis:
 - [ ] Thesis is falsifiable (can be proven wrong)
 - [ ] All data claims have sources and dates
 - [ ] Predictions are specific, time-bound, verifiable
+- [ ] Each prediction passes the [Threshold Disambiguation Checklist](docs/pre-registration.md#threshold-disambiguation-checklist) — its aggregate-vs-subsegment, series, cohort, central-tendency-vs-tail, anchor/window, named-source, and units/provenance readings are pinned in the prep doc
 - [ ] Counterarguments are steelmanned
 - [ ] Confidence levels are stated
 - [ ] Limitations are acknowledged

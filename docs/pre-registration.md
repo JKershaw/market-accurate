@@ -41,7 +41,7 @@ Where will the evidence come from? Named sources reduce cherry-picking at resolu
 
 ### 4. Threshold Unambiguity
 
-If a prediction says "<50%", does 50.0% count as correct? State it. If it says "by Q3," does a July 1 outcome count? State it.
+If a prediction says "<50%", does 50.0% count as correct? State it. If it says "by Q3," does a July 1 outcome count? State it. Boundary tie-breaks are only half the problem; the harder failure is a metric name that hides several incompatible definitions (aggregate vs sub-segment, median vs tail, which series). Run the [Threshold Disambiguation Checklist](#threshold-disambiguation-checklist) when writing the prep doc.
 
 ### 5. Prior Belief Disclosure
 
@@ -75,6 +75,26 @@ When adding a new prediction:
 
 ---
 
+## Threshold Disambiguation Checklist
+
+Commitment #4 (Threshold Unambiguity) fails in practice not because thresholds are missing, but because a *single* metric name hides several incompatible definitions. The June 2026 resolution cycle surfaced seven recurring ambiguity classes where a careless reading would have manufactured a favorable verdict. Run this checklist when **writing each prep document** (and again at resolution), and record the resolved interpretation in the prep doc so the reading cannot drift later.
+
+| # | Ambiguity class | The question to pin down | Worked example (June 2026) |
+|---|-----------------|--------------------------|----------------------------|
+| 1 | **Aggregate vs sub-segment** | Does the metric mean the whole category or a sub-segment? They can point to opposite verdicts. | EA-001: Gartner *total* AI spend +47% (fails <25%) vs *AI-software* sub-segment ~20.4% (passes). |
+| 2 | **Series / definition** | Which exact published series, and which definition within it? | CS-003: credit-card 90+ DPD per-*account* (~low single digits) vs per-*balance* "serious delinquency" flow (~11–12%). |
+| 3 | **Cohort / segment threshold** | Which sub-population does the threshold apply to? | EC-002: BEV pack $99/kWh (passes <$100) vs all-segment average $108 (fails). |
+| 4 | **Central tendency vs tail** | Median, mean, or *any single* member of the set? | PC-001: *median* BDC non-accruals ~2.5% (fails ≥4%) vs tail outlier FSK 8.1% (passes). |
+| 5 | **Anchor & window** | For a drawdown/change, what is the peak/baseline — and does it fall *inside* the measurement window? | DA-001: −52.5% uses the Oct-2025 ATH that predates the Apr-2026 window; within-window peak gives ~−33%. |
+| 6 | **Named-source strictness** | Does the named source list *bind*, or does any equivalent source count? | EA-002: claim names a *consulting firm* (McKinsey/BCG/Bain/Deloitte); the cleanest >80% figures are RAND (research org) and MIT (academic). |
+| 7 | **Return type / units / provenance** | Price vs total return? Nominal vs real? Which provider, and is the baseline an exact print or a proxy? | SC-002: price vs total return; AV-005 baseline is a Dec-31-2025 *proxy*, not a verified Jan-2-2026 close; CRE-001 Yardi 18.6% vs Cushman 20.2%. |
+
+**Rule of application:** If the checklist exposes two defensible readings that yield *opposite* outcomes, the prep doc must commit to **one** reading consistent with the prediction's plain text and intent, in writing, before the verification date. If no single reading is clearly truer to the original intent, the prediction resolves **INDETERMINATE** (per "When to Retire a Prediction") rather than defaulting to the favorable interpretation. Pinning the reading *after* seeing the data is goalpost-shifting (Known Failure Mode #2).
+
+**Source-of-record corollary:** When primary and third-party numbers disagree, cite the primary (SEC filing, official model card / technical report, issuer disclosure), never an SEO/aggregator leaderboard. June 2026 example: DeepSeek-R1-Distill-32B MMLU appeared as both ~72.6 and ~87.5 across aggregator sites; only the official model card is admissible for resolution.
+
+---
+
 ## The Resolution Prep Document
 
 For each prediction, a resolution-prep document lives in `docs/prediction-prep/{ID}-prep.md`. This document is written **between prediction publication and resolution**, and contains:
@@ -83,6 +103,7 @@ For each prediction, a resolution-prep document lives in `docs/prediction-prep/{
 - Interim monitoring points
 - Specific data-collection protocol
 - Tie-breaker rules for edge cases
+- The resolved reading of each applicable [Threshold Disambiguation Checklist](#threshold-disambiguation-checklist) class
 - Resolution checklist
 
 The prep document can be updated. The prediction itself cannot.
@@ -253,4 +274,4 @@ INCONCLUSIVE resolutions do not count toward accuracy but DO count toward Brier 
 
 ---
 
-*Last updated: 2026-04-18*
+*Last updated: 2026-06-13 (added Threshold Disambiguation Checklist)*

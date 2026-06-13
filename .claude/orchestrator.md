@@ -176,8 +176,8 @@ When a new analysis is **published**:
 ```
 
 **Quality gates:**
-- Evidence must be from primary sources
-- Outcome must be unambiguous
+- Evidence must be from primary sources (official model card / filing / issuer disclosure — never an aggregator leaderboard when they disagree)
+- Outcome must be unambiguous — run the Threshold Disambiguation Checklist (`docs/pre-registration.md`); if two defensible readings give opposite verdicts and the prep doc never committed to one, resolve INDETERMINATE rather than defaulting favorable
 - Never modify original prediction wording
 
 ---

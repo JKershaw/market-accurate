@@ -78,6 +78,7 @@ Good predictions are:
 - **Time-bound:** Definite resolution date
 - **Falsifiable:** Can be proven wrong
 - **Non-trivial:** Not obvious or consensus
+- **Unambiguous metric:** The named metric resolves to one series/definition, not several. A single name like "AI spending," "delinquency rate," or "battery price" often hides incompatible readings (aggregate vs sub-segment, per-account vs per-balance, BEV vs all-segment) that point to opposite verdicts. Pin the reading in the prep doc via the [Threshold Disambiguation Checklist](docs/pre-registration.md#threshold-disambiguation-checklist) before the verification date — pinning it afterward is goalpost-shifting.
 
 Bad predictions:
 
